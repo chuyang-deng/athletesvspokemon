@@ -1,0 +1,24 @@
+Project Name: Athlets VS Pokemon
+
+Description: In this project, our team will design and develop a web application over different datasets. Two major datasets we are using are: 1) Olympic medal winners: every one since 1896 as open data; 2) Nintendo Pokedex: all pocket monsters from 6 generations.
+
+Team Members:
+Na Luo: luona@seas.upenn.edu
+Yan Zhong: yanzhong@seas.upenn.edu
+Chuyang Deng: chuyang@seas.upenn.edu
+
+Technologies: Technologies that we are going to use are as follows
+- AWS to host datasets
+- Node.js (Environment to run Express)
+- Express (Set up server)
+- AngularJS (Implement User Interface)
+
+Possible Query Questions:
+(In general, we match each athlete to a particular Pokemon; we also match period of years to Pokemon generations, and sports to Pokemon categories.)
+- Who is the Usain Bolt in Pokemon? (We rescale the speed/power/etc. in Pokemon and match their rank with athletes)
+- Who is the fastest person/Pokemon?
+- What will swimming athletes do in the Pokemon world? (We match each sport with a category of Pokemon so that users could know what kind of activities atheletes will do if they were Pokemon)
+- Who will win if Micheal Phelps battles Ian Thorpe?
+- Who are the first/second/... generations of Olympic athletes?
+- Who is the Pikachu/Squirtle/Charmander among all Olympic athletes? (Popularity, based on news coverage/twitter feeds)
+- personal info & pokemon attributes (这一点我忘记是怎么说的了。。。)
