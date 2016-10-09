@@ -25,13 +25,20 @@ Possible Query Questions:
 
 (Project要求的第四点要写这个，不太理解是什么。。)
 Timeline for different milestones: 
-Milestone 1
-Milestone 2
-Milestone 3
-Milestone 4
+Milestone 1  October 10th
+Develop initial idea, and set up infrastructure
+
+Milestone 2 October 31th
+Project outline and schema design
+
+Milestone 3 November 14th 
+Populate the database
+
+Milestone 4 November 23rd
+Demo basic functionality
 
 (乱写的大家随意改。。。)
 Preliminary division of responsibilities:
-Na Lou: Front end
+Na Luo: Front end and database design and Node.js
 Chuyang Deng: database design and Node.js
 Yan Zhong: database design and Node.js
