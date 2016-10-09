@@ -1,24 +1,37 @@
 Project Name: Athlets VS Pokemon
 
-Description: In this project, our team will design and develop a web application over different datasets. Two major datasets we are using are: 1) Olympic medal winners: every one since 1896 as open data; 2) Nintendo Pokedex: all pocket monsters from 6 generations.
+Description: In this project, our team will design and develop a web application over different datasets. Two major datasets we are using are: 1) Olympic medal winners: every one since 1896 as open data; 2) Nintendo Pokedex: all pocket monsters from 6 generations. Additional datasets might also be used to display basic or detailed description of Olympic medal winners.
 
 Team Members:
 Na Luo: luona@seas.upenn.edu
 Yan Zhong: yanzhong@seas.upenn.edu
 Chuyang Deng: chuyang@seas.upenn.edu
 
-Technologies: Technologies that we are going to use are as follows
+Technologies: Technologies that we are going to use are as follows:
 - AWS to host datasets
 - Node.js (Environment to run Express)
 - Express (Set up server)
 - AngularJS (Implement User Interface)
 
 Possible Query Questions:
-(In general, we match each athlete to a particular Pokemon; we also match period of years to Pokemon generations, and sports to Pokemon categories.)
-- Who is the Usain Bolt in Pokemon? (We rescale the speed/power/etc. in Pokemon and match their rank with athletes)
-- Who is the fastest person/Pokemon?
-- What will swimming athletes do in the Pokemon world? (We match each sport with a category of Pokemon so that users could know what kind of activities atheletes will do if they were Pokemon)
-- Who will win if Micheal Phelps battles Ian Thorpe?
-- Who are the first/second/... generations of Olympic athletes?
-- Who is the Pikachu/Squirtle/Charmander among all Olympic athletes? (Popularity, based on news coverage/twitter feeds)
-- personal info & pokemon attributes (这一点我忘记是怎么说的了。。。)
+(In general, we match each athlete to a particular Pokemon (or a set of pokemons, depends on the properties of specific athletes); we also match period of years to Pokemon generations, and sports to Pokemon categories.)
+1. Who/What is the Usain Bolt in Pokemon? (We rescale the speed/power/etc. in Pokemon and match their ranks with athletes)
+2. Who is the fastest person/Pokemon?
+3. What will swimming athletes do in the world of Pokemon? (We match each sport with a category of Pokemon so that users could know what kind of activities atheletes would do if they were Pokemons)
+4. Who will win if Micheal Phelps battles against Ian Thorpe (they are two players in different generations) (by comparing their actual abilities, as well as the abilities of their corresponding pokemons)?
+5. Who are the first/second/... generations of Olympic athletes (like different generations of Pokemon game)?
+6. Who is the Pikachu/Squirtle/Charmander among all Olympic athletes? (Popularity, based on news coverage/twitter feeds...)
+7. Please give a detailed description about a athlete or about a pokemon (year, birthday, height, picture, other personal information...)
+
+(Project要求的第四点要写这个，不太理解是什么。。)
+Timeline for different milestones: 
+Milestone 1
+Milestone 2
+Milestone 3
+Milestone 4
+
+(乱写的大家随意改。。。)
+Preliminary division of responsibilities:
+Na Lou: Front end
+Chuyang Deng: database design and Node.js
+Yan Zhong: database design and Node.js
