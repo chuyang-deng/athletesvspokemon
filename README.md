@@ -1,2 +1,9 @@
 # athletesvspokemon
-A database web application where users could make queries like "Who is the Usain Bolt in Pokemon?"
+Milestone3 TODO:
+
+1. set up AWS RDS and create instance
+2. clean data
+3. populate database
+4. modify schema
+5. translate questions to queries
+
