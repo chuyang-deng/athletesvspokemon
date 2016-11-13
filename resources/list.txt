@@ -1,0 +1,3 @@
+1. Pokemon.csv : original pokemon dataset (csv file)
+2. Pokemon2.csv : cleaned pokemon dataset (csv file)
+3. pokemonGoData.json : pokemon go spirites descriptions (json file)
