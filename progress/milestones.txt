@@ -1,0 +1,15 @@
+Milestone 1: 
+(1) project description - motivation, questions, technology
+(2) team member responsibilities
+
+Milestone 2:
+(1) design schema
+(2) write DDL
+(3) project motivation
+(4) team member responsibilities
+
+Milestone 3:
+(1) translate questions to queries
+(2) create DB instance
+(3) clean datasets
+(4) populate database
