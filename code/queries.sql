@@ -3,6 +3,10 @@
 -- Activities (Sports, type)
 -- Pokemon (name, HP, total, speed, defense, attack, gender, type, image_NO)
 
+--1. Who/What is the Usain Bolt in Pokémon? 
+For this one, we might change our matching algorithm a bit so we will leave this query
+to be finished by the next milestone
+
 -- Who is the best pokemon?
 SELECT p1.name
 FROM Pokemon p1
