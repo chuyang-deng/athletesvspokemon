@@ -20,7 +20,7 @@ SELECT type
 FROM Activities
 WHERE Sports = "swimming"
 
---use the type above, select some sample pokemon, picture will be linked by image_NO
+--use the type above, select some sample pokemon. Pictures will be linked by image_NO
 --using AWS S3, more description will be provided by noSQL database and a json file
 --which has not been set up yet
 Select p.name
