@@ -66,3 +66,8 @@ without some old athelets, this question is kind of meaningless (and also a litt
 For this question, we will write some web crawler to get data from google search. (we will see the number of time a name has been
 searched on GOOGLE and use that information to create a table of "popularity"). Then we will be able to find out the most popular
 pokemon and the most popular athletes.
+
+--7. Please give a detailed description about an athlete or about a Pokémon (year, birthday, height, picture, other personal information...)
+This will be done by using the noSQL part of our database, which we are having trouble setting up... But we have upload all image for 
+all pokemon into our AWS S3, which should provide enough information for a pokemon (people need to see the picture to 
+know what a pokemon is).
