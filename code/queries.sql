@@ -42,9 +42,10 @@ where 5*m.gold + 3*m.silver + m.bronze >= ALL ( select 5*m2.gold + 3*m2.silver +
 					
 ---- in certain category
 Select a.name
-From Althetes a inner join Medal m on a.name = m.name AND a.DOB = m.DOB
-where a.sports = "swimming" AND 5*m.gold + 3*m.silver + m.bronze >= ALL ( select 5*m2.gold + 3*m2.silver + m2.bronze
-					from Medal m2)
+From Athletes a inner join Medal m on a.name = m.name AND a.DOB = m.DOB
+where a.sports = 'Swimming' AND 5*m.gold + 3*m.silver + m.bronze >= ALL ( select 5*m2.gold + 3*m2.silver + m2.bronze
+					from Athletes a2 inner join Medal m2 on a2.name = m2.name AND a2.DOB = m2.DOB
+					where a2.sports = 'Swimming')
 					
 --4. Given two atheletes name, show which one would win
 Select 5*m.gold + 3*m.silver + m.bronze
