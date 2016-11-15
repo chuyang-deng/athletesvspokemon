@@ -7,7 +7,7 @@
 For this one, we might change our matching algorithm a bit so we will leave this query
 to be finished by the next milestone
 
--- Who is the best pokemon?
+--2. Who is the best pokemon?
 SELECT p1.name
 FROM Pokemon p1
 WHERE p1.total >= ALL (SELECT p2.total
@@ -19,7 +19,7 @@ WHERE p1.type = "water"
 AND p1.total >= ALL (SELECT p2.total
 					 FROM Pokemon p2)
 
--- What will swimmers do in Pokemon?
+--3. What will swimmers do in Pokemon?
 SELECT type
 FROM Activities
 WHERE Sports = "swimming"
@@ -32,7 +32,7 @@ from Pokemon p
 where p.type = "above type" AND ROWNUM < 10
 
 
--- who is the best athletes
+--2. who is the best athletes
 Select m.name
 From Medal m
 where 5*m.gold + 3*m.silver + m.bronze >= ALL ( select 5*m2.gold + 3*m2.silver + m2.bronze
@@ -44,7 +44,7 @@ From Althetes a inner join Medal m on a.name = m.name AND a.DOB = m.DOB
 where a.sports = "swimming" AND 5*m.gold + 3*m.silver + m.bronze >= ALL ( select 5*m2.gold + 3*m2.silver + m2.bronze
 					from Medal m2)
 					
--- Given two atheletes name, show which one would win
+--4. Given two atheletes name, show which one would win
 Select 5*m.gold + 3*m.silver + m.bronze
 From Medal m
 where where m.name = "name1 or name2"  
