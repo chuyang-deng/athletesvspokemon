@@ -3,6 +3,8 @@
 -- Activities (Sports, type)
 -- Pokemon (name, HP, total, speed, defense, attack, gender, type, image_NO)
 
+-- the number listed below match with the number of questions on the first milestone
+
 --1. Who/What is the Usain Bolt in Pokémon? 
 For this one, we might change our matching algorithm a bit so we will leave this query
 to be finished by the next milestone
@@ -56,4 +58,7 @@ from Pokemon p
 where p.name = "above name"
 -- then in NodeJS, compare two number and print out the name with the higher total
 
+--5. Who are the first/second/... generations of Olympic athletes (like different generations of Pokémon game)?
+We decided to not include this question is our project, because we will not include all 1896 - 2016 athelets, and 
+without some old athelets, this question is kind of meaningless (and also a little boring)
 
