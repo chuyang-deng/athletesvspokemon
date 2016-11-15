@@ -62,3 +62,7 @@ where p.name = "above name"
 We decided to not include this question is our project, because we will not include all 1896 - 2016 athelets, and 
 without some old athelets, this question is kind of meaningless (and also a little boring)
 
+--6. Who is the Pikachu/Squirtle/Charmander among all Olympic athletes? (Popularity, based on news coverage/twitter feeds...)
+For this question, we will write some web crawler to get data from google search. (we will see the number of time a name has been
+searched on GOOGLE and use that information to create a table of "popularity"). Then we will be able to find out the most popular
+pokemon and the most popular athletes.
