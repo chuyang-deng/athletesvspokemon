@@ -24,7 +24,8 @@ create table Athletes (
 	height real,
 	weight real,
 	gender varchar(255),
-	primary key (name, dob)
+	primary key (name, dob),
+	foreign key (sports) references Activities (sport)
 );
 
 -- Activities Relation
@@ -37,9 +38,10 @@ create table Activities (
 -- Medal Relation
 create table Medal (
 	name varchar(255) not null,
-	dob varchar(255) not null,
+	dob date not null,
 	gold integer,
 	silver integer,
 	bronze integer,
-	primary key (name, dob)
+	primary key (name, dob),
+	foreign key (name, dob) references Athletes(name, dob)
 );
