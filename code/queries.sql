@@ -78,12 +78,122 @@ know what a pokemon is).
 			VIEWS
 *****************************/
 
-CREATE VIEW 'SwimmingView' AS
+CREATE VIEW SwimmingView AS
 	SELECT *
 	FROM Athletes
 	WHERE Sports = 'Swimming';
 
-CREATE VIEW 'WaterView' AS
+CREATE VIEW ShootingView AS
+	SELECT *
+	FROM Athletes
+	WHERE Sports = 'Shooting';
+
+CREATE VIEW ArcheryView AS
+	SELECT *
+	FROM Athletes
+	WHERE Sports = 'Archery';
+
+CREATE VIEW AquaticsView AS
+	SELECT *
+	FROM Athletes
+	WHERE Sports = 'Aquatics';
+
+CREATE VIEW WaterpoloView AS
+	SELECT *
+	FROM Athletes
+	WHERE Sports = 'Water polo';
+
+CREATE VIEW SailingView AS
+	SELECT *
+	FROM Athletes
+	WHERE Sports = 'Sailing';
+
+CREATE VIEW RowingView AS
+	SELECT *
+	FROM Athletes
+	WHERE Sports = 'Rowing';
+
+CREATE VIEW CanoeView AS
+	SELECT *
+	FROM Athletes
+	WHERE Sports = 'Canoe';
+
+CREATE VIEW FootballView AS
+	SELECT *
+	FROM Athletes
+	WHERE Sports = 'Football';
+
+CREATE VIEW TennisView AS
+	SELECT *
+	FROM Athletes
+	WHERE Sports = 'Tennis';
+
+CREATE VIEW HockyView AS
+	SELECT *
+	FROM Athletes
+	WHERE Sports = 'Hocky';
+
+CREATE VIEW BadmintonView AS
+	SELECT *
+	FROM Athletes
+	WHERE Sports = 'Badminton';
+
+CREATE VIEW HandballView AS
+	SELECT *
+	FROM Athletes
+	WHERE Sports = 'Handball';
+
+CREATE VIEW TableTennisView AS
+	SELECT *
+	FROM Athletes
+	WHERE Sports = 'Table tennis';
+
+CREATE VIEW BasketballView AS
+	SELECT *
+	FROM Athletes
+	WHERE Sports = 'Basketball';
+
+CREATE VIEW VolleyballView AS
+	SELECT *
+	FROM Athletes
+	WHERE Sports = 'Volleyball';
+
+CREATE VIEW WaterView AS
 	SELECT *
 	FROM Pokemon
 	WHERE type = 'Water';
+
+CREATE VIEW GrassView AS
+	SELECT *
+	FROM Pokemon
+	WHERE type = 'Grass';
+
+CREATE VIEW NormalView AS
+	SELECT *
+	FROM Pokemon
+	WHERE type = 'Normal';
+
+CREATE VIEW FireView AS
+	SELECT *
+	FROM Pokemon
+	WHERE type = 'Fire';
+
+CREATE VIEW FlyingView AS
+	SELECT *
+	FROM Pokemon
+	WHERE type = 'Flying';
+
+CREATE VIEW GroundView AS
+	SELECT *
+	FROM Pokemon
+	WHERE type = 'Ground';
+
+CREATE VIEW FightingView AS
+	SELECT *
+	FROM Pokemon
+	WHERE type = 'Fighting';
+
+CREATE VIEW PsychicView AS
+	SELECT *
+	FROM Pokemon
+	WHERE type = 'Psychic';
