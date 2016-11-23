@@ -83,7 +83,6 @@ CREATE VIEW SwimmingView AS
 	FROM Athletes
 	WHERE sports = 'Swimming';
 
-<<<<<<< HEAD
 CREATE VIEW ShootingView AS
 	SELECT *
 	FROM Athletes
@@ -198,9 +197,3 @@ CREATE VIEW PsychicView AS
 	SELECT *
 	FROM Pokemon
 	WHERE type = 'Psychic';
-=======
-CREATE VIEW WaterView AS
-	SELECT *
-	FROM Pokemon
-	WHERE type = 'Water';
->>>>>>> f765eefb498bc9702ac547208c5c4fb493b379ce
