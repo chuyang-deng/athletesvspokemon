@@ -157,6 +157,78 @@ CREATE VIEW VolleyballView AS
 	SELECT *
 	FROM Athletes
 	WHERE Sports = 'Volleyball';
+	
+CREATE VIEW EquestrianView AS
+	SELECT *
+	FROM Athletes
+	WHERE sports = 'Equestrian';
+
+CREATE VIEW CyclingView AS
+	SELECT *
+	FROM Athletes
+	WHERE sports = 'Cycling';
+
+CREATE VIEW AthleticsView AS
+	SELECT *
+	FROM Athletes
+	WHERE sports = 'Athletics';
+
+CREATE VIEW TrampolingView AS
+	SELECT *
+	FROM Athletes
+	WHERE sports = 'Trampoling';
+
+CREATE VIEW GymasticsView AS
+	SELECT *
+	FROM Athletes
+	WHERE sports = 'Gymastics';
+
+CREATE VIEW TaekwondoView AS
+	SELECT *
+	FROM Athletes
+	WHERE sports = 'Taekwondo';
+
+CREATE VIEW WrestlingView AS
+	SELECT *
+	FROM Athletes
+	WHERE sports = 'Wrestling';
+
+CREATE VIEW FencingView AS
+	SELECT *
+	FROM Athletes
+	WHERE sports = 'Fencing';
+
+CREATE VIEW JudoView AS
+	SELECT *
+	FROM Athletes
+	WHERE sports = 'Judo';
+
+CREATE VIEW BoxingView AS
+	SELECT *
+	FROM Athletes
+	WHERE sports = 'Boxing';
+
+CREATE VIEW ModernpentathlonView AS
+	SELECT *
+	FROM Athletes
+	WHERE sports = 'Modern pentathlon';
+
+CREATE VIEW TriathlonView AS
+	SELECT *
+	FROM Athletes
+	WHERE sports = 'Triathlon';
+
+CREATE VIEW WeightliftingView AS
+	SELECT *
+	FROM Athletes
+	WHERE sports = 'Weightlifting';
+
+CREATE VIEW RugbysevensView AS
+	SELECT *
+	FROM Athletes
+	WHERE sports = 'Rugby sevens';
+	
+______________________________________________________________________________________
 
 CREATE VIEW WaterView AS
 	SELECT *
