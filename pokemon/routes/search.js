@@ -2,13 +2,14 @@ var express = require('express');
 var router = express.Router();
 
 var mysql = require('mysql');
-var connection = mysql.createConnection({
-  host: 'cisproject.cguwhx0yelq2.us-west-2.rds.amazonaws.com',
-  user: 'cisproject',
-  password: 'DCYLNZY32',
-  database: 'CISPROJECT'
-})
 
+var settings = require('../settings.json');
+var connection = mysql.createConnection({
+  host: settings.address,
+  user: settings.user,
+  password: settings.password,
+  database: settings.database
+})
 
 
 /////
@@ -28,7 +29,7 @@ function query_db(res, pname) {
         if (err) console.log(err);
         else{
           var result2 = rows;
-          var query3 = "select * from Athletes a where a.sports = '" + result2[4].sport + "'";
+          var query3 = "select * from Athletes a where a.sports = '" + result2[0].sport + "'";
           console.log(query3);
           connection.query(query3, function(err, rows, fields) {
             if (err) console.log(err);
