@@ -9,6 +9,26 @@
 For this one, we might change our matching algorithm a bit so we will leave this query
 to be finished by the next milestone
 
+var sport = SELECT sports FROM Athletes WHERE name = "Usain Bolt"; -- getting the sports of the athletes
+
+var type = SELECT category FROM Pokemon WHERE sport = sport; -- getting the counterpart Pokemon type
+
+var athletesRank = SELECT name, medals, ROWNUM FROM sport+View s INNER JOIN Medal m ON s.name = m.name ORDER BY m.medals; -- getting athletes medals
+
+var pokemonRank = SELECT name, total, ROWNUM FROM type+View ORDER BY total; -- getting Pokemon totals
+
+var athletesRows = SELECT count(*) FROM athletesRank; -- total rows of athletes
+
+var pokemonRows = SELECT count(*) FROM pokemonRank; -- total rows of pokemon
+
+var atheletsRankNo = SELECT ROWNUM FROM athletesRank WHERE name = "Usain Bolt"; -- usain bolts actual rank in his sport
+
+var pokemonRankNo = (int) atheletsRankNo * ( (float) pokemonRows / athletesRows); -- counterpart rank in pokemon;
+
+var result = SELECT name FROM pokemonRank WHERE ROWNUM = pokemonRankNo -- getting the result (pokemon's name)
+
+
+
 --2. Who is the best pokemon?
 SELECT p1.name
 FROM Pokemon p1
@@ -72,86 +92,3 @@ pokemon and the most popular athletes.
 This will be done by using the noSQL part of our database, which we are having trouble setting up... But we have upload all image for 
 all pokemon into our AWS S3, which should provide enough information for a pokemon (people need to see the picture to 
 know what a pokemon is).
-
-
-/****************************
-			VIEWS
-*****************************/
-
-CREATE VIEW SwimmingView AS SELECT * FROM Athletes WHERE sports = 'Swimming';
-
-CREATE VIEW ShootingView AS SELECT * FROM Athletes WHERE sports = 'Shooting';
-
-CREATE VIEW ArcheryView AS SELECT * FROM Athletes WHERE sports = 'Archery';
-
-CREATE VIEW AquaticsView AS SELECT * FROM Athletes WHERE sports = 'Aquatics';
-
-CREATE VIEW WaterpoloView AS SELECT * FROM Athletes WHERE sports = 'Water polo';
-
-CREATE VIEW SailingView AS SELECT * FROM Athletes WHERE sports = 'Sailing';
-
-CREATE VIEW RowingView AS SELECT * FROM Athletes WHERE sports = 'Rowing';
-
-CREATE VIEW CanoeView AS SELECT * FROM Athletes WHERE sports = 'Canoe';
-
-CREATE VIEW FootballView AS SELECT * FROM Athletes WHERE sports = 'Football';
-
-CREATE VIEW TennisView AS SELECT * FROM Athletes WHERE sports = 'Tennis';
-
-CREATE VIEW HockyView AS SELECT * FROM Athletes WHERE sports = 'Hocky';
-
-CREATE VIEW BadmintonView AS SELECT * FROM Athletes WHERE sports = 'Badminton';
-
-CREATE VIEW HandballView AS SELECT * FROM Athletes WHERE sports = 'Handball';
-
-CREATE VIEW TabletennisView AS SELECT * FROM Athletes WHERE sports = 'Table tennis';
-
-CREATE VIEW BasketballView AS SELECT * FROM Athletes WHERE sports = 'Basketball';
-
-CREATE VIEW VolleyballView AS SELECT * FROM Athletes WHERE sports = 'Volleyball';
-	
-CREATE VIEW EquestrianView AS SELECT * FROM Athletes WHERE sports = 'Equestrian';
-
-CREATE VIEW CyclingView AS SELECT * FROM Athletes WHERE sports = 'Cycling';
-
-CREATE VIEW AthleticsView AS SELECT * FROM Athletes WHERE sports = 'Athletics';
-
-CREATE VIEW TrampolingView AS SELECT * FROM Athletes WHERE sports = 'Trampoling';
-
-CREATE VIEW GymasticsView AS SELECT * FROM Athletes WHERE sports = 'Gymastics';
-
-CREATE VIEW TaekwondoView AS SELECT * FROM Athletes WHERE sports = 'Taekwondo';
-
-CREATE VIEW WrestlingView AS SELECT * FROM Athletes WHERE sports = 'Wrestling';
-
-CREATE VIEW FencingView AS SELECT * FROM Athletes WHERE sports = 'Fencing';
-
-CREATE VIEW JudoView AS SELECT * FROM Athletes WHERE sports = 'Judo';
-
-CREATE VIEW BoxingView AS SELECT * FROM Athletes WHERE sports = 'Boxing';
-
-CREATE VIEW ModernpentathlonView AS SELECT * FROM Athletes WHERE sports = 'Modern pentathlon';
-
-CREATE VIEW TriathlonView AS SELECT * FROM Athletes WHERE sports = 'Triathlon';
-
-CREATE VIEW WeightliftingView AS SELECT * FROM Athletes WHERE sports = 'Weightlifting';
-
-CREATE VIEW RugbysevensView AS SELECT * FROM Athletes WHERE sports = 'Rugby sevens';
-	
-______________________________________________________________________________________
-
-CREATE VIEW WaterView AS SELECT * FROM Pokemon WHERE type = 'Water';
-
-CREATE VIEW GrassView AS SELECT * FROM Pokemon WHERE type = 'Grass';
-
-CREATE VIEW NormalView AS SELECT * FROM Pokemon WHERE type = 'Normal';
-
-CREATE VIEW FireView AS SELECT * FROM Pokemon WHERE type = 'Fire';
-
-CREATE VIEW FlyingView AS SELECT * FROM Pokemon WHERE type = 'Flying';
-
-CREATE VIEW GroundView AS SELECT * FROM Pokemon WHERE type = 'Ground';
-
-CREATE VIEW FightingView AS SELECT * FROM Pokemon WHERE type = 'Fighting';
-
-CREATE VIEW PsychicView AS SELECT * FROM Pokemon WHERE type = 'Psychic';

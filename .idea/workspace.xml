@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5090e043-3ee4-4f1f-85c4-ca7d07baf731" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pokemon/views/about.ejs" afterPath="$PROJECT_DIR$/pokemon/views/about.ejs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pokemon/views/guessgame.ejs" afterPath="$PROJECT_DIR$/pokemon/views/guessgame.ejs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pokemon/views/search.ejs" afterPath="$PROJECT_DIR$/pokemon/views/search.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/DDL.sql" afterPath="$PROJECT_DIR$/code/DDL.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/queries.sql" afterPath="$PROJECT_DIR$/code/queries.sql" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -384,12 +384,12 @@
       <workItem from="1479848932371" duration="3000" />
       <workItem from="1479848950942" duration="1232000" />
       <workItem from="1479855093353" duration="738000" />
-      <workItem from="1479868749532" duration="1544000" />
+      <workItem from="1479868749532" duration="2092000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3517000" />
+    <option name="totallyTimeSpent" value="4065000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="157" y="34" width="1065" height="707" extended-state="0" />
