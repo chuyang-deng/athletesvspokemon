@@ -78,12 +78,12 @@ know what a pokemon is).
 			VIEWS
 *****************************/
 
-CREATE VIEW 'Swimming' AS
+CREATE VIEW 'SwimmingView' AS
 	SELECT *
 	FROM Athletes
 	WHERE Sports = 'Swimming';
 
-CREATE VIEW 'Water' AS
+CREATE VIEW 'WaterView' AS
 	SELECT *
 	FROM Pokemon
 	WHERE type = 'Water';
