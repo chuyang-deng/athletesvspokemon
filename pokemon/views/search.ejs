@@ -30,10 +30,26 @@
     <% include templates/header.ejs %>
     <div id="headerwrap">
         <div class="container">
-            <p>The Search Result Page</p>
-            <p>Show Query Result Here</p>
+            <h1>The Search Result Page</h1>
+            <h2><%= title %></h2>
+          <table class = "table table-striped table-hover">
+            <% for (var i=0; i < results.length; i++) { %>
+            <tr class = "warning">
+              <td> <%= results[i].name %> </td>
+              <td> <%= results[i].type %> </td>
+              <td> <%= results[i].total %> </td>
+              <td> <%= results[i].hp %> </td>
+              <td> <%= results[i].attack %> </td>
+              <td> <%= results[i].defense %> </td>
+              <td> <%= results[i].speed %> </td>
+              <td>&nbsp</td>
+            </tr>
+            <% } %>
+          </table>
         </div>
     </div>
+
+<% include templates/footer.ejs%>
 
 </body>
 </html>

@@ -36,12 +36,18 @@
       <div class="col-lg-6">
         <h1>Search an ATHLETES<br/>
           or POKEMON</h1>
-        <form class="form-inline" role="form">
+        <form class="form-inline" role="form" method="get" action="/search">
           <div class="form-group">
-            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter an atheletes or pokemon">
+            <input type="text" class="form-control" name="pname" placeholder="Enter a pokemon's type">
           </div>
-          <button type="submit" class="btn btn-warning btn-lg"><a href="/search">SEARCH</a></button>
+          <button type="submit" class="btn btn-warning btn-lg">SEARCH</button>
         </form>
+        <!--<p>-->
+        <!--&lt;!&ndash;<form method="get" action="/search">&ndash;&gt;-->
+          <!--&lt;!&ndash;<input name="pname" value=""/>&ndash;&gt;-->
+          <!--&lt;!&ndash;<button type="submit" class="btn btn-warning btn-lg"></button>&ndash;&gt;-->
+        <!--&lt;!&ndash;</form>&ndash;&gt;-->
+        <!--</p>-->
       </div><!-- /col-lg-6 -->
       <div class="col-lg-6">
         <img class="img-responsive" src="images/pikachu.png" alt="">
@@ -55,7 +61,10 @@
 <!-- Bootstrap core JavaScript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
-<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
+<!--<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>-->
+<!--<script src="js/bootstrap.min.js"></script>-->
+
+<% include templates/footer.ejs%>
+
 </body>
 </html>
