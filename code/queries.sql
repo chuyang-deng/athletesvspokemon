@@ -38,13 +38,13 @@ where p.type = "above type" AND ROWNUM < 10
 Select m.name
 From Medal m
 where 5*m.gold + 3*m.silver + m.bronze >= ALL ( select 5*m2.gold + 3*m2.silver + m2.bronze
-					from Medal m2)
+			 from Medal m2)
 					
 ---- in certain category
 Select a.name
 From Athletes a inner join Medal m on a.name = m.name AND a.DOB = m.DOB
 where a.sports = 'Swimming' AND 5*m.gold + 3*m.silver + m.bronze >= ALL ( select 5*m2.gold + 3*m2.silver + m2.bronze
-					from Athletes a2 inner join Medal m2 on a2.name = m2.name AND a2.DOB = m2.DOB
+			 from Athletes a2 inner join Medal m2 on a2.name = m2.name AND a2.DOB = m2.DOB
 					where a2.sports = 'Swimming')
 					
 --4. Given two atheletes name, show which one would win
@@ -78,122 +78,80 @@ know what a pokemon is).
 			VIEWS
 *****************************/
 
-CREATE VIEW SwimmingView AS
-	SELECT *
-	FROM Athletes
-	WHERE sports = 'Swimming';
+CREATE VIEW SwimmingView AS SELECT * FROM Athletes WHERE sports = 'Swimming';
 
-CREATE VIEW ShootingView AS
-	SELECT *
-	FROM Athletes
-	WHERE Sports = 'Shooting';
+CREATE VIEW ShootingView AS SELECT * FROM Athletes WHERE sports = 'Shooting';
 
-CREATE VIEW ArcheryView AS
-	SELECT *
-	FROM Athletes
-	WHERE Sports = 'Archery';
+CREATE VIEW ArcheryView AS SELECT * FROM Athletes WHERE sports = 'Archery';
 
-CREATE VIEW AquaticsView AS
-	SELECT *
-	FROM Athletes
-	WHERE Sports = 'Aquatics';
+CREATE VIEW AquaticsView AS SELECT * FROM Athletes WHERE sports = 'Aquatics';
 
-CREATE VIEW WaterpoloView AS
-	SELECT *
-	FROM Athletes
-	WHERE Sports = 'Water polo';
+CREATE VIEW WaterpoloView AS SELECT * FROM Athletes WHERE sports = 'Water polo';
 
-CREATE VIEW SailingView AS
-	SELECT *
-	FROM Athletes
-	WHERE Sports = 'Sailing';
+CREATE VIEW SailingView AS SELECT * FROM Athletes WHERE sports = 'Sailing';
 
-CREATE VIEW RowingView AS
-	SELECT *
-	FROM Athletes
-	WHERE Sports = 'Rowing';
+CREATE VIEW RowingView AS SELECT * FROM Athletes WHERE sports = 'Rowing';
 
-CREATE VIEW CanoeView AS
-	SELECT *
-	FROM Athletes
-	WHERE Sports = 'Canoe';
+CREATE VIEW CanoeView AS SELECT * FROM Athletes WHERE sports = 'Canoe';
 
-CREATE VIEW FootballView AS
-	SELECT *
-	FROM Athletes
-	WHERE Sports = 'Football';
+CREATE VIEW FootballView AS SELECT * FROM Athletes WHERE sports = 'Football';
 
-CREATE VIEW TennisView AS
-	SELECT *
-	FROM Athletes
-	WHERE Sports = 'Tennis';
+CREATE VIEW TennisView AS SELECT * FROM Athletes WHERE sports = 'Tennis';
 
-CREATE VIEW HockyView AS
-	SELECT *
-	FROM Athletes
-	WHERE Sports = 'Hocky';
+CREATE VIEW HockyView AS SELECT * FROM Athletes WHERE sports = 'Hocky';
 
-CREATE VIEW BadmintonView AS
-	SELECT *
-	FROM Athletes
-	WHERE Sports = 'Badminton';
+CREATE VIEW BadmintonView AS SELECT * FROM Athletes WHERE sports = 'Badminton';
 
-CREATE VIEW HandballView AS
-	SELECT *
-	FROM Athletes
-	WHERE Sports = 'Handball';
+CREATE VIEW HandballView AS SELECT * FROM Athletes WHERE sports = 'Handball';
 
-CREATE VIEW TableTennisView AS
-	SELECT *
-	FROM Athletes
-	WHERE Sports = 'Table tennis';
+CREATE VIEW TabletennisView AS SELECT * FROM Athletes WHERE sports = 'Table tennis';
 
-CREATE VIEW BasketballView AS
-	SELECT *
-	FROM Athletes
-	WHERE Sports = 'Basketball';
+CREATE VIEW BasketballView AS SELECT * FROM Athletes WHERE sports = 'Basketball';
 
-CREATE VIEW VolleyballView AS
-	SELECT *
-	FROM Athletes
-	WHERE Sports = 'Volleyball';
+CREATE VIEW VolleyballView AS SELECT * FROM Athletes WHERE sports = 'Volleyball';
+	
+CREATE VIEW EquestrianView AS SELECT * FROM Athletes WHERE sports = 'Equestrian';
 
-CREATE VIEW WaterView AS
-	SELECT *
-	FROM Pokemon
-	WHERE type = 'Water';
+CREATE VIEW CyclingView AS SELECT * FROM Athletes WHERE sports = 'Cycling';
 
-CREATE VIEW GrassView AS
-	SELECT *
-	FROM Pokemon
-	WHERE type = 'Grass';
+CREATE VIEW AthleticsView AS SELECT * FROM Athletes WHERE sports = 'Athletics';
 
-CREATE VIEW NormalView AS
-	SELECT *
-	FROM Pokemon
-	WHERE type = 'Normal';
+CREATE VIEW TrampolingView AS SELECT * FROM Athletes WHERE sports = 'Trampoling';
 
-CREATE VIEW FireView AS
-	SELECT *
-	FROM Pokemon
-	WHERE type = 'Fire';
+CREATE VIEW GymasticsView AS SELECT * FROM Athletes WHERE sports = 'Gymastics';
 
-CREATE VIEW FlyingView AS
-	SELECT *
-	FROM Pokemon
-	WHERE type = 'Flying';
+CREATE VIEW TaekwondoView AS SELECT * FROM Athletes WHERE sports = 'Taekwondo';
 
-CREATE VIEW GroundView AS
-	SELECT *
-	FROM Pokemon
-	WHERE type = 'Ground';
+CREATE VIEW WrestlingView AS SELECT * FROM Athletes WHERE sports = 'Wrestling';
 
-CREATE VIEW FightingView AS
-	SELECT *
-	FROM Pokemon
-	WHERE type = 'Fighting';
+CREATE VIEW FencingView AS SELECT * FROM Athletes WHERE sports = 'Fencing';
 
-CREATE VIEW PsychicView AS
-	SELECT *
-	FROM Pokemon
-	WHERE type = 'Psychic';
+CREATE VIEW JudoView AS SELECT * FROM Athletes WHERE sports = 'Judo';
+
+CREATE VIEW BoxingView AS SELECT * FROM Athletes WHERE sports = 'Boxing';
+
+CREATE VIEW ModernpentathlonView AS SELECT * FROM Athletes WHERE sports = 'Modern pentathlon';
+
+CREATE VIEW TriathlonView AS SELECT * FROM Athletes WHERE sports = 'Triathlon';
+
+CREATE VIEW WeightliftingView AS SELECT * FROM Athletes WHERE sports = 'Weightlifting';
+
+CREATE VIEW RugbysevensView AS SELECT * FROM Athletes WHERE sports = 'Rugby sevens';
+	
+______________________________________________________________________________________
+
+CREATE VIEW WaterView AS SELECT * FROM Pokemon WHERE type = 'Water';
+
+CREATE VIEW GrassView AS SELECT * FROM Pokemon WHERE type = 'Grass';
+
+CREATE VIEW NormalView AS SELECT * FROM Pokemon WHERE type = 'Normal';
+
+CREATE VIEW FireView AS SELECT * FROM Pokemon WHERE type = 'Fire';
+
+CREATE VIEW FlyingView AS SELECT * FROM Pokemon WHERE type = 'Flying';
+
+CREATE VIEW GroundView AS SELECT * FROM Pokemon WHERE type = 'Ground';
+
+CREATE VIEW FightingView AS SELECT * FROM Pokemon WHERE type = 'Fighting';
+
+CREATE VIEW PsychicView AS SELECT * FROM Pokemon WHERE type = 'Psychic';
