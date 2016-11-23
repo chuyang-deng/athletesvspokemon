@@ -13,7 +13,7 @@ var sport = SELECT sports FROM Athletes WHERE name = "Usain Bolt"; -- getting th
 
 var type = SELECT category FROM Pokemon WHERE sport = sport; -- getting the counterpart Pokemon type
 
-var athletesRank = SELECT name, medals, ROWNUM FROM sport+View s INNER JOIN Medal m ON s.name = m.name ORDER BY m.medals; -- getting athletes medals
+var athletesRank = SELECT name, medals, ROWNUM FROM sport+'View' s INNER JOIN Medal m ON s.name = m.name ORDER BY m.medals; -- getting athletes medals
 
 var pokemonRank = SELECT name, total, ROWNUM FROM type+View ORDER BY total; -- getting Pokemon totals
 
@@ -25,7 +25,7 @@ var atheletsRankNo = SELECT ROWNUM FROM athletesRank WHERE name = "Usain Bolt"; 
 
 var pokemonRankNo = (int) atheletsRankNo * ( (float) pokemonRows / athletesRows); -- counterpart rank in pokemon;
 
-var result = SELECT name FROM pokemonRank WHERE ROWNUM = pokemonRankNo -- getting the result (pokemon's name)
+var result = SELECT * FROM pokemonRank WHERE ROWNUM = pokemonRankNo -- getting the result (pokemon's name)
 
 
 

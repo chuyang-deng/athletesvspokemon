@@ -17,11 +17,28 @@ var connection = mysql.createConnection({
 // res = HTTP result object sent back to the client
 // name = Name to query for
 function query_db(res, pname) {
-  query = "select * from Pokemon p where p.type = '" + pname + "'";
+  var query = "select * from Pokemon p where p.type = '" + pname + "'";
   connection.query(query, function(err, rows, fields) {
     if (err) console.log(err);
     else {
-      output_persons(res, pname, rows);
+      var result1 = rows;
+      var query1 = "select * from Activities a where a.category = '" + result1[0].type + "'";
+      console.log(query);
+      connection.query(query1, function(err, rows, fields) {
+        if (err) console.log(err);
+        else{
+          var result2 = rows;
+          var query3 = "select * from Athletes a where a.sports = '" + result2[4].sport + "'";
+          console.log(query3);
+          connection.query(query3, function(err, rows, fields) {
+            if (err) console.log(err);
+            else{
+              var result3 = rows;
+              output_persons(res, pname, result1, result2, result3);
+            }
+          })
+        }
+      })
     }
   });
 }
@@ -32,10 +49,13 @@ function query_db(res, pname) {
 // res = HTTP result object sent back to the client
 // name = Name to query for
 // results = List object of query results
-function output_persons(res, pname, results) {
+function output_persons(res, pname, result1,result2,result3) {
   res.render('search',
       { title: "All Pokemon with type: " + pname,
-        results: results }
+        result1: result1,
+        result2: result2,
+        result3: result3
+      }
   );
   //console.log(results)
 }
