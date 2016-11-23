@@ -60,7 +60,7 @@ where p.name = "above name"
 -- then in NodeJS, compare two number and print out the name with the higher total
 
 --5. Who are the first/second/... generations of Olympic athletes (like different generations of Pokémon game)?
-We decided to not include this question is our project, because we will not include all 1896 - 2016 athelets, and 
+We decided to not include this question in our project, because we will not include all 1896 - 2016 athelets, and 
 without some old athelets, this question is kind of meaningless (and also a little boring)
 
 --6. Who is the Pikachu/Squirtle/Charmander among all Olympic athletes? (Popularity, based on news coverage/twitter feeds...)
@@ -72,3 +72,18 @@ pokemon and the most popular athletes.
 This will be done by using the noSQL part of our database, which we are having trouble setting up... But we have upload all image for 
 all pokemon into our AWS S3, which should provide enough information for a pokemon (people need to see the picture to 
 know what a pokemon is).
+
+
+/****************************
+			VIEWS
+*****************************/
+
+CREATE VIEW 'Swimming' AS
+	SELECT *
+	FROM Athletes
+	WHERE Sports = 'Swimming';
+
+CREATE VIEW 'Water' AS
+	SELECT *
+	FROM Pokemon
+	WHERE type = 'Water';
