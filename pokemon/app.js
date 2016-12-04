@@ -8,7 +8,7 @@ var index = require('./routes/index');
 var about = require('./routes/about');
 var search = require('./routes/search');
 var guessgame = require('./routes/guessgame');
-
+var pokemon = require('./')
 var app = express();
 
 // view engine setup
