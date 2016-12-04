@@ -23,13 +23,13 @@ function query_db(res, pname) {
     if (err) console.log(err);
     else {
       var result1 = rows;
-      var query1 = "select * from Activities a where a.category = '" + result1[0].type + "'";
+      var query1 = "select * from Activities a where a.type = '" + result1[0].type + "'";
       console.log(query);
       connection.query(query1, function(err, rows, fields) {
         if (err) console.log(err);
         else{
           var result2 = rows;
-          var query3 = "select * from Athletes a where a.sports = '" + result2[0].sport + "'";
+          var query3 = "select * from Athletes a where a.sport = '" + result2[0].sport + "'";
           console.log(query3);
           connection.query(query3, function(err, rows, fields) {
             if (err) console.log(err);
