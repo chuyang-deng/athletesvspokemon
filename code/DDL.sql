@@ -2,48 +2,66 @@
 create table Pokemon (
 	name varchar(255) not null,
 	type varchar(255),
-	total number,
-	hp number,
-	attack number,
-	defense number,
-	sp_attack number,
-	sp_defense number,
-	speed number,
-	generation number,
-	image_no number,
+	total Integer,
+	hp Integer,
+	attack Integer,
+	defense Integer,
+	sp_attack Integer,
+	sp_defense Integer,
+	speed Integer,
+	generation Integer,
+	image_no Integer,
+	primary key (name)
+);
+
+
+create table PokemonFull (
+	image_no Integer,
+	name varchar(50) not null,
+	type1 varchar(50),
+	type2 varchar(50),
+	total Integer,
+	hp Integer,
+	attack Integer,
+	defense Integer,
+	sp_attack Integer,
+	sp_defense Integer,
+	speed Integer,
+	generation Integer,
+	legendary boolean,
 	primary key (name)
 );
 
 -- Athletes Relation
 create table Athletes (
 	name varchar(255) not null,
-	dob date not null,
-	country varchar(255),
-	sports varchar(255),
-	events varchar(255),
-	height real,
-	weight real,
-	gender varchar(255),
-	primary key (name, dob),
-	foreign key (sports) references Activities (sport)
+	country varchar(10),
+	gender varchar(10),
+	sport varchar(255),
+	discipline varchar(255),
+	event varchar(255),
+	year varchar(100),
+	primary key (name),
+	foreign key (sport) references Activities (sport)
 );
+#name,Country,Gender,Sport,Discipline,Event,Year
 
 -- Activities Relation
 create table Activities (
-	sport varchar(255),
-	category varchar(255),
+	sport varchar(50),
+	type varchar(50),
 	primary key (sport)
 );
 
 -- Medal Relation
 create table Medal (
-	name varchar(255) not null,
-	dob date not null,
+	name varchar(50) not null,
 	gold integer,
 	silver integer,
 	bronze integer,
-	primary key (name, dob),
-	foreign key (name, dob) references Athletes(name, dob)
+	score integer,
+	primary key (name),
+	foreign key (name) references Athletes(name)
 );
 
 
