@@ -6,9 +6,14 @@ var bodyParser = require('body-parser');
 
 var index = require('./routes/index');
 var about = require('./routes/about');
-var search = require('./routes/search');
+var searchByA = require('./routes/searchByA');
+var resultByA = require('./routes/resultByA');
+
+var searchByPop = require('./routes/searchByPop');
+var resultByPop = require('./routes/resultByPop');
+
+
 var guessgame = require('./routes/guessgame');
-var pokemon = require('./')
 var app = express();
 
 // view engine setup
@@ -25,7 +30,12 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
 app.use('/about', about);
-app.use('/search', search);
+app.use('/searchByA', searchByA);
+app.use('/resultByA', resultByA);
+
+app.use('/searchByPop', searchByPop);
+app.use('/resultByPop', resultByPop);
+
 app.use('/guessgame', guessgame);
 
 // catch 404 and forward to error handler

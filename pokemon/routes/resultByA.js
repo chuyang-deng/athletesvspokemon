@@ -51,7 +51,7 @@ function query_db(res, pname) {
 // name = Name to query for
 // results = List object of query results
 function output_persons(res, pname, result1,result2,result3) {
-  res.render('result',
+  res.render('resultByA',
       { title: "All Pokemon with type: " + pname,
         result1: result1,
         result2: result2,
