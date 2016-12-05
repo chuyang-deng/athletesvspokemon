@@ -69,65 +69,67 @@ create table Medal (
 			VIEWS
 *****************************/
 
-CREATE VIEW SwimmingView AS SELECT * FROM Athletes WHERE sports = 'Swimming';
+CREATE VIEW AquaticsView AS Select * From Athletes Where sport = 'Aquatics';
 
-CREATE VIEW ShootingView AS SELECT * FROM Athletes WHERE sports = 'Shooting';
+CREATE VIEW ArcheryView AS Select * From Athletes Where sport = 'Archery';
 
-CREATE VIEW ArcheryView AS SELECT * FROM Athletes WHERE sports = 'Archery';
+CREATE VIEW AthleticsView AS Select * From Athletes Where sport = 'Athletics';
 
-CREATE VIEW AquaticsView AS SELECT * FROM Athletes WHERE sports = 'Aquatics';
+CREATE VIEW BadmintonView AS Select * From Athletes Where sport = 'Badminton';
 
-CREATE VIEW WaterpoloView AS SELECT * FROM Athletes WHERE sports = 'Water polo';
+CREATE VIEW BaseballView AS Select * From Athletes Where sport = 'Baseball';
 
-CREATE VIEW SailingView AS SELECT * FROM Athletes WHERE sports = 'Sailing';
+CREATE VIEW BasketballView AS Select * From Athletes Where sport = 'Basketball';
 
-CREATE VIEW RowingView AS SELECT * FROM Athletes WHERE sports = 'Rowing';
+CREATE VIEW BoxingView AS Select * From Athletes Where sport = 'Boxing';
 
-CREATE VIEW CanoeView AS SELECT * FROM Athletes WHERE sports = 'Canoe';
+CREATE VIEW CanoeView AS Select * From Athletes Where sport = 'Canoe';
 
-CREATE VIEW FootballView AS SELECT * FROM Athletes WHERE sports = 'Football';
+CREATE VIEW CyclingView AS Select * From Athletes Where sport = 'Cycling';
 
-CREATE VIEW TennisView AS SELECT * FROM Athletes WHERE sports = 'Tennis';
+CREATE VIEW EquestrianView AS Select * From Athletes Where sport = 'Equestrian';
 
-CREATE VIEW HockyView AS SELECT * FROM Athletes WHERE sports = 'Hocky';
+CREATE VIEW FencingView AS Select * From Athletes Where sport = 'Fencing';
 
-CREATE VIEW BadmintonView AS SELECT * FROM Athletes WHERE sports = 'Badminton';
+CREATE VIEW FootballView AS Select * From Athletes Where sport = 'Football';
 
-CREATE VIEW HandballView AS SELECT * FROM Athletes WHERE sports = 'Handball';
+CREATE VIEW GymnasticsView AS Select * From Athletes Where sport = 'Gymnastics';
 
-CREATE VIEW TabletennisView AS SELECT * FROM Athletes WHERE sports = 'Table tennis';
+CREATE VIEW HandballView AS Select * From Athletes Where sport = 'Handball';
 
-CREATE VIEW BasketballView AS SELECT * FROM Athletes WHERE sports = 'Basketball';
+CREATE VIEW HockeyView AS Select * From Athletes Where sport = 'Hockey';
 
-CREATE VIEW VolleyballView AS SELECT * FROM Athletes WHERE sports = 'Volleyball';
-	
-CREATE VIEW EquestrianView AS SELECT * FROM Athletes WHERE sports = 'Equestrian';
+CREATE VIEW JudoView AS Select * From Athletes Where sport = 'Judo';
 
-CREATE VIEW CyclingView AS SELECT * FROM Athletes WHERE sports = 'Cycling';
+CREATE VIEW ModernpentathlonView AS Select * From Athletes Where sport = 'Modern pentathlon';
 
-CREATE VIEW AthleticsView AS SELECT * FROM Athletes WHERE sports = 'Athletics';
+CREATE VIEW RowingView AS Select * From Athletes Where sport = 'Rowing';
 
-CREATE VIEW TrampolingView AS SELECT * FROM Athletes WHERE sports = 'Trampoling';
+CREATE VIEW SailingView AS Select * From Athletes Where sport = 'Sailing';
 
-CREATE VIEW GymasticsView AS SELECT * FROM Athletes WHERE sports = 'Gymastics';
+CREATE VIEW ShootingView AS Select * From Athletes Where sport = 'Shooting';
 
-CREATE VIEW TaekwondoView AS SELECT * FROM Athletes WHERE sports = 'Taekwondo';
+CREATE VIEW SoftballView AS Select * From Athletes Where sport = 'Softball';
 
-CREATE VIEW WrestlingView AS SELECT * FROM Athletes WHERE sports = 'Wrestling';
+CREATE VIEW SwimmingView AS Select * From Athletes Where sport = 'Swimming';
 
-CREATE VIEW FencingView AS SELECT * FROM Athletes WHERE sports = 'Fencing';
+CREATE VIEW TabletennisView AS Select * From Athletes Where sport = 'Table tennis';
 
-CREATE VIEW JudoView AS SELECT * FROM Athletes WHERE sports = 'Judo';
+CREATE VIEW TaekwondoView AS Select * From Athletes Where sport = 'Taekwondo';
 
-CREATE VIEW BoxingView AS SELECT * FROM Athletes WHERE sports = 'Boxing';
+CREATE VIEW TennisView AS Select * From Athletes Where sport = 'Tennis';
 
-CREATE VIEW ModernpentathlonView AS SELECT * FROM Athletes WHERE sports = 'Modern pentathlon';
+CREATE VIEW TrampolingView AS Select * From Athletes Where sport = 'Trampoling';
 
-CREATE VIEW TriathlonView AS SELECT * FROM Athletes WHERE sports = 'Triathlon';
+CREATE VIEW TriathlonView AS Select * From Athletes Where sport = 'Triathlon';
 
-CREATE VIEW WeightliftingView AS SELECT * FROM Athletes WHERE sports = 'Weightlifting';
+CREATE VIEW VolleyballView AS Select * From Athletes Where sport = 'Volleyball';
 
-CREATE VIEW RugbysevensView AS SELECT * FROM Athletes WHERE sports = 'Rugby sevens';
+CREATE VIEW WaterpoloView AS Select * From Athletes Where sport = 'Water polo';
+
+CREATE VIEW WeightliftingView AS Select * From Athletes Where sport = 'Weightlifting';
+
+CREATE VIEW WrestlingView AS Select * From Athletes Where sport = 'Wrestling';
 	
 ______________________________________________________________________________________
 

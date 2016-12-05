@@ -33,33 +33,22 @@
     <h1>The Search Result Page</h1>
     <h2><%= title %></h2>
     <table class = "table table-striped table-hover">
-      <% for (var i=0; i < result1.length; i++) { %>
+      <% var url = "https://s3-us-west-2.amazonaws.com/pokemonimage/image/"+ result.image_no +".png" %>
+      <% console.log(url) %>
       <tr class = "warning">
-        <td> <%= result1[i].name %> </td>
-        <td> <%= result1[i].type %> </td>
-        <td> <%= result1[i].total %> </td>
-        <td> <%= result1[i].hp %> </td>
-        <td> <%= result1[i].attack %> </td>
-        <td> <%= result1[i].defense %> </td>
-        <td> <%= result1[i].speed %> </td>
+        <td><img src = <%=url%> style="width:128px;height:128px;"></td>
+        <td> <%= result.name %> </td>
+        <td> <%= result.type %> </td>
+        <td> <%= result.total %> </td>
+        <td> <%= result.hp %> </td>
+        <td> <%= result.attack %> </td>
+        <td> <%= result.defense %> </td>
+        <td> <%= result.speed %> </td>
         <td>&nbsp</td>
       </tr>
-      <% } %>
+
     </table>
-    <table class = "table table-striped table-hover">
-      <% for (var i=0; i < result3.length; i++) { %>
-      <tr class = "warning">
-        <td> <%= result3[i].name %> </td>
-        <td> <%= result3[i].country %> </td>
-        <td> <%= result3[i].sports %> </td>
-        <td> <%= result3[i].events %> </td>
-        <td> <%= result3[i].height %> </td>
-        <td> <%= result3[i].weight %> </td>
-        <td> <%= result3[i].gender %> </td>
-        <td>&nbsp</td>
-      </tr>
-      <% } %>
-    </table>
+
   </div>
 </div>
 
