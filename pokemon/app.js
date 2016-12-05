@@ -12,8 +12,11 @@ var resultByA = require('./routes/resultByA');
 var searchByPop = require('./routes/searchByPop');
 var resultByPop = require('./routes/resultByPop');
 
+var allPokemon = require('./routes/allPokemon');
+//var allAthletes = require('./routes/allAthletes');
 
 var guessgame = require('./routes/guessgame');
+
 var app = express();
 
 // view engine setup
@@ -35,6 +38,9 @@ app.use('/resultByA', resultByA);
 
 app.use('/searchByPop', searchByPop);
 app.use('/resultByPop', resultByPop);
+
+app.use('/allPokemon', allPokemon);
+//app.use('/allAthletes', allAthletes);
 
 app.use('/guessgame', guessgame);
 

@@ -17,25 +17,47 @@ var connection = mysql.createConnection({
 //
 // res = HTTP result object sent back to the client
 // name = Name to query for
-function query_db(res, pname) {
-  var query = "select * from Pokemon p where p.type = '" + pname + "'";
+function query_db(res, aname) {
+  //var aname = "Barbel Wockel";
+  var query = "select sport from Athletes where name = '" + aname + "'";
   connection.query(query, function(err, rows, fields) {
     if (err) console.log(err);
     else {
-      var result1 = rows;
-      var query1 = "select * from Activities a where a.type = '" + result1[0].type + "'";
+      var sport = rows[0].sport;
+      var query1 = "select type from Activities where sport = '" + sport + "'";
       console.log(query);
       connection.query(query1, function(err, rows, fields) {
         if (err) console.log(err);
         else{
-          var result2 = rows;
-          var query3 = "select * from Athletes a where a.sport = '" + result2[0].sport + "'";
+          var type = rows[0].type;
+          var query3 = "select v.name, m.score from "+ sport+ "View v Inner Join Medal m on " +
+                              "v.name = m.name ORDER BY m.score DESC";
           console.log(query3);
           connection.query(query3, function(err, rows, fields) {
             if (err) console.log(err);
             else{
-              var result3 = rows;
-              output_persons(res, pname, result1, result2, result3);
+              var athletesRank = rows;
+              console.log(athletesRank);
+              var query4 = "Select * From "+ type + "View Order By total DESC";
+              connection.query(query4, function(err, rows, fields) {
+                if (err) console.log(err);
+                else {
+                  var PokemonRank = rows;
+                  console.log(PokemonRank);
+                  var aRowNum = 0;
+                  for (; aRowNum < athletesRank.length; aRowNum++){
+                    if (athletesRank[aRowNum].name == aname) break;
+                  }
+                  console.log(aRowNum);
+                  var pRowNum = aRowNum * ((PokemonRank.length * 1.0) / athletesRank.length);
+                  pRowNum = Math.floor(pRowNum);
+                  console.log(PokemonRank[pRowNum]);
+                  output_result(res, aname, PokemonRank[pRowNum]);
+
+
+
+                }
+              })
             }
           })
         }
@@ -50,12 +72,12 @@ function query_db(res, pname) {
 // res = HTTP result object sent back to the client
 // name = Name to query for
 // results = List object of query results
-function output_persons(res, pname, result1,result2,result3) {
+function output_result(res, aname, result) {
   res.render('resultByA',
-      { title: "All Pokemon with type: " + pname,
-        result1: result1,
-        result2: result2,
-        result3: result3
+      { title: "All Pokemon with type: " + aname,
+        result: result
+        // result2: result2,
+        // result3: result3
       }
   );
   //console.log(results)
@@ -75,7 +97,7 @@ function output_persons(res, pname, result1,result2,result3) {
 
 // This was a bug in the parameter I passed into the function below
 router.get('/', function(req, res, next) {
-  query_db(res, req.query.pname);
+  query_db(res, req.query.aname);
 });
 
 module.exports = router;
