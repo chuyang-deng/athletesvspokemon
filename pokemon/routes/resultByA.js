@@ -19,7 +19,6 @@ var connection = mysql.createConnection({
 // name = Name to query for
 function query_db(res, aname) {
   //var aname = "Barbel Wockel";
-  console.log(aname);
   var query = "select sport from Athletes where name = '" + aname + "'";
   connection.query(query, function(err, rows, fields) {
     if (err) console.log(err);
