@@ -1,13 +1,6 @@
 var express = require('express');
 var router = express.Router();
 
-<<<<<<< HEAD
-/* GET home page. */
-router.get('/', function(req, res, next) {
-    res.render('allPokemon', {
-        title: 'Pokemons'}); // render a view
-}); // use index.ejs as view, also pass additional information, in this case, title: Express
-=======
 var mysql = require('mysql');
 
 var settings = require('../settings.json');
@@ -56,6 +49,5 @@ function output_result(res, result) {
 router.get('/', function(req, res) {
   query_db(res);
 });
->>>>>>> 74454cd96f801df52c8dcc682facf8e5ad0444d8
 
 module.exports = router;
