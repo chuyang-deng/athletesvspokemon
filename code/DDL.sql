@@ -71,27 +71,27 @@ create table Medal (
 
 CREATE VIEW AquaticsView AS Select * From Athletes Where sport = 'Aquatics';
 
-CREATE VIEW ArcheryView AS Select * From Athletes Where sport = 'ArcheryView';
+CREATE VIEW ArcheryView AS Select * From Athletes Where sport = 'Archery';
 
-CREATE VIEW AthleticsView AS Select * From Athletes Where sport = 'AthleticsView';
+CREATE VIEW AthleticsView AS Select * From Athletes Where sport = 'Athletics';
 
-CREATE VIEW BadmintonView AS Select * From Athletes Where sport = 'BadmintonView';
+CREATE VIEW BadmintonView AS Select * From Athletes Where sport = 'Badminton';
 
-CREATE VIEW BaseballView AS Select * From Athletes Where sport = 'BaseballView';
+CREATE VIEW BaseballView AS Select * From Athletes Where sport = 'Baseball';
 
-CREATE VIEW BasketballView AS Select * From Athletes Where sport = 'BasketballView';
+CREATE VIEW BasketballView AS Select * From Athletes Where sport = 'Basketball';
 
-CREATE VIEW BoxingView AS Select * From Athletes Where sport = 'BoxingView';
+CREATE VIEW BoxingView AS Select * From Athletes Where sport = 'Boxing';
 
-CREATE VIEW CanoeView AS Select * From Athletes Where sport = 'CanoeView';
+CREATE VIEW CanoeView AS Select * From Athletes Where sport = 'Canoe';
 
-CREATE VIEW CyclingView AS Select * From Athletes Where sport = 'CyclingView';
+CREATE VIEW CyclingView AS Select * From Athletes Where sport = 'Cycling';
 
-CREATE VIEW EquestrianView AS Select * From Athletes Where sport = 'EquestrianView';
+CREATE VIEW EquestrianView AS Select * From Athletes Where sport = 'Equestrian';
 
-CREATE VIEW FencingView AS Select * From Athletes Where sport = 'FencingView';
+CREATE VIEW FencingView AS Select * From Athletes Where sport = 'Fencing';
 
-CREATE VIEW FootballView AS Select * From Athletes Where sport = 'FootballView';
+CREATE VIEW FootballView AS Select * From Athletes Where sport = 'Football';
 
 CREATE VIEW GymnasticsView AS Select * From Athletes Where sport = 'Gymnastics';
 
