@@ -10,79 +10,13 @@
 
 <section id="middle">
   <div class="container">
-    <h2><%=result.name%></h2>
     <div class="row">
-      <div class="col-sm-6 wow fadeInDown">
-
-        <div class="blog-item">
-          <div class="row">
-            <div class="col-sm-10 blog-content">
-              <% var url = "https://s3-us-west-2.amazonaws.com/pokemonimage/image/"+ result.image_no +".png" %>
-              <% console.log(url) %>
-              <img class="img-responsive img-blog" src= <%=url%> style="width:128px;height:128px;" alt="" />
-              <h2><a href="blog-item.html"><%=result.name%></a></h2>
-              <a class="btn btn-primary readmore" href="blog-item.html">Read More <i class="fa fa-angle-right"></i></a>
-            </div>
-          </div>
-        </div><!--/.blog-item-->
-      <div class="col-sm-6 wow fadeInDown">
-        <div class="skill">
-          <h2>Our Skills</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-
-          <div class="progress-wrap">
-            <h3>Graphic Design</h3>
-            <div class="progress">
-              <div class="progress-bar  color1" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 85%">
-                <span class="bar-width">85%</span>
-              </div>
-
-            </div>
-          </div>
-
-          <div class="progress-wrap">
-            <h3>HTML</h3>
-            <div class="progress">
-              <div class="progress-bar color2" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 95%">
-                <span class="bar-width">95%</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="progress-wrap">
-            <h3>CSS</h3>
-            <div class="progress">
-              <div class="progress-bar color3" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
-                <span class="bar-width">80%</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="progress-wrap">
-            <h3>Wordpress</h3>
-            <div class="progress">
-              <div class="progress-bar color4" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 90%">
-                <span class="bar-width">90%</span>
-              </div>
-            </div>
-          </div>
-
-
-        </div>
-      </div>
-      </div>
-    </div><!--/.row-->
-  </div><!--/.container-->
-</section><!--/#middle-->
-
-<section id="middle">
-  <div class="container">
-    <div class="row">
-
 
       <div class="col-sm-6 wow fadeInDown">
         <div class="accordion">
           <h2>Why People like us?</h2>
+          <!--<% var url = "https://s3-us-west-2.amazonaws.com/pokemonimage/image/"+ result.image_no +".png" %>-->
+          <!--<% console.log(url) %>-->
           <img class="img-responsive img-blog" src= <%=url%> style="width:428px;height:428px;" alt="" />
         </div>
       </div>
@@ -141,57 +75,6 @@
 </section><!--/#middle-->
 
 
-<section id="blog" class="container">
-  <div class="center">
-    <h2><%=result.name%></h2>
-    <p class="lead">Pellentesque habitant morbi tristique senectus et netus et malesuada</p>
-  </div>
-
-  <div class="blog">
-    <div class="row">
-      <div class="col-md-8">
-        <div class="blog-item">
-          <div class="row">
-            <div class="col-sm-10 blog-content">
-              <!--<% var url = "https://s3-us-west-2.amazonaws.com/pokemonimage/image/"+ result.image_no +".png" %>-->
-              <!--<% console.log(url) %>-->
-              <a href=""><img class="img-responsive img-blog" src= <%=url%> style="width:428px;height:428px;" alt="" /></a>
-              <h2><a href="blog-item.html"><%=result.name%></a></h2>
-              <a class="btn btn-primary readmore" href="blog-item.html">Read More <i class="fa fa-angle-right"></i></a>
-            </div>
-          </div>
-        </div><!--/.blog-item-->
-
-
-
-        <ul class="pagination pagination-lg">
-          <li><a href="#"><i class="fa fa-long-arrow-left"></i>Previous Page</a></li>
-          <li class="active"><a href="#">1</a></li>
-          <li><a href="#">2</a></li>
-          <li><a href="#">3</a></li>
-          <li><a href="#">4</a></li>
-          <li><a href="#">5</a></li>
-          <li><a href="#">Next Page<i class="fa fa-long-arrow-right"></i></a></li>
-        </ul><!--/.pagination-->
-      </div><!--/.col-md-8-->
-
-      <aside class="col-md-4">
-        <div class="widget search">
-          <form role="form">
-            <input type="text" class="form-control search_box" autocomplete="off" placeholder="Search Here">
-          </form>
-        </div><!--/.search-->
-
-
-
-
-
-
-
-      </aside>
-    </div><!--/.row-->
-  </div>
-</section><!--/#blog-->
 
 
 
@@ -222,7 +105,7 @@
 </body>
 </html>
 
-<% include templates/header.ejs %>
+<% include templates/head.ejs %>
 <!--<div id="headerwrap">-->
   <!--<div class="container">-->
     <!--<h1>The Search Result Page</h1>-->
