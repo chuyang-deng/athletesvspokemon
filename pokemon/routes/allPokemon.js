@@ -18,7 +18,7 @@ var connection = mysql.createConnection({
 // res = HTTP result object sent back to the client
 // name = Name to query for
 function query_db(res) {
-  var query = "select * from PokemonFull Order By image_no";
+  var query = "select * from PokemonFull";
   connection.query(query, function(err, rows, fields) {
     if (err) console.log(err);
     else {

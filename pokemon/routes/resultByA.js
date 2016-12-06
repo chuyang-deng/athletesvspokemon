@@ -25,36 +25,34 @@ function query_db(res, aname) {
     else {
       var sport = rows[0].sport;
       var query1 = "select type from Activities where sport = '" + sport + "'";
-      console.log(query);
+      //console.log(query);
       connection.query(query1, function(err, rows, fields) {
         if (err) console.log(err);
         else{
           var type = rows[0].type;
           var query3 = "select v.name, m.score from "+ sport+ "View v Inner Join Medal m on " +
                               "v.name = m.name ORDER BY m.score DESC";
-          console.log(query3);
+          //console.log(query3);
           connection.query(query3, function(err, rows, fields) {
             if (err) console.log(err);
             else{
               var athletesRank = rows;
-              console.log(athletesRank);
+              //console.log(athletesRank);
               var query4 = "Select * From "+ type + "View Order By total DESC";
               connection.query(query4, function(err, rows, fields) {
                 if (err) console.log(err);
                 else {
                   var PokemonRank = rows;
-                  console.log(PokemonRank);
+                  //console.log(PokemonRank);
                   var aRowNum = 0;
                   for (; aRowNum < athletesRank.length; aRowNum++){
                     if (athletesRank[aRowNum].name == aname) break;
                   }
-                  console.log(aRowNum);
+                  //console.log(aRowNum);
                   var pRowNum = aRowNum * ((PokemonRank.length * 1.0) / athletesRank.length);
                   pRowNum = Math.floor(pRowNum);
-                  console.log(PokemonRank[pRowNum]);
+                  //console.log(PokemonRank[pRowNum]);
                   output_result(res, aname, PokemonRank[pRowNum]);
-
-
 
                 }
               })
