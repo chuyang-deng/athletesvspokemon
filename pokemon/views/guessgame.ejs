@@ -17,8 +17,6 @@
 
         <!-- MAKE IMAGE BUTTONS -->
         <section>
-            <!-- TODO: ADD LOSE.EJS, LOSE.JS, TIE.EJS, TIE.JS-->
-            <!-- TODO: MAKE INPUT ATTRIBUTE ACTION = CHOOSE0/CHOOSE1-->
             <%
                 var choose0;
                 var choose1;
@@ -30,14 +28,14 @@
                     choose1 = "/win";
                 } else {
                     choose0 = "/tie";
-                    choose1 = "tie";
+                    choose1 = "/tie";
                 }
             %>
             <div class = "guess_options" id = "option0">
                 <% var url0 = "https://s3-us-west-2.amazonaws.com/pokemonimage/image/"+ result[0].image_no +".png" %>
                 <img class = "guess_images" src = <%= url0 %>>
 
-                <form class="form-inline" role="form" method="get" action="/win">
+                <form class="form-inline" role="form" method="get" action=<%= choose0 %>>
                     <div class="form-group">
                         <input type="button" class="form-control" name = "choose0">
                     </div>
@@ -51,7 +49,7 @@
                 <% var url1 = "https://s3-us-west-2.amazonaws.com/pokemonimage/image/"+ result[1].image_no +".png" %>
                 <img class = "guess_images" src=<%= url1 %>>
 
-                <form class="form-inline" role="form" method="get" action="/win">
+                <form class="form-inline" role="form" method="get" action=<%= choose1 %>>
                     <div class="form-group">
                         <input type="button" class="form-control" name = "choose1">
                     </div>

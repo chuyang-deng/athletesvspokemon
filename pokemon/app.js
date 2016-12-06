@@ -26,6 +26,8 @@ var allAthletes = require('./routes/allAthletes');
 
 var guessgame = require('./routes/guessgame');
 var win = require('./routes/win');
+var lose = require('./routes/lose');
+var tie = require('./routes/tie')
 
 var app = express();
 
@@ -54,6 +56,8 @@ app.use('/allAthletes', allAthletes);
 
 app.use('/guessgame', guessgame);
 app.use('/win', win);
+app.use('/lose', lose);
+app.use('/tie', tie);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
