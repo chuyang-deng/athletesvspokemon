@@ -29,7 +29,7 @@ h3 {
     text-align: center;
 }
 
-.guess_button {
+#guess_button {
     background: #3498db;
     border-radius: 28px;
     color: #ffffff;
@@ -42,7 +42,7 @@ h3 {
     margin-right: auto;
 }
 
-.guess_button:hover {
+#guess_button:hover {
     background: #3cb0fd;
     text-decoration: none;
 }

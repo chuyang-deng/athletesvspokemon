@@ -20,16 +20,21 @@
             <div class = "guess_options" id = "option0">
                 <% var url0 = "https://s3-us-west-2.amazonaws.com/pokemonimage/image/"+ result[0].image_no +".png" %>
                 <img class = "guess_images" src = <%= url0 %>>
-                <button class = "guess_button"><%= result[0].name %></button>
-                <% var total0 = result[0].total %>
+                <button id = "guess_button">
+                    <%= result[0].name %>
+                </button>
             </div>
+
+            <!-- TODO: ADD ONCLICK FUNCTION -->
 
             <div class = "guess_options" id = "option1">
                 <% var url1 = "https://s3-us-west-2.amazonaws.com/pokemonimage/image/"+ result[1].image_no +".png" %>
                 <img class = "guess_images" src=<%= url1 %>>
-                <% var total1 = result[1].total %>
-                <button class = "guess_button"><%= result[0].name %></button>
+                <button id = "guess_button">
+                    <%= result[1].name %>
+                </button>
             </div>
+
         </section>
 
     </div>
