@@ -5,7 +5,7 @@
     <title> Pokemon </title>
     <link href="stylesheets/guessgame.css" rel="stylesheet">
     <%include templates/head.ejs%>
-</head><!--/head-->
+</head>
 <body>
 
 <%include templates/navibar.ejs%>
@@ -16,6 +16,7 @@
         <h1>The Guess Game Page</h1>
         <h3><%= title %></h3>
 
+        <!-- MAKE IMAGE BUTTONS -->
         <section>
             <div class = "guess_options" id = "option0">
                 <h3><%= result[0].name %></h3>
