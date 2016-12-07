@@ -10,13 +10,12 @@ var connection = mysql.createConnection({
     password: settings.password,
     database: settings.database
 })
-
 /**
  * Get 2 random tuples from pokemon table
  */
 
 function query_random_pokemon(res) {
-    var query = "SELECT name, image_no, total FROM PokemonFull ORDER BY RAND() LIMIT 2";
+    var query = "SELECT distinct name, image_no, total FROM PokemonFull ORDER BY RAND() LIMIT 20";
     connection.query(query, function(err, rows, fileds) {
         if (err) console.log(err);
         else output_result(res, rows);
