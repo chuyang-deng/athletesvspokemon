@@ -2,19 +2,18 @@
 <html lang="en">
 <head>
   <title>Search By Medal Count</title>
+  <%include templates/head.ejs%>
 </head>
-
-<%include templates/head.ejs%>
-<% include templates/navibar.ejs %>
-
 
 
 
 <body>
-
-    <section id="item" style="background-image: url(images/slider/olym.jpg)">
+<% include templates/navibar.ejs %>
+<div class="wrapper">
+<section id="item" style="background-image: url(images/slider/olym.jpg)">
+  <div id="wrap">
+    <div id="main">
       <div class="container">
-
 
         <div class="row">
             <div class="col-lg-6">
@@ -33,12 +32,15 @@
               <!--&lt;!&ndash;</form>&ndash;&gt;-->
               <!--</p>-->
             </div><!-- /col-lg-6 -->
-
         </div>
-      </div><!--/.container-->
-    </section><!--/#partner-->
+      </div>
+    </div>
+  </div><!--/.container-->
+</section><!--/#partner-->
+</div>
+<div class="push"></div>
+
 
 <% include templates/footer.ejs%>
-
 </body>
 </html>

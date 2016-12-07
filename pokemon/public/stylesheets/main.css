@@ -1518,6 +1518,19 @@ ul.social_icons li  a i{
   font-style: oblique;
 }
 
+
+* {
+  margin: 0;
+}
+html, body {
+  height: 100%;
+}
+
+.wrapper {
+  min-height: 100%;
+  margin: 0 auto -155px; /* the bottom margin is the negative value of the footer's height */
+}
+
 .footer {
   background: none repeat scroll 0 0 #2E2E2E;
   border-top: 5px solid #C52D2F;
@@ -1528,6 +1541,11 @@ ul.social_icons li  a i{
 .footer_left {
   padding: 10px;
 }
+
+footer, .push {
+  height: 155px; /* '.push' must be the same height as 'footer' */
+}
+
 
 .text-left {
   color: #FFFFFF;
