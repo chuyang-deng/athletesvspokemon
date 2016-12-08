@@ -1639,6 +1639,13 @@ table {
     background-color: transparent;
 }
 
+.sortable {
+    background-color:#eee;
+    color:#666666;
+    font-weight: bold;
+    cursor: default;
+}
+
 th {
     text-align: left;
 }
