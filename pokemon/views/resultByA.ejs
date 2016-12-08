@@ -7,7 +7,6 @@
 
 <%include templates/navibar.ejs%>
 
-
 <section id="middle">
   <div class="container">
     <div class="row">
@@ -25,42 +24,53 @@
 
 
         <div class="skill">
-          <h2>Skills</h2>
+          <h2><%= result.type %></h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
+
           <div class="progress-wrap">
-            <h3>Graphic Design</h3>
+            <h3>Total</h3>
             <div class="progress">
-              <div class="progress-bar  color1" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 85%">
-                <span class="bar-width">85%</span>
+              <div class="progress-bar  color1" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: <%= result.total*1.0/7.2%>%">
+                <span class="bar-width"><%= result.total %></span>
               </div>
 
             </div>
           </div>
 
           <div class="progress-wrap">
-            <h3>HTML</h3>
+            <h3>HP</h3>
             <div class="progress">
-              <div class="progress-bar color2" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 95%">
-                <span class="bar-width">95%</span>
+              <div class="progress-bar  color1" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: <%= result.hp*1.0/2.55%>%">
+                <span class="bar-width"><%= result.hp %></span>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="progress-wrap">
+            <h3>Attack</h3>
+            <div class="progress">
+              <div class="progress-bar color2" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: <%= result.hp*1.0/1.66%>%">
+                <span class="bar-width"><%= result.attack %></span>
               </div>
             </div>
           </div>
 
           <div class="progress-wrap">
-            <h3>CSS</h3>
+            <h3>Defense</h3>
             <div class="progress">
-              <div class="progress-bar color3" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
-                <span class="bar-width">80%</span>
+              <div class="progress-bar color3" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: <%= result.defense*1.0/2 %>%">
+                <span class="bar-width"><%= result.defense %></span>
               </div>
             </div>
           </div>
 
           <div class="progress-wrap">
-            <h3>Wordpress</h3>
+            <h3>Speed</h3>
             <div class="progress">
-              <div class="progress-bar color4" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 90%">
-                <span class="bar-width">90%</span>
+              <div class="progress-bar color4" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: <%= result.speed*1.0/1.6 %>%">
+                <span class="bar-width"><%= result.speed %></span>
               </div>
             </div>
           </div>
@@ -94,10 +104,10 @@
         <!--<td> <%= result.name %> </td>-->
         <!--<td> <%= result.type %> </td>-->
         <!--<td> <%= result.total %> </td>-->
-        <!--<td> <%= result.hp %> </td>-->
-        <!--<td> <%= result.attack %> </td>-->
-        <!--<td> <%= result.defense %> </td>-->
-        <!--<td> <%= result.speed %> </td>-->
+        <!--<td> <%= result.hp %> 255</td>-->
+        <!--<td> <%= result.attack %> 160</td>-->
+        <!--<td> <%= result.defense %> 200 </td>-->
+        <!--<td> <%= result.speed %> 160</td>-->
         <!--<td>&nbsp</td>-->
       <!--</tr>-->
 <!---->
