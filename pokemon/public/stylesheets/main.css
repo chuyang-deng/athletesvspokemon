@@ -1916,15 +1916,15 @@ footer, .push {
 
 .gmap-area .gmap iframe {
   border-radius: 50%;
-  height: 280px;
-  width: 300px;
+  height: 350px;
+  width: 350px;
 }
 
 .gmap{
     border: 10px solid #f6f5f0;
     border-radius: 50%;
-    height: 300px;
-    width: 300px;
+    height: 350px;
+    width: 350px;
     box-shadow: 0px 0px 3px 3px #e7e4dc;
     overflow: hidden;
     position: relative;

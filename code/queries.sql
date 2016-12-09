@@ -4,8 +4,6 @@
 -- Pokemon (name, HP, total, speed, defense, attack, gender, type, image_NO)
 
 -- the number listed below match with the number of questions on the first milestone
-https://s3-us-west-2.amazonaws.com/pokemonimage/100.png?X-Amz-Date=20161205T051118Z&X-Amz-Expires=300&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Signature=bad08895ade25b886568bdbcd2523cd8397b404f5463747732db03d8c2186c9b&X-Amz-Credential=ASIAISEF7NWWN3QQWHRQ/20161205/us-west-2/s3/aws4_request&X-Amz-SignedHeaders=Host&x-amz-security-token=FQoDYXdzEMT//////////wEaDEfMT09Wq6I9aXHthyL6AXzI0acmGLZSBLFgCoQSE3YlflqocMfl34Hp6gKpebAtxMZLs%2BAak1/cRVnlmgRkUyEEB8wwT9O/ydrFPdPuhcUPbPknYwC3butxaaqkBsbQ656i735Ug6ao/031jGoujT0YLQ8lqI2JNqdAuxIxuy6v5tof4uV8bZG14d7pIGogt76zL/RvfUq%2BlNF%2BkHUGInBb5D/Eb40GBhro5EPJotY%2B5ArNSbH5onIPeams7KwluaB4bQwpgHYe%2B7OerXOIBdS46M0m7fdJM/YT1LIXVvpzi2QJx9UlJm5acGvYGeO8dWyu1ZvC%2Bu/qLfcDSOHBI9n8aJZ4HqWBO44oxdKRwgU%3D
-https://s3-us-west-2.amazonaws.com/pokemonimage/100.png
 --1. Who/What is the Usain Bolt in Pokémon? 
 For this one, we might change our matching algorithm a bit so we will leave this query
 to be finished by the next milestone
@@ -30,6 +28,9 @@ var pokemonRankNo = (int) atheletsRankNo * ( (float) pokemonRows / athletesRows)
 
 var result = SELECT * FROM pokemonRank WHERE ROWNUM = pokemonRankNo -- getting the result (pokemon's name)
 
+
+select a.country, sum(gold), sum(silver), sum(bronze) from Athletes a inner join Medal m on a.name = m.name group by country order by country;
+select a.sport, sum(gold), sum(silver), sum(bronze) from Athletes a inner join Medal m on a.name = m.name group by sport order by country;
 
 
 --2. Who is the best pokemon?

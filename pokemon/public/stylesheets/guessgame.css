@@ -18,18 +18,19 @@ div#option1 {
 }
 
 img {
-    width: 50%;
-    height: 50%;
+    width: 60%;
+    height: 60%;
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
 h3 {
+    font-size: 36px;
     text-align: center;
 }
 
-#guess_button {
+#guess_button1 {
     background: #3498db;
     border-radius: 28px;
     color: #ffffff;
@@ -42,7 +43,23 @@ h3 {
     margin-right: auto;
 }
 
-#guess_button:hover {
+#guess_button2 {
+    background: #3498db;
+    border-radius: 28px;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    display: block;
+    margin-top: 28px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#guess_button1:hover {
+    background: #3cb0fd;
+    text-decoration: none;
+}
+#guess_button2:hover {
     background: #3cb0fd;
     text-decoration: none;
 }
