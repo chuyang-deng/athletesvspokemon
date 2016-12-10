@@ -22,7 +22,27 @@ function query_db(res, aname) {
   var query = "select sport from Athletes where name = '" + aname + "'";
   connection.query(query, function(err, rows, fields) {
     if (err) console.log(err);
-    else {
+    else if (rows.length == 0){
+      connection.query("SET @rank = 0");
+      connection.query("SET @sport = (select sport from Athletes where name = \"Michael Phelps\")");
+      connection.query("SET @athRank = (select rank from (select @rank:=@rank+1 as rank, name from " +
+          "(select a.name from Athletes a inner join Medal m on a.name = m.name where a.sport = @sport " +
+          "order by m.score DESC) as prerank) as rank where name = \"Michael Phelps\")");
+      connection.query("SET @athTotal = @rank");
+      connection.query("SET @type = (select type from Activities where sport = @sport)");
+      connection.query("SET @pokeTotal = (select count(*) from Pokemon where type = @type)");
+      connection.query("SET @pokeRank = ceiling(@athRank * (@pokeTotal * 1.0 / @athTotal))");
+
+      connection.query("SET @rank = 0");
+      connection.query("select rank2.* from (select @rank:=@rank+1 as rank, prerank2.* from " +
+          "(select * from Pokemon where type = @type order by total DESC) as prerank2) " +
+          "as rank2 where rank = @pokeRank",
+      function(err, rows, fields){
+        if (err) console.log(err);
+        console.log(rows);
+        output_result(res, aname, rows[0]);
+      })
+    } else {
       var sport = rows[0].sport;
       var query1 = "select type from Activities where sport = '" + sport + "'";
       //console.log(query);
@@ -63,6 +83,13 @@ function query_db(res, aname) {
     }
   });
 }
+
+function noResult(res, aname){
+  res.render('searchByA', {
+    errorMsg: "Athlete: "+ aname+ " is not in our database."
+  });
+}
+
 
 // ///
 // Given a set of query results, output a table
