@@ -1,47 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Search By Medal Count</title>
+  <title>Search By Popularity</title>
     <%include templates/head.ejs%>
-
 </head>
 
 
-<body>
+
+<body style="background-image: url(images/athletes2.jpg);background-repeat:no-repeat;background-size: 100%;background-position: 0px 100px;">
 <% include templates/navibar.ejs %>
 <div class="wrapper">
-<section id="partner">
-  <div class="container">
-    <div class="center wow fadeInDown">
-      <h2>Our Partners</h2>
-      <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br> et dolore magna aliqua. Ut enim ad minim veniam</p>
-    </div>
-
-    <div class="partners">
-      <ul>
-        <div class="col-lg-6">
-          <h1>Search an Athlete<br/>
-          </h1>
-          <form class="form-inline" role="form" method="get" action="/resultByA">
-            <div class="form-group">
-              <input type="text" class="form-control" name="aname" placeholder="Enter a Athletes' name">
-            </div>
-            <button type="submit" class="btn btn-warning btn-lg">SEARCH</button>
-          </form>
-          <!--<p>-->
-          <!--&lt;!&ndash;<form method="get" action="/search">&ndash;&gt;-->
-          <!--&lt;!&ndash;<input name="pname" value=""/>&ndash;&gt;-->
-          <!--&lt;!&ndash;<button type="submit" class="btn btn-warning btn-lg"></button>&ndash;&gt;-->
-          <!--&lt;!&ndash;</form>&ndash;&gt;-->
-          <!--</p>-->
-        </div><!-- /col-lg-6 -->
-      </ul>
-    </div>
-  </div><!--/.container-->
-</section><!--/#partner-->
+  <section id="item" >
+    <div id="wrap">
+      <div id="main">
+        <div class="container">
+          <div class="box">
+            <p>
+            <div class="center wow fadeInDown">
+              <h1 style="color:aliceblue;">Search an Athlete<br/>
+              </h1>
+              <form class="form-inline" role="form" method="get" action="/resultByA">
+                <div class="form-group">
+                  <input type="text" class="form-control" name="aname" placeholder="Enter a Athletes' name">
+                </div>
+                <button type="submit" class="btn btn-warning btn-lg">SEARCH</button>
+              </form>
+              <!--<p>-->
+              <!--&lt;!&ndash;<form method="get" action="/search">&ndash;&gt;-->
+              <!--&lt;!&ndash;<input name="pname" value=""/>&ndash;&gt;-->
+              <!--&lt;!&ndash;<button type="submit" class="btn btn-warning btn-lg"></button>&ndash;&gt;-->
+              <!--&lt;!&ndash;</form>&ndash;&gt;-->
+              <!--</p>-->
+            </div><!-- /col-lg-6 -->
+            </p>
+          </div>
+        </div>
+      </div>
+    </div><!--/.container-->
+  </section><!--/#partner-->
 </div>
 <div class="push"></div>
-<% include templates/footer.ejs%>
 
+
+<% include templates/footer.ejs%>
 </body>
 </html>
