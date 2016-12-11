@@ -13,7 +13,7 @@
 
       <div class="col-sm-6 wow fadeInDown">
         <div class="accordion">
-          <h2><%= result.name %></h2>
+          <h2><%= name %></h2>
           <!--<% var url = "https://s3-us-west-2.amazonaws.com/pokemonimage/image/"+ result.image_no +".png" %>-->
           <!--<% console.log(url) %>-->
           <img class="img-responsive img-blog" src= <%=url%> style="width:428px;height:428px;" alt="" />
@@ -24,8 +24,8 @@
 
 
         <div class="skill">
-          <h2><%= result.type %></h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <h2><%= result.name %></h2>
+          <p> The corresponding Pokémon for <%= name %> is <%= result.name %>, whose type is  <%= result.type %>.</p>
 
 
           <div class="progress-wrap">

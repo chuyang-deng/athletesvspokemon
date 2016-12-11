@@ -73,7 +73,8 @@ function query_db(res, aname) {
 function output_result(res, aname, result) {
   res.render('resultByA',
       { title: "All Pokemon with type: " + aname,
-        result: result
+        result: result,
+        name: aname
         // result2: result2,
         // result3: result3
       }
