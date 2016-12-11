@@ -18,7 +18,7 @@ var connection = mysql.createConnection({
 // res = HTTP result object sent back to the client
 // name = Name to query for
 function query_db(res) {
-    var query = "select * from PokemonFull";
+    var query = "select * from Athletes inner join Medal on Athletes.name = Medal.name order by gold desc LIMIT 700";
     connection.query(query, function(err, rows, fields) {
         if (err) console.log(err);
         else {
@@ -35,7 +35,7 @@ function query_db(res) {
 // results = List object of query results
 function output_result(res, result) {
     res.render('allAthletes',
-        { title: "allAthletes",
+        { title: "All Athletes",
             result: result
             // result2: result2,
             // result3: result3

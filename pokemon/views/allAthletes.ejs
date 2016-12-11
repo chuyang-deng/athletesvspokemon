@@ -17,16 +17,14 @@
         <table class = "table sortable table-striped table-hover">
             <thead>
             <tr>
-                <th>Icon</th>
                 <th>Name</th>
-                <th>Type1</th>
-                <th>Type2</th>
-                <th>Total</th>
-                <th>HP</th>
-                <th>Attack</th>
-                <th>Defense</th>
-                <th>Speed</th>
-                <th>Generation</th>
+                <th>Gold</th>
+                <th>Country</th>
+                <th>Gender</th>
+                <th>Sport</th>
+                <th>Discipline</th>
+                <th>Event</th>
+                <th>Year</th>
 
 
             </tr>
@@ -34,22 +32,16 @@
             </thead>
             <tbody>
             <% for (var i = 0; i < result.length; i++){%>
-            <% var url = "https://s3-us-west-2.amazonaws.com/pokemonimage/icon/"+ result[i].image_no +".png" %>
             <tr class = "warning">
-                <td><img src = <%=url%>></td>
+
                 <td> <%= result[i].name %> </td>
-                <td> <%= result[i].type1 %> </td>
-                <% if (result[i].type2 == "NULL") {%>
-                <td></td>
-                <%} else {%>
-                <td> <%= result[i].type2 %></td>
-                <%}%>
-                <td> <%= result[i].total %> </td>
-                <td> <%= result[i].hp %> </td>
-                <td> <%= result[i].attack %> </td>
-                <td> <%= result[i].defense %> </td>
-                <td> <%= result[i].speed %> </td>
-                <td> <%= result[i].generation %> </td>
+                <td> <%= result[i].gold %> </td>
+                <td> <%= result[i].country %> </td>
+                <td> <%= result[i].gender %> </td>
+                <td> <%= result[i].sport %> </td>
+                <td> <%= result[i].discipline %> </td>
+                <td> <%= result[i].event %> </td>
+                <td> <%= result[i].year %> </td>
             </tr>
             <%}%>
             </tbody>
