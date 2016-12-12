@@ -93,7 +93,7 @@ function output_result(res, athletes, answers, other) {
   console.log(other);
   res.render('matchGame',
       {
-        title: 'Guess Who Will Win the Battle',
+        title: 'Guess Which Pokemon This Athlete Match To',
         athletes: athletes,
         answers: answers,
         other: other

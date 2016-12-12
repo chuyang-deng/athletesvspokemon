@@ -24,10 +24,10 @@ function query_db(res, aname) {
     if (err) console.log(err);
     else if (rows.length == 0){
       connection.query("SET @rank = 0");
-      connection.query("SET @sport = (select sport from Athletes where name = \"Michael Phelps\")");
+      connection.query("SET @sport = (select sport from Athletes where name = \"Kai Zou\")");
       connection.query("SET @athRank = (select rank from (select @rank:=@rank+1 as rank, name from " +
           "(select a.name from Athletes a inner join Medal m on a.name = m.name where a.sport = @sport " +
-          "order by m.score DESC) as prerank) as rank where name = \"Michael Phelps\")");
+          "order by m.score DESC) as prerank) as rank where name = \"Kai Zou\")");
       connection.query("SET @athTotal = @rank");
       connection.query("SET @type = (select type from Activities where sport = @sport)");
       connection.query("SET @pokeTotal = (select count(*) from Pokemon where type = @type)");

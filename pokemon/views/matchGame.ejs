@@ -3,8 +3,9 @@
 <head>
 
   <title> Pokemon </title>
-  <link href="stylesheets/guessgame.css" rel="stylesheet">
+  <link href="stylesheets/matchgame.css" rel="stylesheet">
   <%include templates/head.ejs%>
+
 </head>
 
 <body>
@@ -15,8 +16,8 @@
   <div id="headerwrap">
     <div class="container">
       <h2 class = "text-center"><%= title %></h2>
-      <h2 class = "text-center">Your Score:</h2>
-      <h2 class = "text-center" id = "score">0</h2>
+
+
       <div style = "display:none">
 
         <h3 id = "index1">0</h3>
@@ -54,14 +55,16 @@
 
             var rightAnswer = document.getElementById("rightAnswer").innerHTML;
 
-            confirm((choice == rightAnswer).toString());
+            //confirm((choice == rightAnswer).toString());
 
             if (choice + "" == rightAnswer){
               increment("score");
               message = "You are right!"
             }else {
-              message = "You are wrong! Right Answer is " + rightAnswer;
+
+              message = "You are wrong!";
             }
+            document.getElementById("div" + rightAnswer).style.background = "#eeffdd";
 
             document.getElementById("right or wrong").innerHTML = message;
 
@@ -82,7 +85,7 @@
                 document.getElementById("replay").style.display = "";
               }
             }
-
+            document.getElementById("div" + document.getElementById("rightAnswer").innerHTML).style.background = "white";
             increment("index1");
             increment("index2");
 
@@ -146,7 +149,7 @@
 
 
             document.getElementById("img" + rightAnswer).src = rightURL;
-            document.getElementById("guess_button" + rightAnswer).innerHTML = answer[0];
+            document.getElementById("match_button" + rightAnswer).innerHTML = answer[0];
             document.getElementById("info" + rightAnswer).innerHTML = answer[1] + " " + answer[3];
 
             var j = 0;
@@ -154,13 +157,13 @@
             for (var i = 1; i < 5; i++){
               if (i != rightAnswer){
                 document.getElementById("img" + i).src = wrongImgs[j];
-                document.getElementById("guess_button" + i).innerHTML = wrongName[j];
+                document.getElementById("match_button" + i).innerHTML = wrongName[j];
                 document.getElementById("info" + i).innerHTML = wrongTotal[j] + " " + wrongType[j];
                 j++;
               }
             }
 
-            document.getElementById("right or wrong").innerHTML = "";
+            document.getElementById("right or wrong").innerHTML = " ";
           }
 
           function increment(msg){
@@ -184,66 +187,40 @@
             <div class="container2">
               <div class="center wow fadeInDown">
                 <h2 id = "athletesName"><%= athletes[0].name%></h2>
-                <p class="lead" id = "athletesAtt"><%= athletes[0].sport + " " + athletes[0].gold + " " + athletes[0].silver
-                                      + " " + athletes[0].bronze%></p>
+                <h3 class="lead" id = "athletesAtt"><%= athletes[0].sport + " " + athletes[0].gold + " " + athletes[0].silver
+                                      + " " + athletes[0].bronze%></h3>
+                <h4>Your Score:</h4>
+                <h4 class = "text-center" id = "score">0</h4>
               </div>
 
               <div class="row">
-                <div class="col-xs-12 col-sm-4 col-md-3">
-                  <div class="recent-work-wrap">
-                    <img id = "img1" class = "guess_images" src=<%= url0 %>>
+                <div id = "div1" class="col-xs-12 col-sm-4 col-md-3" style="background:w">
+                    <img id = "img1" class = "match_images" src=<%= url0 %>>
                     <h3 id = "info1"><%=answers[0].total + " " + answers[0].type%></h3>
-                  </div>
+                  <button id = "match_button1" onclick="popup(1)" class="btn btn-warning btn-lg"><%= answers[0].name %></button>
                 </div>
 
-                <div class="col-xs-12 col-sm-4 col-md-3">
-                  <div class="recent-work-wrap">
-                    <img id = "img2" class = "guess_images" src=<%= url1 %>>
+                <div id = "div2" class="col-xs-12 col-sm-4 col-md-3" style="background:white">
+                    <img id = "img2" class = "match_images" src=<%= url1 %>>
                     <h3 id = "info2"><%=other[0].total + " " + other[0].type%></h3>
-                  </div>
+                  <button id = "match_button2" onclick="popup(2)" class="btn btn-warning btn-lg"><%= other[0].name %></button>
                 </div>
 
-                <div class="col-xs-12 col-sm-4 col-md-3">
-                  <div class="recent-work-wrap">
-                    <img id = "img3" class = "guess_images" src=<%= url2 %>>
+                <div id = "div3" class="col-xs-12 col-sm-4 col-md-3" style="background:white">
+                    <img id = "img3" class = "match_images" src=<%= url2 %>>
                     <h3 id = "info3"><%=other[1].total + " " + other[1].type%></h3>
-                  </div>
+                  <button id = "match_button3" onclick="popup(3)" class="btn btn-warning btn-lg"><%= other[1].name %></button>
                 </div>
 
-                <div class="col-xs-12 col-sm-4 col-md-3">
-                  <div class="recent-work-wrap">
-                    <img id = "img4" class = "guess_images" src=<%= url3 %>>
+                <div id = "div4" class="col-xs-12 col-sm-4 col-md-3" style="background:white">
+                    <img id = "img4" class = "match_images" src=<%= url3 %>>
                     <h3 id = "info4"><%=other[2].total + " " + other[2].type%></h3>
-                  </div>
+                  <button id = "match_button4" onclick="popup(4)" class="btn btn-warning btn-lg"><%= other[2].name %></button>
                 </div>
+
               </div>
 
-                <div class="row">
-                <div class="col-xs-12 col-sm-4 col-md-3">
-                  <div class="recent-work-wrap">
-                    <button id = "guess_button1" onclick="popup(1)" class="btn btn-warning btn-lg"><%= answers[0].name %></button>
-                  </div>
-                </div>
-
-                <div class="col-xs-12 col-sm-4 col-md-3">
-                  <div class="recent-work-wrap">
-                    <button id = "guess_button2" onclick="popup(2)" class="btn btn-warning btn-lg"><%= other[0].name %></button>
-                  </div>
-                </div>
-
-                <div class="col-xs-12 col-sm-4 col-md-3">
-                  <div class="recent-work-wrap">
-                    <button id = "guess_button3" onclick="popup(3)" class="btn btn-warning btn-lg"><%= other[1].name %></button>
-                  </div>
-                </div>
-
-                <div class="col-xs-12 col-sm-4 col-md-3">
-                  <div class="recent-work-wrap">
-                    <button id = "guess_button4" onclick="popup(4)" class="btn btn-warning btn-lg"><%= other[2].name %></button>
-                  </div>
-                </div>
-              </div><!--/.row-->
-              <h2 id = "right or wrong" class = "text-center"></h2>
+              <h2 id = "right or wrong" class = "text-center"> </h2>
 
               <div class = "center">
                 <button id = "replay" style="display:none;" onclick="location.reload()" class="btn btn-warning btn-lg">Play Again</button>
@@ -264,7 +241,10 @@
     </div>
   </div>
 </div>
-<% include templates/footer.ejs%>
 
+
+  <div class="push"></div>
+  <% include templates/footer.ejs%>
 </body>
+
 </html>
