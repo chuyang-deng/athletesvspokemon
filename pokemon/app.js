@@ -25,7 +25,7 @@ var allPokemon = require('./routes/allPokemon');
 var allAthletes = require('./routes/allAthletes');
 
 var guessgame = require('./routes/guessgame');
-var matchGame = require('./routes/matchGame');
+var matchgame = require('./routes/matchGame');
 
 var app = express();
 
@@ -54,7 +54,7 @@ app.use('/allPokemon', allPokemon);
 app.use('/allAthletes', allAthletes);
 
 app.use('/guessgame', guessgame);
-app.use('/matchGame', matchGame);
+app.use('/matchgame', matchgame);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

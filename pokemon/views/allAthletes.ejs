@@ -19,6 +19,8 @@
             <tr>
                 <th>Name</th>
                 <th>Gold</th>
+                <th>Silver</th>
+                <th>Bronze</th>
                 <th>Country</th>
                 <th>Gender</th>
                 <th>Sport</th>
@@ -36,12 +38,14 @@
 
                 <td> <%= result[i].name %> </td>
                 <td> <%= result[i].gold %> </td>
+                <td> <%= result[i].silver %> </td>
+                <td> <%= result[i].bronze %> </td>
                 <td> <%= result[i].country %> </td>
                 <td> <%= result[i].gender %> </td>
-                <td> <%= result[i].sport %> </td>
-                <td> <%= result[i].discipline %> </td>
-                <td> <%= result[i].event %> </td>
-                <td> <%= result[i].year %> </td>
+                <td> <%= result[i].sport.replace(/&/g, "; ") %> </td>
+                <td> <%= result[i].discipline.replace(/&/g, "; ") %> </td>
+                <td> <%= result[i].event.replace(/&/g, "; ") %> </td>
+                <td> <%= result[i].year.replace(/&/g, "; ") %> </td>
             </tr>
             <%}%>
             </tbody>

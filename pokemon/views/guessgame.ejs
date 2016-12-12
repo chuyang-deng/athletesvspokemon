@@ -16,6 +16,7 @@
         <h2 class = "text-center"><%= title %></h2>
         <h2 class = "text-center">Your Score:</h2>
         <h2 class = "text-center" id = "score">0</h2>
+
         <div style="display:none;">
 
             <h3 id = "index1">0</h3>
@@ -27,15 +28,9 @@
 
         </div>
 
-
         <section>
+
             <script>
-                function popup(right) {
-                  document.getElementById("firstImg").src = "";
-                  if (right == null){
-                    confirm("Tie!");
-                  }else if (!right){
-                    confirm ("You are wrong!");
                 function popup(choice) {
                   var first = "poke" + document.getElementById("index1").innerHTML;
                   var second = "poke" + document.getElementById("index2").innerHTML;
@@ -81,9 +76,6 @@
 
                   //location.reload();
                 }
-
-            </script>
-          <% var url0 = result[0].image_no %>
 
                 function nextQ(){
 

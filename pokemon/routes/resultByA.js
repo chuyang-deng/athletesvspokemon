@@ -23,55 +23,37 @@ function query_db(res, aname) {
   connection.query(query, function(err, rows, fields) {
     if (err) console.log(err);
     else if (rows.length == 0){
-      connection.query("SET @rank = 0");
-      connection.query("SET @sport = (select sport from Athletes where name = \"Kai Zou\")");
-      connection.query("SET @athRank = (select rank from (select @rank:=@rank+1 as rank, name from " +
-          "(select a.name from Athletes a inner join Medal m on a.name = m.name where a.sport = @sport " +
-          "order by m.score DESC) as prerank) as rank where name = \"Kai Zou\")");
-      connection.query("SET @athTotal = @rank");
-      connection.query("SET @type = (select type from Activities where sport = @sport)");
-      connection.query("SET @pokeTotal = (select count(*) from Pokemon where type = @type)");
-      connection.query("SET @pokeRank = ceiling(@athRank * (@pokeTotal * 1.0 / @athTotal))");
-
-      connection.query("SET @rank = 0");
-      connection.query("select rank2.* from (select @rank:=@rank+1 as rank, prerank2.* from " +
-          "(select * from Pokemon where type = @type order by total DESC) as prerank2) " +
-          "as rank2 where rank = @pokeRank",
-      function(err, rows, fields){
-        if (err) console.log(err);
-        console.log(rows);
-        output_result(res, aname, rows[0]);
-      })
+      noResult(res, aname);
     } else {
       var sport = rows[0].sport;
       var query1 = "select type from Activities where sport = '" + sport + "'";
-      //console.log(query);
+      console.log(query);
       connection.query(query1, function(err, rows, fields) {
         if (err) console.log(err);
         else{
           var type = rows[0].type;
           var query3 = "select v.name, m.score from "+ sport+ "View v Inner Join Medal m on " +
                               "v.name = m.name ORDER BY m.score DESC";
-          //console.log(query3);
+          console.log(query3);
           connection.query(query3, function(err, rows, fields) {
             if (err) console.log(err);
             else{
               var athletesRank = rows;
-              //console.log(athletesRank);
+              console.log(athletesRank);
               var query4 = "Select * From "+ type + "View Order By total DESC";
               connection.query(query4, function(err, rows, fields) {
                 if (err) console.log(err);
                 else {
                   var PokemonRank = rows;
-                  //console.log(PokemonRank);
+                  console.log(PokemonRank);
                   var aRowNum = 0;
                   for (; aRowNum < athletesRank.length; aRowNum++){
                     if (athletesRank[aRowNum].name == aname) break;
                   }
-                  //console.log(aRowNum);
+                  console.log(aRowNum);
                   var pRowNum = aRowNum * ((PokemonRank.length * 1.0) / athletesRank.length);
                   pRowNum = Math.floor(pRowNum);
-                  //console.log(PokemonRank[pRowNum]);
+                  console.log(PokemonRank[pRowNum]);
                   output_result(res, aname, PokemonRank[pRowNum]);
 
                 }

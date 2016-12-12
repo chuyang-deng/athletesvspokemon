@@ -24,13 +24,11 @@
                   <input type="text" class="form-control" name="aname" placeholder="Enter a Athletes' name">
                 </div>
                 <button type="submit" class="btn btn-warning btn-lg">SEARCH</button>
+                <% if (errorMsg != ""){%>
+                  <p style="color: #ac2925"><%=errorMsg%></p>
+                <% } %>
               </form>
-              <!--<p>-->
-              <!--&lt;!&ndash;<form method="get" action="/search">&ndash;&gt;-->
-              <!--&lt;!&ndash;<input name="pname" value=""/>&ndash;&gt;-->
-              <!--&lt;!&ndash;<button type="submit" class="btn btn-warning btn-lg"></button>&ndash;&gt;-->
-              <!--&lt;!&ndash;</form>&ndash;&gt;-->
-              <!--</p>-->
+
             </div><!-- /col-lg-6 -->
           </p>
         </div>
