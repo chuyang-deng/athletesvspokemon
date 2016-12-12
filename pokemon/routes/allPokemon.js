@@ -35,7 +35,7 @@ function query_db(res) {
 // results = List object of query results
 function output_result(res, result) {
   res.render('allPokemon',
-      { title: "All Pokemon",
+      { title: "All Pokémons",
         result: result
         // result2: result2,
         // result3: result3

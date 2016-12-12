@@ -19,10 +19,13 @@ var connection = mysql.createConnection({
 // name = Name to query for
 function query_db(res, aname) {
   //var aname = "Barbel Wockel";
+  aname = aname.trim();
   var query = "select sport from Athletes where name = '" + aname + "'";
   connection.query(query, function(err, rows, fields) {
     if (err) console.log(err);
-    else {
+    else if (rows.length == 0){
+      noResult(res, aname);
+    } else {
       var sport = rows[0].sport;
       var query1 = "select type from Activities where sport = '" + sport + "'";
       //console.log(query);
@@ -43,7 +46,6 @@ function query_db(res, aname) {
                 if (err) console.log(err);
                 else {
                   var PokemonRank = rows;
-                  //console.log(PokemonRank);
                   var aRowNum = 0;
                   for (; aRowNum < athletesRank.length; aRowNum++){
                     if (athletesRank[aRowNum].name == aname) break;
@@ -51,6 +53,7 @@ function query_db(res, aname) {
                   //console.log(aRowNum);
                   var pRowNum = aRowNum * ((PokemonRank.length * 1.0) / athletesRank.length);
                   pRowNum = Math.floor(pRowNum);
+                  //console.log(pRowNum);
                   //console.log(PokemonRank[pRowNum]);
                   output_result(res, aname, PokemonRank[pRowNum]);
 
@@ -64,6 +67,13 @@ function query_db(res, aname) {
   });
 }
 
+function noResult(res, aname){
+  res.render('searchByA', {
+    errorMsg: "Athlete: "+ aname+ " is not in our database."
+  });
+}
+
+
 // ///
 // Given a set of query results, output a table
 //
@@ -73,7 +83,8 @@ function query_db(res, aname) {
 function output_result(res, aname, result) {
   res.render('resultByA',
       { title: "All Pokemon with type: " + aname,
-        result: result
+        result: result,
+        name: aname
         // result2: result2,
         // result3: result3
       }
