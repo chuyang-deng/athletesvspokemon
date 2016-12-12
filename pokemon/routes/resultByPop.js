@@ -15,7 +15,8 @@ var connection = mysql.createConnection({
 var MongoClient = mongodb.MongoClient;
 var uri = "mongodb://chuyang:xiaogougou4250@ds127928.mlab.com:27928/popularity";
 
-var popularity;
+var popularityA;
+var popularityP;
 var rank;
 var pokemon;
 
@@ -35,26 +36,12 @@ function mongoQuery(res, aname) {
                     /* Get athlete's popularity */
                     console.log("Connected to Athletes collection.");
 
-                    popularity = result[0]["Popularity"];
-                    console.log('Popularity: ', popularity);
+                    popularityA = result[0]["Popularity"];
+                    rank = result[0]["Rank"];
+                    console.log('Popularity: ', popularityA, 'Rank: ', rank);
 
                 } else {
                     res.send("Athlete is not in our record.");
-                }
-            });
-
-            collectionAthletes.find({Popularity: {$gt: popularity}}, {Popularity: 1, _id: 0}).count(function (err, result) {
-                if (err) {
-                    res.send(err);
-                } else if (result != null) {
-                    /* Get athlete's popularity rank */
-                    console.log("Connected to Athletes collection.");
-
-                    rank = result;
-                    console.log('Rank: ', rank);
-
-                } else {
-                    res.send("Failed to calculate rank.");
                 }
             });
 
@@ -67,17 +54,14 @@ function mongoQuery(res, aname) {
                     console.log("Connected to Pokemon collection.");
 
                     pokemon = result[rank]["Name"];
+                    popularityP = result[rank]["Popularity"]
                     console.log("Popular Pokemon: ", pokemon);
 
-                    sqlQuery(res, pokemon);
+                    sqlQuery(res, pokemon, aname);
 
                     db.close();
 
                 } else {
-
-                    /**
-                     *  TODO: render a page to show the message
-                     */
                     res.send("Athlete's popularity rank is out of Pokemon's total amount.");
                 }
             });
@@ -85,7 +69,7 @@ function mongoQuery(res, aname) {
     });
 }
 
-function sqlQuery(res, pokemon) {
+function sqlQuery(res, pokemon, aname) {
 
     var query = "SELECT image_no FROM PokemonFull WHERE name = '" + pokemon + "'";
     connection.query(query, function(err, rows) {
@@ -95,9 +79,11 @@ function sqlQuery(res, pokemon) {
             console.log("Found pokemon in MySQL with image_no: ", rows[0].image_no);
 
             res.render('resultByPop', {
+                athlete: aname,
                 pokemon: pokemon,
                 result: rows[0].image_no,
-                percentage: 720 - rank
+                popularityA: popularityA,
+                popularityP: popularityP
             });
 
         } else {
