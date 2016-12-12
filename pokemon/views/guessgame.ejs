@@ -30,6 +30,12 @@
 
         <section>
             <script>
+                function popup(right) {
+                  document.getElementById("firstImg").src = "";
+                  if (right == null){
+                    confirm("Tie!");
+                  }else if (!right){
+                    confirm ("You are wrong!");
                 function popup(choice) {
                   var first = "poke" + document.getElementById("index1").innerHTML;
                   var second = "poke" + document.getElementById("index2").innerHTML;
@@ -51,6 +57,7 @@
 //                      confirm("Tie!");
                       message = "Tie!"
                     }
+
                   }else {
                     if (parseInt(p1[1]) < parseInt(p2[1])) {
                       increment("score");
@@ -74,6 +81,9 @@
 
                   //location.reload();
                 }
+
+            </script>
+          <% var url0 = result[0].image_no %>
 
                 function nextQ(){
 
