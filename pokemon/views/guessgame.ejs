@@ -16,43 +16,21 @@
         <h2 class = "text-center"><%= title %></h2>
         <h2 class = "text-center">Your Score:</h2>
         <h2 class = "text-center" id = "score">0</h2>
+
         <div style="display:none;">
 
             <h3 id = "index1">0</h3>
             <h3 id = "index2">10</h3>
 
+            <% for (var i = 0; i < 20; i++) {%>
+                <h3 id = <%="poke" + i%>><%=result[i].name+"; "+result[i].total+"; "+result[i].image_no %></h3>
+            <% } %>
 
-            <h3 id = "poke0"><%=result[0].name+"; "+result[0].total+"; "+result[0].image_no %></h3>
-            <h3 id = "poke1"><%=result[1].name+"; "+result[1].total+"; "+result[1].image_no %></h3>
-            <h3 id = "poke2"><%=result[2].name+"; "+result[2].total+"; "+result[2].image_no %></h3>
-            <h3 id = "poke3"><%=result[3].name+"; "+result[3].total+"; "+result[3].image_no %></h3>
-            <h3 id = "poke4"><%=result[4].name+"; "+result[4].total+"; "+result[4].image_no %></h3>
-            <h3 id = "poke5"><%=result[5].name+"; "+result[5].total+"; "+result[5].image_no %></h3>
-            <h3 id = "poke6"><%=result[6].name+"; "+result[6].total+"; "+result[6].image_no %></h3>
-            <h3 id = "poke7"><%=result[7].name+"; "+result[7].total+"; "+result[7].image_no %></h3>
-            <h3 id = "poke8"><%=result[8].name+"; "+result[8].total+"; "+result[8].image_no %></h3>
-            <h3 id = "poke9"><%=result[9].name+"; "+result[9].total+"; "+result[9].image_no %></h3>
-            <h3 id = "poke10"><%=result[10].name+"; "+result[10].total+"; "+result[10].image_no %></h3>
-            <h3 id = "poke11"><%=result[11].name+"; "+result[11].total+"; "+result[11].image_no %></h3>
-            <h3 id = "poke12"><%=result[12].name+"; "+result[12].total+"; "+result[12].image_no %></h3>
-            <h3 id = "poke13"><%=result[13].name+"; "+result[13].total+"; "+result[13].image_no %></h3>
-            <h3 id = "poke14"><%=result[14].name+"; "+result[14].total+"; "+result[14].image_no %></h3>
-            <h3 id = "poke15"><%=result[15].name+"; "+result[15].total+"; "+result[15].image_no %></h3>
-            <h3 id = "poke16"><%=result[16].name+"; "+result[16].total+"; "+result[16].image_no %></h3>
-            <h3 id = "poke17"><%=result[17].name+"; "+result[17].total+"; "+result[17].image_no %></h3>
-            <h3 id = "poke18"><%=result[18].name+"; "+result[18].total+"; "+result[18].image_no %></h3>
-            <h3 id = "poke19"><%=result[19].name+"; "+result[19].total+"; "+result[19].image_no %></h3>
         </div>
 
-
         <section>
+
             <script>
-                function popup(right) {
-                  document.getElementById("firstImg").src = "";
-                  if (right == null){
-                    confirm("Tie!");
-                  }else if (!right){
-                    confirm ("You are wrong!");
                 function popup(choice) {
                   var first = "poke" + document.getElementById("index1").innerHTML;
                   var second = "poke" + document.getElementById("index2").innerHTML;
@@ -98,9 +76,6 @@
 
                   //location.reload();
                 }
-
-            </script>
-          <% var url0 = result[0].image_no %>
 
                 function nextQ(){
 
@@ -165,9 +140,9 @@
 
             </div>
         </section>
+
       <h2 id = "right or wrong" class = "text-center"></h2>
       <div>
-
           <button id = "replay" style="display:none;" onclick="location.reload()" class="btn btn-warning btn-lg">Play Again</button>
       </div>
     </div>

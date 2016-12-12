@@ -4,8 +4,6 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
-var mongo = require('mongodb');
-
 require('jsdom').env("", function(err, window) {
   if (err) {
     console.error(err);
@@ -27,6 +25,7 @@ var allPokemon = require('./routes/allPokemon');
 var allAthletes = require('./routes/allAthletes');
 
 var guessgame = require('./routes/guessgame');
+var matchgame = require('./routes/matchGame');
 
 var app = express();
 
@@ -55,6 +54,7 @@ app.use('/allPokemon', allPokemon);
 app.use('/allAthletes', allAthletes);
 
 app.use('/guessgame', guessgame);
+app.use('/matchgame', matchgame);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

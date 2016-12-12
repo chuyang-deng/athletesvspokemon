@@ -102,8 +102,8 @@ a:focus {
 
 .center h2{
   font-size: 36px;
-  margin-top: 0;
-  margin-bottom: 20px;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 
 .media>.pull-left{
@@ -771,7 +771,7 @@ input.search-form:hover {
 }
 
 .accordion h2{
-  margin-bottom: 25px;
+  margin-bottom: 35px;
 }
 
 .panel-default{
@@ -825,6 +825,34 @@ input.search-form:hover {
 
 .panel-heading.active .panel-title>a{
   color:#fff;
+}
+
+.panel {
+  position:fixed;
+  bottom:0px;
+  right:0px;
+  border:solid 0px black;
+  background-color:black;
+}
+
+
+.box {
+  width:500px;
+  height:150px;
+  position:absolute;
+  top:350px;
+  left:450px;
+  margin: 20px;
+  background-color: #000000;
+  border: 1px solid black;
+  opacity: 0.8;
+  filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+
+. box p {
+  margin: 5%;
+  font-weight: bold;
+  color: #000000;
 }
 
 a.accordion-toggle  i{

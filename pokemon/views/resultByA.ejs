@@ -13,9 +13,9 @@
 
       <div class="col-sm-6 wow fadeInDown">
         <div class="accordion">
-          <h2><%= result.name %></h2>
-          <!--<% var url = "https://s3-us-west-2.amazonaws.com/pokemonimage/image/"+ result.image_no +".png" %>-->
-          <!--<% console.log(url) %>-->
+          <h2><%= name %></h2>
+
+          <% var url = "https://s3-us-west-2.amazonaws.com/pokemonimage/image/"+ result.image_no +".png" %>
           <img class="img-responsive img-blog" src= <%=url%> style="width:428px;height:428px;" alt="" />
         </div>
       </div>
@@ -24,8 +24,8 @@
 
 
         <div class="skill">
-          <h2><%= result.type %></h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <h2><%= result.name %></h2>
+          <p> The corresponding Pokémon for <%= name %> is <%= result.name %>, whose type is  <%= result.type %>.</p>
 
 
           <div class="progress-wrap">
@@ -85,34 +85,8 @@
 </section><!--/#middle-->
 
 
-</div>
-<div class="push"></div>
+
 <% include templates/footer.ejs%>
 </body>
 </html>
-
-
-<!--<div id="headerwrap">-->
-  <!--<div class="container">-->
-    <!--<h1>The Search Result Page</h1>-->
-    <!--<h2><%= title %></h2>-->
-    <!--<table class = "table table-striped table-hover">-->
-      <!--<% var url = "https://s3-us-west-2.amazonaws.com/pokemonimage/image/"+ result.image_no +".png" %>-->
-      <!--<% console.log(url) %>-->
-      <!--<tr class = "warning">-->
-        <!--<td><img src = <%=url%> style="width:128px;height:128px;"></td>-->
-        <!--<td> <%= result.name %> </td>-->
-        <!--<td> <%= result.type %> </td>-->
-        <!--<td> <%= result.total %> </td>-->
-        <!--<td> <%= result.hp %> 255</td>-->
-        <!--<td> <%= result.attack %> 160</td>-->
-        <!--<td> <%= result.defense %> 200 </td>-->
-        <!--<td> <%= result.speed %> 160</td>-->
-        <!--<td>&nbsp</td>-->
-      <!--</tr>-->
-<!---->
-    <!--</table>-->
-<!---->
-  <!--</div>-->
-<!--</div>-->
 

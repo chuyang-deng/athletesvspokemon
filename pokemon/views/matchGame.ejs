@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title> Pokemon </title>
+  <link href="stylesheets/matchgame.css" rel="stylesheet">
+  <%include templates/head.ejs%>
+
+</head>
+
+<body>
+
+  <%include templates/navibar.ejs%>
+<div class="wrapper">
+
+  <div id="headerwrap">
+    <div class="container">
+      <h2 class = "text-center"><%= title %></h2>
+
+
+      <div style = "display:none">
+
+        <h3 id = "index1">0</h3>
+        <h3 id = "index2">0</h3>
+        <h3 id = "rightAnswer">1</h3>
+
+        <% for (var i = 0; i < 5; i++) {%>
+          <h3 id = <%="athlete" + i%>><%=athletes[i].name+"; "+athletes[i].sport
+                              +"; "+athletes[i].gold +"; "+athletes[i].silver+"; "+athletes[i].bronze%></h3>
+        <% } %>
+
+        <% for (var i = 0; i < 5; i++) {%>
+          <h3 id = <%="answer" + i%>><%=answers[i].name+"; "+answers[i].total+"; "
+                                        +answers[i].image_no + "; " + answers[i].type%></h3>
+        <% } %>
+
+        <% for (var i = 0; i < 15; i++) {%>
+          <h3 id = <%="other" + i%>><%=other[i].name+"; "+other[i].total+"; "
+                                        +other[i].image_no + "; " + other[i].type %></h3>
+        <% } %>
+
+      </div>
+
+      <section>
+        <script>
+          function popup(choice) {
+
+            var athlete = "athlete" + document.getElementById("index1").innerHTML;
+            var answer = "answer" + document.getElementById("index2").innerHTML;
+
+            var ath =document.getElementById(athlete).innerHTML.split("; ");
+            var ans =document.getElementById(answer).innerHTML.split("; ");
+
+            var message = "";
+
+            var rightAnswer = document.getElementById("rightAnswer").innerHTML;
+
+            //confirm((choice == rightAnswer).toString());
+
+            if (choice + "" == rightAnswer){
+              increment("score");
+              message = "You are right!"
+            }else {
+
+              message = "You are wrong!";
+            }
+            document.getElementById("div" + rightAnswer).style.background = "#eeffdd";
+
+            document.getElementById("right or wrong").innerHTML = message;
+
+            window.setTimeout(nextQ, 1500);
+
+            //location.reload();
+          }
+
+          function nextQ(){
+
+            if (parseInt(document.getElementById("index1").innerHTML) == 4){
+              var msg = "Your total score is: " + document.getElementById("score").innerHTML
+                  + ". \nDo you want to play again?";
+              if (confirm(msg) == true){
+                location.reload();
+              }else{
+                document.getElementById("right or wrong").innerHTML = "";
+                document.getElementById("replay").style.display = "";
+              }
+            }
+            document.getElementById("div" + document.getElementById("rightAnswer").innerHTML).style.background = "white";
+            increment("index1");
+            increment("index2");
+
+            var athlete = "athlete" + document.getElementById("index1").innerHTML;
+            var answer = "answer" + document.getElementById("index2").innerHTML;
+
+            athlete =document.getElementById(athlete).innerHTML.split("; ");
+            answer =document.getElementById(answer).innerHTML.split("; ");
+
+            document.getElementById("athletesName").innerHTML = athlete[0];
+
+            document.getElementById("athletesAtt").innerHTML = athlete[1] + " " + athlete[2] + " "
+                                                             + athlete[3] + " " + athlete[4];
+
+
+            var rightAnswer = Math.floor(Math.random() * (4 - 1 + 1)) + 1;
+
+            document.getElementById("rightAnswer").innerHTML = rightAnswer.toString();
+
+            var rightURL = "https://s3-us-west-2.amazonaws.com/pokemonimage/image/"+ answer[2] +".png";
+
+
+
+            var index2 = document.getElementById("index2").innerHTML;
+            index2 = parseInt(index2);
+            index2 = index2 * 3;
+
+            var other1 = "other" + index2;
+            index2++;
+            var other2 = "other" + index2;
+            index2++;
+            var other3 = "other" + index2;
+
+            var wrong1 = document.getElementById(other1).innerHTML.split("; ");
+            var wrong2 = document.getElementById(other2).innerHTML.split("; ");
+            var wrong3 = document.getElementById(other3).innerHTML.split("; ");
+
+            var wrongURL1 = "https://s3-us-west-2.amazonaws.com/pokemonimage/image/"+ wrong1[2] +".png";
+            var wrongURL2 = "https://s3-us-west-2.amazonaws.com/pokemonimage/image/"+ wrong2[2] +".png";
+            var wrongURL3 = "https://s3-us-west-2.amazonaws.com/pokemonimage/image/"+ wrong3[2] +".png";
+
+            var wrongImgs = [];
+            wrongImgs.push(wrongURL1);
+            wrongImgs.push(wrongURL2);
+            wrongImgs.push(wrongURL3);
+
+            var wrongName = [];
+            wrongName.push(wrong1[0]);
+            wrongName.push(wrong2[0]);
+            wrongName.push(wrong3[0]);
+
+            var wrongTotal = [];
+            wrongTotal.push(wrong1[1]);
+            wrongTotal.push(wrong2[1]);
+            wrongTotal.push(wrong3[1]);
+
+            var wrongType = [];
+            wrongType.push(wrong1[3]);
+            wrongType.push(wrong2[3]);
+            wrongType.push(wrong3[3]);
+
+
+            document.getElementById("img" + rightAnswer).src = rightURL;
+            document.getElementById("match_button" + rightAnswer).innerHTML = answer[0];
+            document.getElementById("info" + rightAnswer).innerHTML = answer[1] + " " + answer[3];
+
+            var j = 0;
+
+            for (var i = 1; i < 5; i++){
+              if (i != rightAnswer){
+                document.getElementById("img" + i).src = wrongImgs[j];
+                document.getElementById("match_button" + i).innerHTML = wrongName[j];
+                document.getElementById("info" + i).innerHTML = wrongTotal[j] + " " + wrongType[j];
+                j++;
+              }
+            }
+
+            document.getElementById("right or wrong").innerHTML = " ";
+          }
+
+          function increment(msg){
+            var i =  document.getElementById(msg).innerHTML;
+            i = parseInt(i);
+            i = i + 1;
+            document.getElementById(msg).innerHTML = i;
+          }
+
+        </script>
+
+      </section>
+
+      <% var url0 = "https://s3-us-west-2.amazonaws.com/pokemonimage/image/"+ answers[0].image_no +".png" %>
+      <% var url1 = "https://s3-us-west-2.amazonaws.com/pokemonimage/image/"+ other[0].image_no +".png" %>
+      <% var url2 = "https://s3-us-west-2.amazonaws.com/pokemonimage/image/"+ other[1].image_no +".png" %>
+      <% var url3 = "https://s3-us-west-2.amazonaws.com/pokemonimage/image/"+ other[2].image_no +".png" %>
+
+        <div class="wrapper">
+          <section id="Athletes">
+            <div class="container2">
+              <div class="center wow fadeInDown">
+                <h2 id = "athletesName"><%= athletes[0].name%></h2>
+                <h3 class="lead" id = "athletesAtt"><%= athletes[0].sport + " " + athletes[0].gold + " " + athletes[0].silver
+                                      + " " + athletes[0].bronze%></h3>
+                <h4>Your Score:</h4>
+                <h4 class = "text-center" id = "score">0</h4>
+              </div>
+
+              <div class="row">
+                <div id = "div1" class="col-xs-12 col-sm-4 col-md-3" style="background:w">
+                    <img id = "img1" class = "match_images" src=<%= url0 %>>
+                    <h3 id = "info1"><%=answers[0].total + " " + answers[0].type%></h3>
+                  <button id = "match_button1" onclick="popup(1)" class="btn btn-warning btn-lg"><%= answers[0].name %></button>
+                </div>
+
+                <div id = "div2" class="col-xs-12 col-sm-4 col-md-3" style="background:white">
+                    <img id = "img2" class = "match_images" src=<%= url1 %>>
+                    <h3 id = "info2"><%=other[0].total + " " + other[0].type%></h3>
+                  <button id = "match_button2" onclick="popup(2)" class="btn btn-warning btn-lg"><%= other[0].name %></button>
+                </div>
+
+                <div id = "div3" class="col-xs-12 col-sm-4 col-md-3" style="background:white">
+                    <img id = "img3" class = "match_images" src=<%= url2 %>>
+                    <h3 id = "info3"><%=other[1].total + " " + other[1].type%></h3>
+                  <button id = "match_button3" onclick="popup(3)" class="btn btn-warning btn-lg"><%= other[1].name %></button>
+                </div>
+
+                <div id = "div4" class="col-xs-12 col-sm-4 col-md-3" style="background:white">
+                    <img id = "img4" class = "match_images" src=<%= url3 %>>
+                    <h3 id = "info4"><%=other[2].total + " " + other[2].type%></h3>
+                  <button id = "match_button4" onclick="popup(4)" class="btn btn-warning btn-lg"><%= other[2].name %></button>
+                </div>
+
+              </div>
+
+              <h2 id = "right or wrong" class = "text-center"> </h2>
+
+              <div class = "center">
+                <button id = "replay" style="display:none;" onclick="location.reload()" class="btn btn-warning btn-lg">Play Again</button>
+              </div>
+
+
+            </div><!--/.container-->
+
+          </section>
+
+        </div>
+
+      <section>
+        <!--<button id = "replay" style="display:none;" onclick="location.reload()" class="btn btn-warning btn-lg">Play Again</button>-->
+      </section>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <div class="push"></div>
+  <% include templates/footer.ejs%>
+</body>
+
+</html>
