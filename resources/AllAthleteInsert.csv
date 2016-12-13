@@ -1404,7 +1404,7 @@ INSERT INTO Athletes VALUES ('JYrgen Colombo','FRG','Men','Cycling','Cycling Tra
 INSERT INTO Athletes VALUES ('Jenny Morris','AUS','Women','Hockey','Hockey','hockey','1996&2000');
 INSERT INTO Athletes VALUES ('Ying Chen','CHN','Women','Shooting','Shooting','25m pistol (30+30 shots)','2008');
 INSERT INTO Athletes VALUES ('Yuri Shapochka','URS','Men','Rowing','Rowing','quadruple sculls without coxswain (4x)','1980');
-INSERT INTO Athletes VALUES ('Na Li','CHN','Women','Aquatics&Fencing','Diving&Fencing','10m platform&synchronized diving 10m platform&Zpze team','2000');
+INSERT INTO Athletes VALUES ('Na Li','CHN','Women','Aquatics','Diving','10m platform&synchronized diving 10m platform&Zpze team','2000');
 INSERT INTO Athletes VALUES ('James Michael Ferguson','USA','Men','Aquatics','Water polo','water polo','1972');
 INSERT INTO Athletes VALUES ('Tingting Jiang','CHN','Women','Aquatics','Synchronized S.','team','2008');
 INSERT INTO Athletes VALUES ('Hye-Sook Min','KOR','Women','Handball','Handball','handball','1992');

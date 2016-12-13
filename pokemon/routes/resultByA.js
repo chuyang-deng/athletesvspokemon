@@ -55,6 +55,9 @@ function query_db(res, aname) {
                   pRowNum = Math.floor(pRowNum);
                   //console.log(pRowNum);
                   //console.log(PokemonRank[pRowNum]);
+                  if (pRowNum >= PokemonRank.length || pRowNum < 0){
+                    noResult(res, aname);
+                  }
                   output_result(res, aname, PokemonRank[pRowNum]);
 
                 }
