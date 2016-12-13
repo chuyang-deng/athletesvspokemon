@@ -1,10 +1,10 @@
 var express = require('express');
 var router = express.Router();
 var mongodb = require('mongodb');
-
 var mysql = require('mysql');
 
 var settings = require('../settings.json');
+
 var connection = mysql.createConnection({
     host: settings.address,
     user: settings.user,
