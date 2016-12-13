@@ -97,8 +97,8 @@
 
             document.getElementById("athletesName").innerHTML = athlete[0];
 
-            document.getElementById("athletesAtt").innerHTML = athlete[1] + " " + athlete[2] + " "
-                                                             + athlete[3] + " " + athlete[4];
+            document.getElementById("athletesAtt").innerHTML = "Sport: " + athlete[1] + ", Gold: " + athlete[2] + ", Silver: "
+                                                             + athlete[3] + ", Bronze: " + athlete[4];
 
 
             var rightAnswer = Math.floor(Math.random() * (4 - 1 + 1)) + 1;
@@ -187,8 +187,8 @@
             <div class="container2">
               <div class="center wow fadeInDown">
                 <h2 id = "athletesName"><%= athletes[0].name%></h2>
-                <h3 class="lead" id = "athletesAtt"><%= athletes[0].sport + " " + athletes[0].gold + " " + athletes[0].silver
-                                      + " " + athletes[0].bronze%></h3>
+                <h3 class="lead" id = "athletesAtt"><%= "Sport: " + athletes[0].sport + ", Gold: " + athletes[0].gold + ", Silver: " + athletes[0].silver
+                                      + ", Bronze: " + athletes[0].bronze%></h3>
                 <h4>Your Score:</h4>
                 <h4 class = "text-center" id = "score">0</h4>
               </div>
