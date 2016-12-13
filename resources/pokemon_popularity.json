@@ -1,719 +1,3575 @@
-  {"Name": "Bulbasaur","Popularity": 7150000}
-  {"Name": "Ivysaur","Popularity": 1660000}
-  {"Name": "Venusaur","Popularity": 3310000}
-  {"Name": "Charmander","Popularity": 9600000}
-  {"Name": "Charmeleon","Popularity": 2070000}
-  {"Name": "Charizard","Popularity": 12800000}
-  {"Name": "Squirtle","Popularity": 10200000}
-  {"Name": "Wartortle","Popularity": 1440000}
-  {"Name": "Blastoise","Popularity": 4600000}
-  {"Name": "Caterpie","Popularity": 1300000}
-  {"Name": "Metapod","Popularity": 1130000}
-  {"Name": "Butterfree","Popularity": 1310000}
-  {"Name": "Weedle","Popularity": 1190000}
-  {"Name": "Kakuna","Popularity": 1160000}
-  {"Name": "Beedrill","Popularity": 1070000}
-  {"Name": "Pidgey","Popularity": 2100000}
-  {"Name": "Pidgeotto","Popularity": 807000}
-  {"Name": "Pidgeot","Popularity": 1310000}
-  {"Name": "Rattata","Popularity": 1740000}
-  {"Name": "Raticate","Popularity": 968000}
-  {"Name": "Spearow","Popularity": 983000}
-  {"Name": "Fearow","Popularity": 616000}
-  {"Name": "Ekans","Popularity": 964000}
-  {"Name": "Arbok","Popularity": 1360000}
-  {"Name": "Pikachu","Popularity": 68300000}
-  {"Name": "Raichu","Popularity": 4830000}
-  {"Name": "Sandshrew","Popularity": 882000}
-  {"Name": "Sandslash","Popularity": 886000}
-  {"Name": "Nidoran♀","Popularity": 222000}
-  {"Name": "Nidorina","Popularity": 572000}
-  {"Name": "Nidoqueen","Popularity": 979000}
-  {"Name": "Nidoran♂","Popularity": 220000}
-  {"Name": "Nidorino","Popularity": 658000}
-  {"Name": "Nidoking","Popularity": 1250000}
-  {"Name": "Clefairy","Popularity": 1870000}
-  {"Name": "Clefable","Popularity": 772000}
-  {"Name": "Vulpix","Popularity": 2880000}
-  {"Name": "Ninetales","Popularity": 2250000}
-  {"Name": "Jigglypuff","Popularity": 3910000}
-  {"Name": "Wigglytuff","Popularity": 768000}
-  {"Name": "Zubat","Popularity": 1880000}
-  {"Name": "Golbat","Popularity": 871000}
-  {"Name": "Oddish","Popularity": 1240000}
-  {"Name": "Gloom","Popularity": 20000000}
-  {"Name": "Vileplume","Popularity": 802000}
-  {"Name": "Paras","Popularity": 47800000}
-  {"Name": "Parasect","Popularity": 698000}
-  {"Name": "Venonat","Popularity": 579000}
-  {"Name": "Venomoth","Popularity": 622000}
-  {"Name": "Diglett","Popularity": 1190000}
-  {"Name": "Dugtrio","Popularity": 935000}
-  {"Name": "Meowth","Popularity": 3220000}
-  {"Name": "Persian","Popularity": 185000000}
-  {"Name": "Psyduck","Popularity": 2200000}
-  {"Name": "Golduck","Popularity": 768000}
-  {"Name": "Mankey","Popularity": 1680000}
-  {"Name": "Primeape","Popularity": 639000}
-  {"Name": "Growlithe","Popularity": 1710000}
-  {"Name": "Arcanine","Popularity": 2620000}
-  {"Name": "Poliwag","Popularity": 859000}
-  {"Name": "Poliwhirl","Popularity": 676000}
-  {"Name": "Poliwrath","Popularity": 720000}
-  {"Name": "Abra","Popularity": 55300000}
-  {"Name": "Kadabra","Popularity": 1980000}
-  {"Name": "Alakazam","Popularity": 2480000}
-  {"Name": "Machop","Popularity": 834000}
-  {"Name": "Machoke","Popularity": 789000}
-  {"Name": "Machamp","Popularity": 1440000}
-  {"Name": "Bellsprout","Popularity": 795000}
-  {"Name": "Weepinbell","Popularity": 483000}
-  {"Name": "Victreebel","Popularity": 645000}
-  {"Name": "Tentacool","Popularity": 818000}
-  {"Name": "Tentacruel","Popularity": 909000}
-  {"Name": "Geodude","Popularity": 997000}
-  {"Name": "Graveler","Popularity": 538000}
-  {"Name": "Golem","Popularity": 21000000}
-  {"Name": "Ponyta","Popularity": 1750000}
-  {"Name": "Rapidash","Popularity": 1170000}
-  {"Name": "Slowpoke","Popularity": 4440000}
-  {"Name": "Slowbro","Popularity": 1100000}
-  {"Name": "Magnemite","Popularity": 848000}
-  {"Name": "Magneton","Popularity": 1620000}
-  {"Name": "Farfetch'd","Popularity": 684000}
-  {"Name": "Doduo","Popularity": 701000}
-  {"Name": "Dodrio","Popularity": 618000}
-  {"Name": "Seel","Popularity": 12800000}
-  {"Name": "Dewgong","Popularity": 644000}
-  {"Name": "Grimer","Popularity": 1300000}
-  {"Name": "Muk","Popularity": 21400000}
-  {"Name": "Shellder","Popularity": 607000}
-  {"Name": "Cloyster","Popularity": 748000}
-  {"Name": "Gastly","Popularity": 1620000}
-  {"Name": "Haunter","Popularity": 3320000}
-  {"Name": "Gengar","Popularity": 4690000}
-  {"Name": "Onix","Popularity": 33700000}
-  {"Name": "Drowzee","Popularity": 782000}
-  {"Name": "Hypno","Popularity": 12600000}
-  {"Name": "Krabby","Popularity": 2540000}
-  {"Name": "Kingler","Popularity": 610000}
-  {"Name": "Voltorb","Popularity": 827000}
-  {"Name": "Electrode","Popularity": 54600000}
-  {"Name": "Exeggcute","Popularity": 610000}
-  {"Name": "Exeggutor","Popularity": 1070000}
-  {"Name": "Cubone","Popularity": 1730000}
-  {"Name": "Marowak","Popularity": 997000}
-  {"Name": "Hitmonlee","Popularity": 764000}
-  {"Name": "Hitmonchan","Popularity": 962000}
-  {"Name": "Lickitung","Popularity": 709000}
-  {"Name": "Koffing","Popularity": 955000}
-  {"Name": "Weezing","Popularity": 741000}
-  {"Name": "Rhyhorn","Popularity": 650000}
-  {"Name": "Rhydon","Popularity": 793000}
-  {"Name": "Chansey","Popularity": 1380000}
-  {"Name": "Tangela","Popularity": 1840000}
-  {"Name": "Kangaskhan","Popularity": 1040000}
-  {"Name": "Horsea","Popularity": 1080000}
-  {"Name": "Seadra","Popularity": 633000}
-  {"Name": "Goldeen","Popularity": 820000}
-  {"Name": "Seaking","Popularity": 2970000}
-  {"Name": "Staryu","Popularity": 863000}
-  {"Name": "Starmie","Popularity": 926000}
-  {"Name": "Mr. Mime","Popularity": 3690000}
-  {"Name": "Scyther","Popularity": 1560000}
-  {"Name": "Jynx","Popularity": 27200000}
-  {"Name": "Electabuzz","Popularity": 965000}
-  {"Name": "Magmar","Popularity": 1540000}
-  {"Name": "Pinsir","Popularity": 1840000}
-  {"Name": "Tauros","Popularity": 1910000}
-  {"Name": "Magikarp","Popularity": 3640000}
-  {"Name": "Gyarados","Popularity": 4090000}
-  {"Name": "Lapras","Popularity": 2960000}
-  {"Name": "Ditto","Popularity": 28700000}
-  {"Name": "Eevee","Popularity": 13100000}
-  {"Name": "Vaporeon","Popularity": 4430000}
-  {"Name": "Jolteon","Popularity": 3430000}
-  {"Name": "Flareon","Popularity": 3480000}
-  {"Name": "Porygon","Popularity": 1650000}
-  {"Name": "Omanyte","Popularity": 600000}
-  {"Name": "Omastar","Popularity": 589000}
-  {"Name": "Kabuto","Popularity": 18000000}
-  {"Name": "Kabutops","Popularity": 955000}
-  {"Name": "Aerodactyl","Popularity": 1300000}
-  {"Name": "Snorlax","Popularity": 5980000}
-  {"Name": "Articuno","Popularity": 2840000}
-  {"Name": "Zapdos","Popularity": 2640000}
-  {"Name": "Moltres","Popularity": 2210000}
-  {"Name": "Dratini","Popularity": 2120000}
-  {"Name": "Dragonair","Popularity": 3130000}
-  {"Name": "Dragonite","Popularity": 4770000}
-  {"Name": "Mewtwo","Popularity": 10900000}
-  {"Name": "Mew","Popularity": 36700000}
-  {"Name": "Chikorita","Popularity": 1610000}
-  {"Name": "Bayleef","Popularity": 614000}
-  {"Name": "Meganium","Popularity": 687000}
-  {"Name": "Cyndaquil","Popularity": 1670000}
-  {"Name": "Quilava","Popularity": 797000}
-  {"Name": "Typhlosion","Popularity": 1390000}
-  {"Name": "Totodile","Popularity": 1580000}
-  {"Name": "Croconaw","Popularity": 412000}
-  {"Name": "Feraligatr","Popularity": 922000}
-  {"Name": "Sentret","Popularity": 510000}
-  {"Name": "Furret","Popularity": 644000}
-  {"Name": "Hoothoot","Popularity": 1340000}
-  {"Name": "Noctowl","Popularity": 490000}
-  {"Name": "Ledyba","Popularity": 275000}
-  {"Name": "Ledian","Popularity": 758000}
-  {"Name": "Spinarak","Popularity": 368000}
-  {"Name": "Ariados","Popularity": 506000}
-  {"Name": "Crobat","Popularity": 785000}
-  {"Name": "Chinchou","Popularity": 393000}
-  {"Name": "Lanturn","Popularity": 544000}
-  {"Name": "Pichu","Popularity": 5900000}
-  {"Name": "Cleffa","Popularity": 458000}
-  {"Name": "Igglybuff","Popularity": 394000}
-  {"Name": "Togepi","Popularity": 1720000}
-  {"Name": "Togetic","Popularity": 510000}
-  {"Name": "Natu","Popularity": 24000000}
-  {"Name": "Xatu","Popularity": 726000}
-  {"Name": "Mareep","Popularity": 618000}
-  {"Name": "Flaaffy","Popularity": 333000}
-  {"Name": "Ampharos","Popularity": 1240000}
-  {"Name": "Bellossom","Popularity": 418000}
-  {"Name": "Marill","Popularity": 983000}
-  {"Name": "Azumarill","Popularity": 698000}
-  {"Name": "Sudowoodo","Popularity": 538000}
-  {"Name": "Politoed","Popularity": 496000}
-  {"Name": "Hoppip","Popularity": 466000}
-  {"Name": "Skiploom","Popularity": 271000}
-  {"Name": "Jumpluff","Popularity": 376000}
-  {"Name": "Aipom","Popularity": 547000}
-  {"Name": "Sunkern","Popularity": 320000}
-  {"Name": "Sunflora","Popularity": 386000}
-  {"Name": "Yanma","Popularity": 107000000}
-  {"Name": "Wooper","Popularity": 738000}
-  {"Name": "Quagsire","Popularity": 478000}
-  {"Name": "Espeon","Popularity": 3620000}
-  {"Name": "Umbreon","Popularity": 6050000}
-  {"Name": "Murkrow","Popularity": 494000}
-  {"Name": "Slowking","Popularity": 542000}
-  {"Name": "Misdreavus","Popularity": 520000}
-  {"Name": "Unown","Popularity": 892000000}
-  {"Name": "Wobbuffet","Popularity": 730000}
-  {"Name": "Girafarig","Popularity": 436000}
-  {"Name": "Pineco","Popularity": 381000}
-  {"Name": "Forretress","Popularity": 340000}
-  {"Name": "Dunsparce","Popularity": 517000}
-  {"Name": "Gligar","Popularity": 424000}
-  {"Name": "Steelix","Popularity": 959000}
-  {"Name": "Snubbull","Popularity": 369000}
-  {"Name": "Granbull","Popularity": 333000}
-  {"Name": "Qwilfish","Popularity": 322000}
-  {"Name": "Scizor","Popularity": 1270000}
-  {"Name": "Shuckle","Popularity": 572000}
-  {"Name": "Heracross","Popularity": 1310000}
-  {"Name": "Sneasel","Popularity": 674000}
-  {"Name": "Teddiursa","Popularity": 537000}
-  {"Name": "Ursaring","Popularity": 512000}
-  {"Name": "Slugma","Popularity": 347000}
-  {"Name": "Magcargo","Popularity": 358000}
-  {"Name": "Swinub","Popularity": 355000}
-  {"Name": "Piloswine","Popularity": 328000}
-  {"Name": "Corsola","Popularity": 466000}
-  {"Name": "Remoraid","Popularity": 330000}
-  {"Name": "Octillery","Popularity": 442000}
-  {"Name": "Delibird","Popularity": 522000}
-  {"Name": "Mantine","Popularity": 1020000}
-  {"Name": "Skarmory","Popularity": 743000}
-  {"Name": "Houndour","Popularity": 549000}
-  {"Name": "Houndoom","Popularity": 1100000}
-  {"Name": "Kingdra","Popularity": 645000}
-  {"Name": "Phanpy","Popularity": 432000}
-  {"Name": "Donphan","Popularity": 564000}
-  {"Name": "Porygon2","Popularity": 391000}
-  {"Name": "Stantler","Popularity": 325000}
-  {"Name": "Smeargle","Popularity": 633000}
-  {"Name": "Tyrogue","Popularity": 360000}
-  {"Name": "Hitmontop","Popularity": 375000}
-  {"Name": "Smoochum","Popularity": 321000}
-  {"Name": "Elekid","Popularity": 454000}
-  {"Name": "Magby","Popularity": 512000}
-  {"Name": "Miltank","Popularity": 632000}
-  {"Name": "Blissey","Popularity": 590000}
-  {"Name": "Raikou","Popularity": 1720000}
-  {"Name": "Entei","Popularity": 2150000}
-  {"Name": "Suicune","Popularity": 2340000}
-  {"Name": "Larvitar","Popularity": 563000}
-  {"Name": "Pupitar","Popularity": 325000}
-  {"Name": "Tyranitar","Popularity": 1370000}
-  {"Name": "Lugia","Popularity": 4540000}
-  {"Name": "Ho-Oh","Popularity": 27500000}
-  {"Name": "Celebi","Popularity": 5310000}
-  {"Name": "Treecko","Popularity": 1430000}
-  {"Name": "Grovyle","Popularity": 644000}
-  {"Name": "Sceptile","Popularity": 1430000}
-  {"Name": "Torchic","Popularity": 1580000}
-  {"Name": "Combusken","Popularity": 447000}
-  {"Name": "Blaziken","Popularity": 2910000}
-  {"Name": "Mudkip","Popularity": 2390000}
-  {"Name": "Marshtomp","Popularity": 401000}
-  {"Name": "Swampert","Popularity": 1150000}
-  {"Name": "Poochyena","Popularity": 519000}
-  {"Name": "Mightyena","Popularity": 660000}
-  {"Name": "Zigzagoon","Popularity": 446000}
-  {"Name": "Linoone","Popularity": 362000}
-  {"Name": "Wurmple","Popularity": 370000}
-  {"Name": "Silcoon","Popularity": 239000}
-  {"Name": "Beautifly","Popularity": 614000}
-  {"Name": "Cascoon","Popularity": 257000}
-  {"Name": "Dustox","Popularity": 318000}
-  {"Name": "Lotad","Popularity": 432000}
-  {"Name": "Lombre","Popularity": 27400000}
-  {"Name": "Ludicolo","Popularity": 488000}
-  {"Name": "Seedot","Popularity": 371000}
-  {"Name": "Nuzleaf","Popularity": 329000}
-  {"Name": "Shiftry","Popularity": 363000}
-  {"Name": "Taillow","Popularity": 465000}
-  {"Name": "Swellow","Popularity": 508000}
-  {"Name": "Wingull","Popularity": 444000}
-  {"Name": "Pelipper","Popularity": 363000}
-  {"Name": "Ralts","Popularity": 840000}
-  {"Name": "Kirlia","Popularity": 713000}
-  {"Name": "Gardevoir","Popularity": 3740000}
-  {"Name": "Surskit","Popularity": 297000}
-  {"Name": "Masquerain","Popularity": 290000}
-  {"Name": "Shroomish","Popularity": 355000}
-  {"Name": "Breloom","Popularity": 553000}
-  {"Name": "Slakoth","Popularity": 271000}
-  {"Name": "Vigoroth","Popularity": 256000}
-  {"Name": "Slaking","Popularity": 810000}
-  {"Name": "Nincada","Popularity": 302000}
-  {"Name": "Ninjask","Popularity": 2320000}
-  {"Name": "Shedinja","Popularity": 430000}
-  {"Name": "Whismur","Popularity": 255000}
-  {"Name": "Loudred","Popularity": 362000}
-  {"Name": "Exploud","Popularity": 383000}
-  {"Name": "Makuhita","Popularity": 318000}
-  {"Name": "Hariyama","Popularity": 397000}
-  {"Name": "Azurill","Popularity": 539000}
-  {"Name": "Nosepass","Popularity": 351000}
-  {"Name": "Skitty","Popularity": 1390000}
-  {"Name": "Delcatty","Popularity": 649000}
-  {"Name": "Sableye","Popularity": 878000}
-  {"Name": "Mawile","Popularity": 955000}
-  {"Name": "Aron","Popularity": 40700000}
-  {"Name": "Lairon","Popularity": 403000}
-  {"Name": "Aggron","Popularity": 849000}
-  {"Name": "Meditite","Popularity": 308000}
-  {"Name": "Medicham","Popularity": 419000}
-  {"Name": "Electrike","Popularity": 358000}
-  {"Name": "Manectric","Popularity": 654000}
-  {"Name": "Plusle","Popularity": 933000}
-  {"Name": "Minun","Popularity": 15100000}
-  {"Name": "Volbeat","Popularity": 4990000}
-  {"Name": "Illumise","Popularity": 290000}
-  {"Name": "Roselia","Popularity": 2090000}
-  {"Name": "Gulpin","Popularity": 360000}
-  {"Name": "Swalot","Popularity": 261000}
-  {"Name": "Carvanha","Popularity": 299000}
-  {"Name": "Sharpedo","Popularity": 630000}
-  {"Name": "Wailmer","Popularity": 381000}
-  {"Name": "Wailord","Popularity": 1060000}
-  {"Name": "Numel","Popularity": 529000}
-  {"Name": "Camerupt","Popularity": 528000}
-  {"Name": "Torkoal","Popularity": 434000}
-  {"Name": "Spoink","Popularity": 366000}
-  {"Name": "Grumpig","Popularity": 305000}
-  {"Name": "Spinda","Popularity": 512000}
-  {"Name": "Trapinch","Popularity": 404000}
-  {"Name": "Vibrava","Popularity": 572000}
-  {"Name": "Flygon","Popularity": 1120000}
-  {"Name": "Cacnea","Popularity": 347000}
-  {"Name": "Cacturne","Popularity": 393000}
-  {"Name": "Swablu","Popularity": 443000}
-  {"Name": "Altaria","Popularity": 2190000}
-  {"Name": "Zangoose","Popularity": 4530000}
-  {"Name": "Seviper","Popularity": 578000}
-  {"Name": "Lunatone","Popularity": 422000}
-  {"Name": "Solrock","Popularity": 431000}
-  {"Name": "Barboach","Popularity": 259000}
-  {"Name": "Whiscash","Popularity": 721000}
-  {"Name": "Corphish","Popularity": 347000}
-  {"Name": "Crawdaunt","Popularity": 323000}
-  {"Name": "Baltoy","Popularity": 274000}
-  {"Name": "Claydol","Popularity": 63200}
-  {"Name": "Lileep","Popularity": 261000}
-  {"Name": "Cradily","Popularity": 325000}
-  {"Name": "Anorith","Popularity": 289000}
-  {"Name": "Armaldo","Popularity": 417000}
-  {"Name": "Feebas","Popularity": 2730000}
-  {"Name": "Milotic","Popularity": 1170000}
-  {"Name": "Castform","Popularity": 463000}
-  {"Name": "Kecleon","Popularity": 490000}
-  {"Name": "Shuppet","Popularity": 414000}
-  {"Name": "Banette","Popularity": 1260000}
-  {"Name": "Duskull","Popularity": 496000}
-  {"Name": "Dusclops","Popularity": 364000}
-  {"Name": "Tropius","Popularity": 515000}
-  {"Name": "Chimecho","Popularity": 312000}
-  {"Name": "Absol","Popularity": 4910000}
-  {"Name": "Wynaut","Popularity": 373000}
-  {"Name": "Snorunt","Popularity": 390000}
-  {"Name": "Glalie","Popularity": 446000}
-  {"Name": "Spheal","Popularity": 420000}
-  {"Name": "Sealeo","Popularity": 277000}
-  {"Name": "Walrein","Popularity": 336000}
-  {"Name": "Clamperl","Popularity": 282000}
-  {"Name": "Huntail","Popularity": 255000}
-  {"Name": "Gorebyss","Popularity": 268000}
-  {"Name": "Relicanth","Popularity": 362000}
-  {"Name": "Luvdisc","Popularity": 403000}
-  {"Name": "Bagon","Popularity": 1190000}
-  {"Name": "Shelgon","Popularity": 403000}
-  {"Name": "Salamence","Popularity": 1050000}
-  {"Name": "Beldum","Popularity": 536000}
-  {"Name": "Metang","Popularity": 416000}
-  {"Name": "Metagross","Popularity": 1110000}
-  {"Name": "Regirock","Popularity": 641000}
-  {"Name": "Regice","Popularity": 664000}
-  {"Name": "Registeel","Popularity": 624000}
-  {"Name": "Latias","Popularity": 2330000}
-  {"Name": "Latios","Popularity": 2560000}
-  {"Name": "Kyogre","Popularity": 2610000}
-  {"Name": "Groudon","Popularity": 2780000}
-  {"Name": "Rayquaza","Popularity": 3820000}
-  {"Name": "Jirachi","Popularity": 2460000}
-  {"Name": "Deoxys","Popularity": 3120000}
-  {"Name": "Turtwig","Popularity": 909000}
-  {"Name": "Grotle","Popularity": 336000}
-  {"Name": "Torterra","Popularity": 742000}
-  {"Name": "Chimchar","Popularity": 894000}
-  {"Name": "Monferno","Popularity": 318000}
-  {"Name": "Infernape","Popularity": 898000}
-  {"Name": "Piplup","Popularity": 1680000}
-  {"Name": "Prinplup","Popularity": 234000}
-  {"Name": "Empoleon","Popularity": 714000}
-  {"Name": "Starly","Popularity": 1130000}
-  {"Name": "Staravia","Popularity": 253000}
-  {"Name": "Staraptor","Popularity": 445000}
-  {"Name": "Bidoof","Popularity": 689000}
-  {"Name": "Bibarel","Popularity": 319000}
-  {"Name": "Kricketot","Popularity": 154000}
-  {"Name": "Kricketune","Popularity": 159000}
-  {"Name": "Shinx","Popularity": 767000}
-  {"Name": "Luxio","Popularity": 2010000}
-  {"Name": "Luxray","Popularity": 1230000}
-  {"Name": "Budew","Popularity": 268000}
-  {"Name": "Roserade","Popularity": 499000}
-  {"Name": "Cranidos","Popularity": 225000}
-  {"Name": "Rampardos","Popularity": 276000}
-  {"Name": "Shieldon","Popularity": 2890000}
-  {"Name": "Bastiodon","Popularity": 210000}
-  {"Name": "Burmy","Popularity": 225000}
-  {"Name": "Wormadam","Popularity": 162000}
-  {"Name": "Mothim","Popularity": 176000}
-  {"Name": "Combee","Popularity": 872000}
-  {"Name": "Vespiquen","Popularity": 236000}
-  {"Name": "Pachirisu","Popularity": 814000}
-  {"Name": "Buizel","Popularity": 598000}
-  {"Name": "Floatzel","Popularity": 404000}
-  {"Name": "Cherubi","Popularity": 274000}
-  {"Name": "Cherrim","Popularity": 263000}
-  {"Name": "Shellos","Popularity": 453000}
-  {"Name": "Gastrodon","Popularity": 304000}
-  {"Name": "Ambipom","Popularity": 259000}
-  {"Name": "Drifloon","Popularity": 431000}
-  {"Name": "Drifblim","Popularity": 320000}
-  {"Name": "Buneary","Popularity": 566000}
-  {"Name": "Lopunny","Popularity": 921000}
-  {"Name": "Mismagius","Popularity": 460000}
-  {"Name": "Honchkrow","Popularity": 338000}
-  {"Name": "Glameow","Popularity": 276000}
-  {"Name": "Purugly","Popularity": 198000}
-  {"Name": "Chingling","Popularity": 436000}
-  {"Name": "Stunky","Popularity": 216000}
-  {"Name": "Skuntank","Popularity": 210000}
-  {"Name": "Bronzor","Popularity": 239000}
-  {"Name": "Bronzong","Popularity": 313000}
-  {"Name": "Bonsly","Popularity": 209000}
-  {"Name": "Mime Jr.","Popularity": 270000}
-  {"Name": "Happiny","Popularity": 239000}
-  {"Name": "Chatot","Popularity": 2170000}
-  {"Name": "Spiritomb","Popularity": 478000}
-  {"Name": "Gible","Popularity": 1540000}
-  {"Name": "Gabite","Popularity": 444000}
-  {"Name": "Garchomp","Popularity": 1440000}
-  {"Name": "Munchlax","Popularity": 956000}
-  {"Name": "Riolu","Popularity": 1460000}
-  {"Name": "Lucario","Popularity": 6280000}
-  {"Name": "Hippopotas","Popularity": 194000}
-  {"Name": "Hippowdon","Popularity": 218000}
-  {"Name": "Skorupi","Popularity": 193000}
-  {"Name": "Drapion","Popularity": 293000}
-  {"Name": "Croagunk","Popularity": 385000}
-  {"Name": "Toxicroak","Popularity": 300000}
-  {"Name": "Carnivine","Popularity": 201000}
-  {"Name": "Finneon","Popularity": 188000}
-  {"Name": "Lumineon","Popularity": 267000}
-  {"Name": "Mantyke","Popularity": 170000}
-  {"Name": "Snover","Popularity": 898000}
-  {"Name": "Abomasnow","Popularity": 431000}
-  {"Name": "Weavile","Popularity": 690000}
-  {"Name": "Magnezone","Popularity": 418000}
-  {"Name": "Lickilicky","Popularity": 184000}
-  {"Name": "Rhyperior","Popularity": 317000}
-  {"Name": "Tangrowth","Popularity": 247000}
-  {"Name": "Electivire","Popularity": 405000}
-  {"Name": "Magmortar","Popularity": 323000}
-  {"Name": "Togekiss","Popularity": 673000}
-  {"Name": "Yanmega","Popularity": 337000}
-  {"Name": "Leafeon","Popularity": 2280000}
-  {"Name": "Glaceon","Popularity": 2670000}
-  {"Name": "Gliscor","Popularity": 457000}
-  {"Name": "Mamoswine","Popularity": 565000}
-  {"Name": "Porygon-Z","Popularity": 458000}
-  {"Name": "Gallade","Popularity": 1120000}
-  {"Name": "Probopass","Popularity": 198000}
-  {"Name": "Dusknoir","Popularity": 403000}
-  {"Name": "Froslass","Popularity": 468000}
-  {"Name": "Rotom","Popularity": 1590000}
-  {"Name": "Uxie","Popularity": 685000}
-  {"Name": "Mesprit","Popularity": 452000}
-  {"Name": "Azelf","Popularity": 506000}
-  {"Name": "Dialga","Popularity": 2010000}
-  {"Name": "Palkia","Popularity": 1520000}
-  {"Name": "Heatran","Popularity": 658000}
-  {"Name": "Regigigas","Popularity": 659000}
-  {"Name": "Giratina","Popularity": 2100000}
-  {"Name": "Cresselia","Popularity": 614000}
-  {"Name": "Phione","Popularity": 421000}
-  {"Name": "Manaphy","Popularity": 1020000}
-  {"Name": "Darkrai","Popularity": 2780000}
-  {"Name": "Shaymin","Popularity": 1740000}
-  {"Name": "Arceus","Popularity": 4060000}
-  {"Name": "Victini","Popularity": 1700000}
-  {"Name": "Snivy","Popularity": 1990000}
-  {"Name": "Servine","Popularity": 395000}
-  {"Name": "Serperior","Popularity": 790000}
-  {"Name": "Tepig","Popularity": 1080000}
-  {"Name": "Pignite","Popularity": 273000}
-  {"Name": "Emboar","Popularity": 542000}
-  {"Name": "Oshawott","Popularity": 1520000}
-  {"Name": "Dewott","Popularity": 376000}
-  {"Name": "Samurott","Popularity": 530000}
-  {"Name": "Patrat","Popularity": 3650000}
-  {"Name": "Watchog","Popularity": 218000}
-  {"Name": "Lillipup","Popularity": 224000}
-  {"Name": "Herdier","Popularity": 173000}
-  {"Name": "Stoutland","Popularity": 533000}
-  {"Name": "Purrloin","Popularity": 401000}
-  {"Name": "Liepard","Popularity": 294000}
-  {"Name": "Pansage","Popularity": 937000}
-  {"Name": "Simisage","Popularity": 151000}
-  {"Name": "Pansear","Popularity": 238000}
-  {"Name": "Simisear","Popularity": 148000}
-  {"Name": "Panpour","Popularity": 532000}
-  {"Name": "Simipour","Popularity": 150000}
-  {"Name": "Munna","Popularity": 8600000}
-  {"Name": "Musharna","Popularity": 224000}
-  {"Name": "Pidove","Popularity": 254000}
-  {"Name": "Tranquill","Popularity": 606000}
-  {"Name": "Unfezant","Popularity": 180000}
-  {"Name": "Blitzle","Popularity": 224000}
-  {"Name": "Zebstrika","Popularity": 317000}
-  {"Name": "Roggenrola","Popularity": 174000}
-  {"Name": "Boldore","Popularity": 845000}
-  {"Name": "Gigalith","Popularity": 181000}
-  {"Name": "Woobat","Popularity": 269000}
-  {"Name": "Swoobat","Popularity": 189000}
-  {"Name": "Drilbur","Popularity": 167000}
-  {"Name": "Excadrill","Popularity": 376000}
-  {"Name": "Audino","Popularity": 1210000}
-  {"Name": "Timburr","Popularity": 409000}
-  {"Name": "Gurdurr","Popularity": 132000}
-  {"Name": "Conkeldurr","Popularity": 225000}
-  {"Name": "Tympole","Popularity": 162000}
-  {"Name": "Palpitoad","Popularity": 186000}
-  {"Name": "Seismitoad","Popularity": 226000}
-  {"Name": "Throh","Popularity": 229000}
-  {"Name": "Sawk","Popularity": 543000}
-  {"Name": "Sewaddle","Popularity": 193000}
-  {"Name": "Swadloon","Popularity": 202000}
-  {"Name": "Leavanny","Popularity": 239000}
-  {"Name": "Venipede","Popularity": 179000}
-  {"Name": "Whirlipede","Popularity": 145000}
-  {"Name": "Scolipede","Popularity": 324000}
-  {"Name": "Cottonee","Popularity": 1470000}
-  {"Name": "Whimsicott","Popularity": 397000}
-  {"Name": "Petilil","Popularity": 187000}
-  {"Name": "Lilligant","Popularity": 361000}
-  {"Name": "Basculin","Popularity": 147000}
-  {"Name": "Sandile","Popularity": 1720000}
-  {"Name": "Krokorok","Popularity": 177000}
-  {"Name": "Krookodile","Popularity": 335000}
-  {"Name": "Darumaka","Popularity": 194000}
-  {"Name": "Darmanitan","Popularity": 258000}
-  {"Name": "Maractus","Popularity": 201000}
-  {"Name": "Dwebble","Popularity": 211000}
-  {"Name": "Crustle","Popularity": 163000}
-  {"Name": "Scraggy","Popularity": 933000}
-  {"Name": "Scrafty","Popularity": 710000}
-  {"Name": "Sigilyph","Popularity": 216000}
-  {"Name": "Yamask","Popularity": 225000}
-  {"Name": "Cofagrigus","Popularity": 252000}
-  {"Name": "Tirtouga","Popularity": 134000}
-  {"Name": "Carracosta","Popularity": 166000}
-  {"Name": "Archen","Popularity": 486000}
-  {"Name": "Archeops","Popularity": 320000}
-  {"Name": "Trubbish","Popularity": 229000}
-  {"Name": "Garbodor","Popularity": 252000}
-  {"Name": "Zorua","Popularity": 1130000}
-  {"Name": "Zoroark","Popularity": 2280000}
-  {"Name": "Minccino","Popularity": 399000}
-  {"Name": "Cinccino","Popularity": 213000}
-  {"Name": "Gothita","Popularity": 216000}
-  {"Name": "Gothorita","Popularity": 193000}
-  {"Name": "Gothitelle","Popularity": 282000}
-  {"Name": "Solosis","Popularity": 212000}
-  {"Name": "Duosion","Popularity": 164000}
-  {"Name": "Reuniclus","Popularity": 360000}
-  {"Name": "Ducklett","Popularity": 226000}
-  {"Name": "Swanna","Popularity": 357000}
-  {"Name": "Vanillite","Popularity": 236000}
-  {"Name": "Vanillish","Popularity": 158000}
-  {"Name": "Vanilluxe","Popularity": 182000}
-  {"Name": "Deerling","Popularity": 380000}
-  {"Name": "Sawsbuck","Popularity": 303000}
-  {"Name": "Emolga","Popularity": 813000}
-  {"Name": "Karrablast","Popularity": 126000}
-  {"Name": "Escavalier","Popularity": 169000}
-  {"Name": "Foongus","Popularity": 187000}
-  {"Name": "Amoonguss","Popularity": 198000}
-  {"Name": "Frillish","Popularity": 192000}
-  {"Name": "Jellicent","Popularity": 213000}
-  {"Name": "Alomomola","Popularity": 193000}
-  {"Name": "Joltik","Popularity": 459000}
-  {"Name": "Galvantula","Popularity": 285000}
-  {"Name": "Ferroseed","Popularity": 180000}
-  {"Name": "Ferrothorn","Popularity": 254000}
-  {"Name": "Klink","Popularity": 7770000}
-  {"Name": "Klang","Popularity": 46700000}
-  {"Name": "Klinklang","Popularity": 165000}
-  {"Name": "Tynamo","Popularity": 180000}
-  {"Name": "Eelektrik","Popularity": 183000}
-  {"Name": "Eelektross","Popularity": 187000}
-  {"Name": "Elgyem","Popularity": 146000}
-  {"Name": "Beheeyem","Popularity": 162000}
-  {"Name": "Litwick","Popularity": 443000}
-  {"Name": "Lampent","Popularity": 299000}
-  {"Name": "Chandelure","Popularity": 706000}
-  {"Name": "Axew","Popularity": 605000}
-  {"Name": "Fraxure","Popularity": 208000}
-  {"Name": "Haxorus","Popularity": 438000}
-  {"Name": "Cubchoo","Popularity": 248000}
-  {"Name": "Beartic","Popularity": 342000}
-  {"Name": "Cryogonal","Popularity": 146000}
-  {"Name": "Shelmet","Popularity": 485000}
-  {"Name": "Accelgor","Popularity": 199000}
-  {"Name": "Stunfisk","Popularity": 511000}
-  {"Name": "Mienfoo","Popularity": 189000}
-  {"Name": "Mienshao","Popularity": 303000}
-  {"Name": "Druddigon","Popularity": 307000}
-  {"Name": "Golett","Popularity": 152000}
-  {"Name": "Golurk","Popularity": 333000}
-  {"Name": "Pawniard","Popularity": 188000}
-  {"Name": "Bisharp","Popularity": 447000}
-  {"Name": "Bouffalant","Popularity": 182000}
-  {"Name": "Rufflet","Popularity": 276000}
-  {"Name": "Braviary","Popularity": 319000}
-  {"Name": "Vullaby","Popularity": 161000}
-  {"Name": "Mandibuzz","Popularity": 189000}
-  {"Name": "Heatmor","Popularity": 172000}
-  {"Name": "Durant","Popularity": 162000000}
-  {"Name": "Deino","Popularity": 637000}
-  {"Name": "Zweilous","Popularity": 165000}
-  {"Name": "Hydreigon","Popularity": 712000}
-  {"Name": "Larvesta","Popularity": 235000}
-  {"Name": "Volcarona","Popularity": 442000}
-  {"Name": "Cobalion","Popularity": 401000}
-  {"Name": "Terrakion","Popularity": 413000}
-  {"Name": "Virizion","Popularity": 415000}
-  {"Name": "Tornadus","Popularity": 377000}
-  {"Name": "Thundurus","Popularity": 440000}
-  {"Name": "Reshiram","Popularity": 1860000}
-  {"Name": "Zekrom","Popularity": 1910000}
-  {"Name": "Landorus","Popularity": 424000}
-  {"Name": "Kyurem","Popularity": 1760000}
-  {"Name": "Keldeo","Popularity": 1150000}
-  {"Name": "Meloetta","Popularity": 1300000}
-  {"Name": "Genesect","Popularity": 1560000}
-  {"Name": "Chespin","Popularity": 4030000}
-  {"Name": "Quilladin","Popularity": 215000}
-  {"Name": "Chesnaught","Popularity": 448000}
-  {"Name": "Fennekin","Popularity": 1580000}
-  {"Name": "Braixen","Popularity": 860000}
-  {"Name": "Delphox","Popularity": 788000}
-  {"Name": "Froakie","Popularity": 1240000}
-  {"Name": "Frogadier","Popularity": 408000}
-  {"Name": "Greninja","Popularity": 3070000}
-  {"Name": "Bunnelby","Popularity": 246000}
-  {"Name": "Diggersby","Popularity": 241000}
-  {"Name": "Fletchling","Popularity": 329000}
-  {"Name": "Fletchinder","Popularity": 202000}
-  {"Name": "Talonflame","Popularity": 620000}
-  {"Name": "Scatterbug","Popularity": 343000}
-  {"Name": "Spewpa","Popularity": 105000}
-  {"Name": "Vivillon","Popularity": 398000}
-  {"Name": "Litleo","Popularity": 233000}
-  {"Name": "Pyroar","Popularity": 348000}
-  {"Name": "Flabébé","Popularity": 114000}
-  {"Name": "Floette","Popularity": 537000}
-  {"Name": "Florges","Popularity": 279000}
-  {"Name": "Skiddo","Popularity": 190000}
-  {"Name": "Gogoat","Popularity": 476000}
-  {"Name": "Pancham","Popularity": 1920000}
-  {"Name": "Pangoro","Popularity": 305000}
-  {"Name": "Furfrou","Popularity": 286000}
-  {"Name": "Espurr","Popularity": 676000}
-  {"Name": "Meowstic","Popularity": 472000}
-  {"Name": "Honedge","Popularity": 285000}
-  {"Name": "Doublade","Popularity": 231000}
-  {"Name": "Aegislash","Popularity": 451000}
-  {"Name": "Spritzee","Popularity": 215000}
-  {"Name": "Aromatisse","Popularity": 168000}
-  {"Name": "Swirlix","Popularity": 242000}
-  {"Name": "Slurpuff","Popularity": 207000}
-  {"Name": "Inkay","Popularity": 328000}
-  {"Name": "Malamar","Popularity": 393000}
-  {"Name": "Binacle","Popularity": 151000}
-  {"Name": "Barbaracle","Popularity": 154000}
-  {"Name": "Skrelp","Popularity": 162000}
-  {"Name": "Dragalge","Popularity": 178000}
-  {"Name": "Clauncher","Popularity": 705000}
-  {"Name": "Clawitzer","Popularity": 151000}
-  {"Name": "Helioptile","Popularity": 244000}
-  {"Name": "Heliolisk","Popularity": 204000}
-  {"Name": "Tyrunt","Popularity": 242000}
-  {"Name": "Tyrantrum","Popularity": 349000}
-  {"Name": "Amaura","Popularity": 415000}
-  {"Name": "Aurorus","Popularity": 258000}
-  {"Name": "Sylveon","Popularity": 3370000}
-  {"Name": "Hawlucha","Popularity": 454000}
-  {"Name": "Dedenne","Popularity": 806000}
-  {"Name": "Carbink","Popularity": 223000}
-  {"Name": "Goomy","Popularity": 543000}
-  {"Name": "Sliggoo","Popularity": 173000}
-  {"Name": "Goodra","Popularity": 776000}
-  {"Name": "Klefki","Popularity": 351000}
-  {"Name": "Phantump","Popularity": 264000}
-  {"Name": "Trevenant","Popularity": 319000}
-  {"Name": "Pumpkaboo","Popularity": 415000}
-  {"Name": "Gourgeist","Popularity": 516000}
-  {"Name": "Bergmite","Popularity": 141000}
-  {"Name": "Avalugg","Popularity": 138000}
-  {"Name": "Noibat","Popularity": 2830000}
-  {"Name": "Noivern","Popularity": 549000}
-  {"Name": "Xerneas","Popularity": 1740000}
-  {"Name": "Yveltal","Popularity": 6010000}
-  {"Name": "Zygarde","Popularity": 2040000}
-  {"Name": "Dianci","Popularity": 1360000}
+  {
+    "Name": "Pikachu",
+    "Popularity": 68300000,
+    "Rank": 0
+  }
+  {
+    "Name": "Abra",
+    "Popularity": 55300000,
+    "Rank": 1
+  }
+  {
+    "Name": "Electrode",
+    "Popularity": 54600000,
+    "Rank": 2
+  }
+  {
+    "Name": "Paras",
+    "Popularity": 47800000,
+    "Rank": 3
+  }
+  {
+    "Name": "Klang",
+    "Popularity": 46700000,
+    "Rank": 4
+  }
+  {
+    "Name": "Aron",
+    "Popularity": 40700000,
+    "Rank": 5
+  }
+  {
+    "Name": "Mew",
+    "Popularity": 36700000,
+    "Rank": 6
+  }
+  {
+    "Name": "Onix",
+    "Popularity": 33700000,
+    "Rank": 7
+  }
+  {
+    "Name": "Ditto",
+    "Popularity": 28700000,
+    "Rank": 8
+  }
+  {
+    "Name": "Ho-Oh",
+    "Popularity": 27500000,
+    "Rank": 9
+  }
+  {
+    "Name": "Lombre",
+    "Popularity": 27400000,
+    "Rank": 10
+  }
+  {
+    "Name": "Jynx",
+    "Popularity": 27200000,
+    "Rank": 11
+  }
+  {
+    "Name": "Natu",
+    "Popularity": 24000000,
+    "Rank": 12
+  }
+  {
+    "Name": "Muk",
+    "Popularity": 21400000,
+    "Rank": 13
+  }
+  {
+    "Name": "Golem",
+    "Popularity": 21000000,
+    "Rank": 14
+  }
+  {
+    "Name": "Gloom",
+    "Popularity": 20000000,
+    "Rank": 15
+  }
+  {
+    "Name": "Kabuto",
+    "Popularity": 18000000,
+    "Rank": 16
+  }
+  {
+    "Name": "Minun",
+    "Popularity": 15100000,
+    "Rank": 17
+  }
+  {
+    "Name": "Eevee",
+    "Popularity": 13100000,
+    "Rank": 18
+  }
+  {
+    "Name": "Charizard",
+    "Popularity": 12800000,
+    "Rank": 19
+  }
+  {
+    "Name": "Seel",
+    "Popularity": 12800000,
+    "Rank": 20
+  }
+  {
+    "Name": "Hypno",
+    "Popularity": 12600000,
+    "Rank": 21
+  }
+  {
+    "Name": "Mewtwo",
+    "Popularity": 10900000,
+    "Rank": 22
+  }
+  {
+    "Name": "Squirtle",
+    "Popularity": 10200000,
+    "Rank": 23
+  }
+  {
+    "Name": "Charmander",
+    "Popularity": 9600000,
+    "Rank": 24
+  }
+  {
+    "Name": "Munna",
+    "Popularity": 8600000,
+    "Rank": 25
+  }
+  {
+    "Name": "Klink",
+    "Popularity": 7770000,
+    "Rank": 26
+  }
+  {
+    "Name": "Bulbasaur",
+    "Popularity": 7150000,
+    "Rank": 27
+  }
+  {
+    "Name": "Lucario",
+    "Popularity": 6280000,
+    "Rank": 28
+  }
+  {
+    "Name": "Umbreon",
+    "Popularity": 6050000,
+    "Rank": 29
+  }
+  {
+    "Name": "Yveltal",
+    "Popularity": 6010000,
+    "Rank": 30
+  }
+  {
+    "Name": "Snorlax",
+    "Popularity": 5980000,
+    "Rank": 31
+  }
+  {
+    "Name": "Pichu",
+    "Popularity": 5900000,
+    "Rank": 32
+  }
+  {
+    "Name": "Celebi",
+    "Popularity": 5310000,
+    "Rank": 33
+  }
+  {
+    "Name": "Volbeat",
+    "Popularity": 4990000,
+    "Rank": 34
+  }
+  {
+    "Name": "Absol",
+    "Popularity": 4910000,
+    "Rank": 35
+  }
+  {
+    "Name": "Raichu",
+    "Popularity": 4830000,
+    "Rank": 36
+  }
+  {
+    "Name": "Dragonite",
+    "Popularity": 4770000,
+    "Rank": 37
+  }
+  {
+    "Name": "Gengar",
+    "Popularity": 4690000,
+    "Rank": 38
+  }
+  {
+    "Name": "Blastoise",
+    "Popularity": 4600000,
+    "Rank": 39
+  }
+  {
+    "Name": "Lugia",
+    "Popularity": 4540000,
+    "Rank": 40
+  }
+  {
+    "Name": "Zangoose",
+    "Popularity": 4530000,
+    "Rank": 41
+  }
+  {
+    "Name": "Slowpoke",
+    "Popularity": 4440000,
+    "Rank": 42
+  }
+  {
+    "Name": "Vaporeon",
+    "Popularity": 4430000,
+    "Rank": 43
+  }
+  {
+    "Name": "Gyarados",
+    "Popularity": 4090000,
+    "Rank": 44
+  }
+  {
+    "Name": "Arceus",
+    "Popularity": 4060000,
+    "Rank": 45
+  }
+  {
+    "Name": "Chespin",
+    "Popularity": 4030000,
+    "Rank": 46
+  }
+  {
+    "Name": "Jigglypuff",
+    "Popularity": 3910000,
+    "Rank": 47
+  }
+  {
+    "Name": "Rayquaza",
+    "Popularity": 3820000,
+    "Rank": 48
+  }
+  {
+    "Name": "Gardevoir",
+    "Popularity": 3740000,
+    "Rank": 49
+  }
+  {
+    "Name": "Mr. Mime",
+    "Popularity": 3690000,
+    "Rank": 50
+  }
+  {
+    "Name": "Patrat",
+    "Popularity": 3650000,
+    "Rank": 51
+  }
+  {
+    "Name": "Magikarp",
+    "Popularity": 3640000,
+    "Rank": 52
+  }
+  {
+    "Name": "Espeon",
+    "Popularity": 3620000,
+    "Rank": 53
+  }
+  {
+    "Name": "Flareon",
+    "Popularity": 3480000,
+    "Rank": 54
+  }
+  {
+    "Name": "Jolteon",
+    "Popularity": 3430000,
+    "Rank": 55
+  }
+  {
+    "Name": "Sylveon",
+    "Popularity": 3370000,
+    "Rank": 56
+  }
+  {
+    "Name": "Haunter",
+    "Popularity": 3320000,
+    "Rank": 57
+  }
+  {
+    "Name": "Venusaur",
+    "Popularity": 3310000,
+    "Rank": 58
+  }
+  {
+    "Name": "Meowth",
+    "Popularity": 3220000,
+    "Rank": 59
+  }
+  {
+    "Name": "Dragonair",
+    "Popularity": 3130000,
+    "Rank": 60
+  }
+  {
+    "Name": "Deoxys",
+    "Popularity": 3120000,
+    "Rank": 61
+  }
+  {
+    "Name": "Greninja",
+    "Popularity": 3070000,
+    "Rank": 62
+  }
+  {
+    "Name": "Seaking",
+    "Popularity": 2970000,
+    "Rank": 63
+  }
+  {
+    "Name": "Lapras",
+    "Popularity": 2960000,
+    "Rank": 64
+  }
+  {
+    "Name": "Blaziken",
+    "Popularity": 2910000,
+    "Rank": 65
+  }
+  {
+    "Name": "Shieldon",
+    "Popularity": 2890000,
+    "Rank": 66
+  }
+  {
+    "Name": "Vulpix",
+    "Popularity": 2880000,
+    "Rank": 67
+  }
+  {
+    "Name": "Articuno",
+    "Popularity": 2840000,
+    "Rank": 68
+  }
+  {
+    "Name": "Noibat",
+    "Popularity": 2830000,
+    "Rank": 69
+  }
+  {
+    "Name": "Groudon",
+    "Popularity": 2780000,
+    "Rank": 70
+  }
+  {
+    "Name": "Darkrai",
+    "Popularity": 2780000,
+    "Rank": 71
+  }
+  {
+    "Name": "Feebas",
+    "Popularity": 2730000,
+    "Rank": 72
+  }
+  {
+    "Name": "Glaceon",
+    "Popularity": 2670000,
+    "Rank": 73
+  }
+  {
+    "Name": "Zapdos",
+    "Popularity": 2640000,
+    "Rank": 74
+  }
+  {
+    "Name": "Arcanine",
+    "Popularity": 2620000,
+    "Rank": 75
+  }
+  {
+    "Name": "Kyogre",
+    "Popularity": 2610000,
+    "Rank": 76
+  }
+  {
+    "Name": "Latios",
+    "Popularity": 2560000,
+    "Rank": 77
+  }
+  {
+    "Name": "Krabby",
+    "Popularity": 2540000,
+    "Rank": 78
+  }
+  {
+    "Name": "Alakazam",
+    "Popularity": 2480000,
+    "Rank": 79
+  }
+  {
+    "Name": "Jirachi",
+    "Popularity": 2460000,
+    "Rank": 80
+  }
+  {
+    "Name": "Mudkip",
+    "Popularity": 2390000,
+    "Rank": 81
+  }
+  {
+    "Name": "Suicune",
+    "Popularity": 2340000,
+    "Rank": 82
+  }
+  {
+    "Name": "Latias",
+    "Popularity": 2330000,
+    "Rank": 83
+  }
+  {
+    "Name": "Ninjask",
+    "Popularity": 2320000,
+    "Rank": 84
+  }
+  {
+    "Name": "Leafeon",
+    "Popularity": 2280000,
+    "Rank": 85
+  }
+  {
+    "Name": "Zoroark",
+    "Popularity": 2280000,
+    "Rank": 86
+  }
+  {
+    "Name": "Ninetales",
+    "Popularity": 2250000,
+    "Rank": 87
+  }
+  {
+    "Name": "Moltres",
+    "Popularity": 2210000,
+    "Rank": 88
+  }
+  {
+    "Name": "Psyduck",
+    "Popularity": 2200000,
+    "Rank": 89
+  }
+  {
+    "Name": "Altaria",
+    "Popularity": 2190000,
+    "Rank": 90
+  }
+  {
+    "Name": "Chatot",
+    "Popularity": 2170000,
+    "Rank": 91
+  }
+  {
+    "Name": "Entei",
+    "Popularity": 2150000,
+    "Rank": 92
+  }
+  {
+    "Name": "Dratini",
+    "Popularity": 2120000,
+    "Rank": 93
+  }
+  {
+    "Name": "Pidgey",
+    "Popularity": 2100000,
+    "Rank": 94
+  }
+  {
+    "Name": "Giratina",
+    "Popularity": 2100000,
+    "Rank": 95
+  }
+  {
+    "Name": "Roselia",
+    "Popularity": 2090000,
+    "Rank": 96
+  }
+  {
+    "Name": "Charmeleon",
+    "Popularity": 2070000,
+    "Rank": 97
+  }
+  {
+    "Name": "Zygarde",
+    "Popularity": 2040000,
+    "Rank": 98
+  }
+  {
+    "Name": "Luxio",
+    "Popularity": 2010000,
+    "Rank": 99
+  }
+  {
+    "Name": "Dialga",
+    "Popularity": 2010000,
+    "Rank": 100
+  }
+  {
+    "Name": "Snivy",
+    "Popularity": 1990000,
+    "Rank": 101
+  }
+  {
+    "Name": "Kadabra",
+    "Popularity": 1980000,
+    "Rank": 102
+  }
+  {
+    "Name": "Pancham",
+    "Popularity": 1920000,
+    "Rank": 103
+  }
+  {
+    "Name": "Tauros",
+    "Popularity": 1910000,
+    "Rank": 104
+  }
+  {
+    "Name": "Zekrom",
+    "Popularity": 1910000,
+    "Rank": 105
+  }
+  {
+    "Name": "Zubat",
+    "Popularity": 1880000,
+    "Rank": 106
+  }
+  {
+    "Name": "Clefairy",
+    "Popularity": 1870000,
+    "Rank": 107
+  }
+  {
+    "Name": "Reshiram",
+    "Popularity": 1860000,
+    "Rank": 108
+  }
+  {
+    "Name": "Tangela",
+    "Popularity": 1840000,
+    "Rank": 109
+  }
+  {
+    "Name": "Pinsir",
+    "Popularity": 1840000,
+    "Rank": 110
+  }
+  {
+    "Name": "Kyurem",
+    "Popularity": 1760000,
+    "Rank": 111
+  }
+  {
+    "Name": "Ponyta",
+    "Popularity": 1750000,
+    "Rank": 112
+  }
+  {
+    "Name": "Rattata",
+    "Popularity": 1740000,
+    "Rank": 113
+  }
+  {
+    "Name": "Shaymin",
+    "Popularity": 1740000,
+    "Rank": 114
+  }
+  {
+    "Name": "Xerneas",
+    "Popularity": 1740000,
+    "Rank": 115
+  }
+  {
+    "Name": "Cubone",
+    "Popularity": 1730000,
+    "Rank": 116
+  }
+  {
+    "Name": "Togepi",
+    "Popularity": 1720000,
+    "Rank": 117
+  }
+  {
+    "Name": "Raikou",
+    "Popularity": 1720000,
+    "Rank": 118
+  }
+  {
+    "Name": "Sandile",
+    "Popularity": 1720000,
+    "Rank": 119
+  }
+  {
+    "Name": "Growlithe",
+    "Popularity": 1710000,
+    "Rank": 120
+  }
+  {
+    "Name": "Victini",
+    "Popularity": 1700000,
+    "Rank": 121
+  }
+  {
+    "Name": "Mankey",
+    "Popularity": 1680000,
+    "Rank": 122
+  }
+  {
+    "Name": "Piplup",
+    "Popularity": 1680000,
+    "Rank": 123
+  }
+  {
+    "Name": "Cyndaquil",
+    "Popularity": 1670000,
+    "Rank": 124
+  }
+  {
+    "Name": "Ivysaur",
+    "Popularity": 1660000,
+    "Rank": 125
+  }
+  {
+    "Name": "Porygon",
+    "Popularity": 1650000,
+    "Rank": 126
+  }
+  {
+    "Name": "Magneton",
+    "Popularity": 1620000,
+    "Rank": 127
+  }
+  {
+    "Name": "Gastly",
+    "Popularity": 1620000,
+    "Rank": 128
+  }
+  {
+    "Name": "Chikorita",
+    "Popularity": 1610000,
+    "Rank": 129
+  }
+  {
+    "Name": "Rotom",
+    "Popularity": 1590000,
+    "Rank": 130
+  }
+  {
+    "Name": "Totodile",
+    "Popularity": 1580000,
+    "Rank": 131
+  }
+  {
+    "Name": "Torchic",
+    "Popularity": 1580000,
+    "Rank": 132
+  }
+  {
+    "Name": "Fennekin",
+    "Popularity": 1580000,
+    "Rank": 133
+  }
+  {
+    "Name": "Scyther",
+    "Popularity": 1560000,
+    "Rank": 134
+  }
+  {
+    "Name": "Genesect",
+    "Popularity": 1560000,
+    "Rank": 135
+  }
+  {
+    "Name": "Magmar",
+    "Popularity": 1540000,
+    "Rank": 136
+  }
+  {
+    "Name": "Gible",
+    "Popularity": 1540000,
+    "Rank": 137
+  }
+  {
+    "Name": "Palkia",
+    "Popularity": 1520000,
+    "Rank": 138
+  }
+  {
+    "Name": "Oshawott",
+    "Popularity": 1520000,
+    "Rank": 139
+  }
+  {
+    "Name": "Cottonee",
+    "Popularity": 1470000,
+    "Rank": 140
+  }
+  {
+    "Name": "Riolu",
+    "Popularity": 1460000,
+    "Rank": 141
+  }
+  {
+    "Name": "Wartortle",
+    "Popularity": 1440000,
+    "Rank": 142
+  }
+  {
+    "Name": "Machamp",
+    "Popularity": 1440000,
+    "Rank": 143
+  }
+  {
+    "Name": "Garchomp",
+    "Popularity": 1440000,
+    "Rank": 144
+  }
+  {
+    "Name": "Treecko",
+    "Popularity": 1430000,
+    "Rank": 145
+  }
+  {
+    "Name": "Sceptile",
+    "Popularity": 1430000,
+    "Rank": 146
+  }
+  {
+    "Name": "Typhlosion",
+    "Popularity": 1390000,
+    "Rank": 147
+  }
+  {
+    "Name": "Skitty",
+    "Popularity": 1390000,
+    "Rank": 148
+  }
+  {
+    "Name": "Chansey",
+    "Popularity": 1380000,
+    "Rank": 149
+  }
+  {
+    "Name": "Tyranitar",
+    "Popularity": 1370000,
+    "Rank": 150
+  }
+  {
+    "Name": "Arbok",
+    "Popularity": 1360000,
+    "Rank": 151
+  }
+  {
+    "Name": "Hoothoot",
+    "Popularity": 1340000,
+    "Rank": 152
+  }
+  {
+    "Name": "Butterfree",
+    "Popularity": 1310000,
+    "Rank": 153
+  }
+  {
+    "Name": "Pidgeot",
+    "Popularity": 1310000,
+    "Rank": 154
+  }
+  {
+    "Name": "Heracross",
+    "Popularity": 1310000,
+    "Rank": 155
+  }
+  {
+    "Name": "Caterpie",
+    "Popularity": 1300000,
+    "Rank": 156
+  }
+  {
+    "Name": "Grimer",
+    "Popularity": 1300000,
+    "Rank": 157
+  }
+  {
+    "Name": "Aerodactyl",
+    "Popularity": 1300000,
+    "Rank": 158
+  }
+  {
+    "Name": "Meloetta",
+    "Popularity": 1300000,
+    "Rank": 159
+  }
+  {
+    "Name": "Dianci",
+    "Popularity": 1290000,
+    "Rank": 160
+  }
+  {
+    "Name": "Scizor",
+    "Popularity": 1270000,
+    "Rank": 161
+  }
+  {
+    "Name": "Banette",
+    "Popularity": 1260000,
+    "Rank": 162
+  }
+  {
+    "Name": "Nidoking",
+    "Popularity": 1250000,
+    "Rank": 163
+  }
+  {
+    "Name": "Oddish",
+    "Popularity": 1240000,
+    "Rank": 164
+  }
+  {
+    "Name": "Ampharos",
+    "Popularity": 1240000,
+    "Rank": 165
+  }
+  {
+    "Name": "Froakie",
+    "Popularity": 1240000,
+    "Rank": 166
+  }
+  {
+    "Name": "Luxray",
+    "Popularity": 1230000,
+    "Rank": 167
+  }
+  {
+    "Name": "Audino",
+    "Popularity": 1210000,
+    "Rank": 168
+  }
+  {
+    "Name": "Weedle",
+    "Popularity": 1190000,
+    "Rank": 169
+  }
+  {
+    "Name": "Diglett",
+    "Popularity": 1190000,
+    "Rank": 170
+  }
+  {
+    "Name": "Bagon",
+    "Popularity": 1190000,
+    "Rank": 171
+  }
+  {
+    "Name": "Rapidash",
+    "Popularity": 1170000,
+    "Rank": 172
+  }
+  {
+    "Name": "Milotic",
+    "Popularity": 1170000,
+    "Rank": 173
+  }
+  {
+    "Name": "Kakuna",
+    "Popularity": 1160000,
+    "Rank": 174
+  }
+  {
+    "Name": "Swampert",
+    "Popularity": 1150000,
+    "Rank": 175
+  }
+  {
+    "Name": "Keldeo",
+    "Popularity": 1150000,
+    "Rank": 176
+  }
+  {
+    "Name": "Metapod",
+    "Popularity": 1130000,
+    "Rank": 177
+  }
+  {
+    "Name": "Starly",
+    "Popularity": 1130000,
+    "Rank": 178
+  }
+  {
+    "Name": "Zorua",
+    "Popularity": 1130000,
+    "Rank": 179
+  }
+  {
+    "Name": "Flygon",
+    "Popularity": 1120000,
+    "Rank": 180
+  }
+  {
+    "Name": "Gallade",
+    "Popularity": 1120000,
+    "Rank": 181
+  }
+  {
+    "Name": "Metagross",
+    "Popularity": 1110000,
+    "Rank": 182
+  }
+  {
+    "Name": "Slowbro",
+    "Popularity": 1100000,
+    "Rank": 183
+  }
+  {
+    "Name": "Houndoom",
+    "Popularity": 1100000,
+    "Rank": 184
+  }
+  {
+    "Name": "Horsea",
+    "Popularity": 1080000,
+    "Rank": 185
+  }
+  {
+    "Name": "Tepig",
+    "Popularity": 1080000,
+    "Rank": 186
+  }
+  {
+    "Name": "Beedrill",
+    "Popularity": 1070000,
+    "Rank": 187
+  }
+  {
+    "Name": "Exeggutor",
+    "Popularity": 1070000,
+    "Rank": 188
+  }
+  {
+    "Name": "Wailord",
+    "Popularity": 1060000,
+    "Rank": 189
+  }
+  {
+    "Name": "Salamence",
+    "Popularity": 1050000,
+    "Rank": 190
+  }
+  {
+    "Name": "Kangaskhan",
+    "Popularity": 1040000,
+    "Rank": 191
+  }
+  {
+    "Name": "Mantine",
+    "Popularity": 1020000,
+    "Rank": 192
+  }
+  {
+    "Name": "Manaphy",
+    "Popularity": 1020000,
+    "Rank": 193
+  }
+  {
+    "Name": "Geodude",
+    "Popularity": 997000,
+    "Rank": 194
+  }
+  {
+    "Name": "Marowak",
+    "Popularity": 997000,
+    "Rank": 195
+  }
+  {
+    "Name": "Spearow",
+    "Popularity": 983000,
+    "Rank": 196
+  }
+  {
+    "Name": "Marill",
+    "Popularity": 983000,
+    "Rank": 197
+  }
+  {
+    "Name": "Nidoqueen",
+    "Popularity": 979000,
+    "Rank": 198
+  }
+  {
+    "Name": "Raticate",
+    "Popularity": 968000,
+    "Rank": 199
+  }
+  {
+    "Name": "Electabuzz",
+    "Popularity": 965000,
+    "Rank": 200
+  }
+  {
+    "Name": "Ekans",
+    "Popularity": 964000,
+    "Rank": 201
+  }
+  {
+    "Name": "Hitmonchan",
+    "Popularity": 962000,
+    "Rank": 202
+  }
+  {
+    "Name": "Steelix",
+    "Popularity": 959000,
+    "Rank": 203
+  }
+  {
+    "Name": "Munchlax",
+    "Popularity": 956000,
+    "Rank": 204
+  }
+  {
+    "Name": "Koffing",
+    "Popularity": 955000,
+    "Rank": 205
+  }
+  {
+    "Name": "Kabutops",
+    "Popularity": 955000,
+    "Rank": 206
+  }
+  {
+    "Name": "Mawile",
+    "Popularity": 955000,
+    "Rank": 207
+  }
+  {
+    "Name": "Pansage",
+    "Popularity": 937000,
+    "Rank": 208
+  }
+  {
+    "Name": "Dugtrio",
+    "Popularity": 935000,
+    "Rank": 209
+  }
+  {
+    "Name": "Plusle",
+    "Popularity": 933000,
+    "Rank": 210
+  }
+  {
+    "Name": "Scraggy",
+    "Popularity": 933000,
+    "Rank": 211
+  }
+  {
+    "Name": "Starmie",
+    "Popularity": 926000,
+    "Rank": 212
+  }
+  {
+    "Name": "Feraligatr",
+    "Popularity": 922000,
+    "Rank": 213
+  }
+  {
+    "Name": "Lopunny",
+    "Popularity": 921000,
+    "Rank": 214
+  }
+  {
+    "Name": "Tentacruel",
+    "Popularity": 909000,
+    "Rank": 215
+  }
+  {
+    "Name": "Turtwig",
+    "Popularity": 909000,
+    "Rank": 216
+  }
+  {
+    "Name": "Infernape",
+    "Popularity": 898000,
+    "Rank": 217
+  }
+  {
+    "Name": "Snover",
+    "Popularity": 898000,
+    "Rank": 218
+  }
+  {
+    "Name": "Chimchar",
+    "Popularity": 894000,
+    "Rank": 219
+  }
+  {
+    "Name": "Sandslash",
+    "Popularity": 886000,
+    "Rank": 220
+  }
+  {
+    "Name": "Sandshrew",
+    "Popularity": 882000,
+    "Rank": 221
+  }
+  {
+    "Name": "Sableye",
+    "Popularity": 878000,
+    "Rank": 222
+  }
+  {
+    "Name": "Combee",
+    "Popularity": 872000,
+    "Rank": 223
+  }
+  {
+    "Name": "Golbat",
+    "Popularity": 871000,
+    "Rank": 224
+  }
+  {
+    "Name": "Staryu",
+    "Popularity": 863000,
+    "Rank": 225
+  }
+  {
+    "Name": "Braixen",
+    "Popularity": 860000,
+    "Rank": 226
+  }
+  {
+    "Name": "Poliwag",
+    "Popularity": 859000,
+    "Rank": 227
+  }
+  {
+    "Name": "Aggron",
+    "Popularity": 849000,
+    "Rank": 228
+  }
+  {
+    "Name": "Magnemite",
+    "Popularity": 848000,
+    "Rank": 229
+  }
+  {
+    "Name": "Boldore",
+    "Popularity": 845000,
+    "Rank": 230
+  }
+  {
+    "Name": "Ralts",
+    "Popularity": 840000,
+    "Rank": 231
+  }
+  {
+    "Name": "Machop",
+    "Popularity": 834000,
+    "Rank": 232
+  }
+  {
+    "Name": "Voltorb",
+    "Popularity": 827000,
+    "Rank": 233
+  }
+  {
+    "Name": "Goldeen",
+    "Popularity": 820000,
+    "Rank": 234
+  }
+  {
+    "Name": "Tentacool",
+    "Popularity": 818000,
+    "Rank": 235
+  }
+  {
+    "Name": "Pachirisu",
+    "Popularity": 814000,
+    "Rank": 236
+  }
+  {
+    "Name": "Emolga",
+    "Popularity": 813000,
+    "Rank": 237
+  }
+  {
+    "Name": "Slaking",
+    "Popularity": 810000,
+    "Rank": 238
+  }
+  {
+    "Name": "Pidgeotto",
+    "Popularity": 807000,
+    "Rank": 239
+  }
+  {
+    "Name": "Dedenne",
+    "Popularity": 806000,
+    "Rank": 240
+  }
+  {
+    "Name": "Vileplume",
+    "Popularity": 802000,
+    "Rank": 241
+  }
+  {
+    "Name": "Quilava",
+    "Popularity": 797000,
+    "Rank": 242
+  }
+  {
+    "Name": "Bellsprout",
+    "Popularity": 795000,
+    "Rank": 243
+  }
+  {
+    "Name": "Rhydon",
+    "Popularity": 793000,
+    "Rank": 244
+  }
+  {
+    "Name": "Serperior",
+    "Popularity": 790000,
+    "Rank": 245
+  }
+  {
+    "Name": "Machoke",
+    "Popularity": 789000,
+    "Rank": 246
+  }
+  {
+    "Name": "Delphox",
+    "Popularity": 788000,
+    "Rank": 247
+  }
+  {
+    "Name": "Crobat",
+    "Popularity": 785000,
+    "Rank": 248
+  }
+  {
+    "Name": "Drowzee",
+    "Popularity": 782000,
+    "Rank": 249
+  }
+  {
+    "Name": "Goodra",
+    "Popularity": 776000,
+    "Rank": 250
+  }
+  {
+    "Name": "Clefable",
+    "Popularity": 772000,
+    "Rank": 251
+  }
+  {
+    "Name": "Wigglytuff",
+    "Popularity": 768000,
+    "Rank": 252
+  }
+  {
+    "Name": "Golduck",
+    "Popularity": 768000,
+    "Rank": 253
+  }
+  {
+    "Name": "Shinx",
+    "Popularity": 767000,
+    "Rank": 254
+  }
+  {
+    "Name": "Hitmonlee",
+    "Popularity": 764000,
+    "Rank": 255
+  }
+  {
+    "Name": "Ledian",
+    "Popularity": 758000,
+    "Rank": 256
+  }
+  {
+    "Name": "Cloyster",
+    "Popularity": 748000,
+    "Rank": 257
+  }
+  {
+    "Name": "Skarmory",
+    "Popularity": 743000,
+    "Rank": 258
+  }
+  {
+    "Name": "Torterra",
+    "Popularity": 742000,
+    "Rank": 259
+  }
+  {
+    "Name": "Weezing",
+    "Popularity": 741000,
+    "Rank": 260
+  }
+  {
+    "Name": "Wooper",
+    "Popularity": 738000,
+    "Rank": 261
+  }
+  {
+    "Name": "Wobbuffet",
+    "Popularity": 730000,
+    "Rank": 262
+  }
+  {
+    "Name": "Xatu",
+    "Popularity": 726000,
+    "Rank": 263
+  }
+  {
+    "Name": "Whiscash",
+    "Popularity": 721000,
+    "Rank": 264
+  }
+  {
+    "Name": "Poliwrath",
+    "Popularity": 720000,
+    "Rank": 265
+  }
+  {
+    "Name": "Empoleon",
+    "Popularity": 714000,
+    "Rank": 266
+  }
+  {
+    "Name": "Kirlia",
+    "Popularity": 713000,
+    "Rank": 267
+  }
+  {
+    "Name": "Hydreigon",
+    "Popularity": 712000,
+    "Rank": 268
+  }
+  {
+    "Name": "Scrafty",
+    "Popularity": 710000,
+    "Rank": 269
+  }
+  {
+    "Name": "Lickitung",
+    "Popularity": 709000,
+    "Rank": 270
+  }
+  {
+    "Name": "Chandelure",
+    "Popularity": 706000,
+    "Rank": 271
+  }
+  {
+    "Name": "Clauncher",
+    "Popularity": 705000,
+    "Rank": 272
+  }
+  {
+    "Name": "Doduo",
+    "Popularity": 701000,
+    "Rank": 273
+  }
+  {
+    "Name": "Parasect",
+    "Popularity": 698000,
+    "Rank": 274
+  }
+  {
+    "Name": "Azumarill",
+    "Popularity": 698000,
+    "Rank": 275
+  }
+  {
+    "Name": "Weavile",
+    "Popularity": 690000,
+    "Rank": 276
+  }
+  {
+    "Name": "Bidoof",
+    "Popularity": 689000,
+    "Rank": 277
+  }
+  {
+    "Name": "Meganium",
+    "Popularity": 687000,
+    "Rank": 278
+  }
+  {
+    "Name": "Uxie",
+    "Popularity": 685000,
+    "Rank": 279
+  }
+  {
+    "Name": "Farfetch'd",
+    "Popularity": 684000,
+    "Rank": 280
+  }
+  {
+    "Name": "Poliwhirl",
+    "Popularity": 676000,
+    "Rank": 281
+  }
+  {
+    "Name": "Espurr",
+    "Popularity": 676000,
+    "Rank": 282
+  }
+  {
+    "Name": "Sneasel",
+    "Popularity": 674000,
+    "Rank": 283
+  }
+  {
+    "Name": "Togekiss",
+    "Popularity": 673000,
+    "Rank": 284
+  }
+  {
+    "Name": "Regice",
+    "Popularity": 664000,
+    "Rank": 285
+  }
+  {
+    "Name": "Mightyena",
+    "Popularity": 660000,
+    "Rank": 286
+  }
+  {
+    "Name": "Regigigas",
+    "Popularity": 659000,
+    "Rank": 287
+  }
+  {
+    "Name": "Nidorino",
+    "Popularity": 658000,
+    "Rank": 288
+  }
+  {
+    "Name": "Heatran",
+    "Popularity": 658000,
+    "Rank": 289
+  }
+  {
+    "Name": "Manectric",
+    "Popularity": 654000,
+    "Rank": 290
+  }
+  {
+    "Name": "Rhyhorn",
+    "Popularity": 650000,
+    "Rank": 291
+  }
+  {
+    "Name": "Delcatty",
+    "Popularity": 649000,
+    "Rank": 292
+  }
+  {
+    "Name": "Victreebel",
+    "Popularity": 645000,
+    "Rank": 293
+  }
+  {
+    "Name": "Kingdra",
+    "Popularity": 645000,
+    "Rank": 294
+  }
+  {
+    "Name": "Dewgong",
+    "Popularity": 644000,
+    "Rank": 295
+  }
+  {
+    "Name": "Furret",
+    "Popularity": 644000,
+    "Rank": 296
+  }
+  {
+    "Name": "Grovyle",
+    "Popularity": 644000,
+    "Rank": 297
+  }
+  {
+    "Name": "Regirock",
+    "Popularity": 641000,
+    "Rank": 298
+  }
+  {
+    "Name": "Primeape",
+    "Popularity": 639000,
+    "Rank": 299
+  }
+  {
+    "Name": "Deino",
+    "Popularity": 637000,
+    "Rank": 300
+  }
+  {
+    "Name": "Seadra",
+    "Popularity": 633000,
+    "Rank": 301
+  }
+  {
+    "Name": "Smeargle",
+    "Popularity": 633000,
+    "Rank": 302
+  }
+  {
+    "Name": "Miltank",
+    "Popularity": 632000,
+    "Rank": 303
+  }
+  {
+    "Name": "Sharpedo",
+    "Popularity": 630000,
+    "Rank": 304
+  }
+  {
+    "Name": "Registeel",
+    "Popularity": 624000,
+    "Rank": 305
+  }
+  {
+    "Name": "Venomoth",
+    "Popularity": 622000,
+    "Rank": 306
+  }
+  {
+    "Name": "Talonflame",
+    "Popularity": 620000,
+    "Rank": 307
+  }
+  {
+    "Name": "Dodrio",
+    "Popularity": 618000,
+    "Rank": 308
+  }
+  {
+    "Name": "Mareep",
+    "Popularity": 618000,
+    "Rank": 309
+  }
+  {
+    "Name": "Fearow",
+    "Popularity": 616000,
+    "Rank": 310
+  }
+  {
+    "Name": "Bayleef",
+    "Popularity": 614000,
+    "Rank": 311
+  }
+  {
+    "Name": "Beautifly",
+    "Popularity": 614000,
+    "Rank": 312
+  }
+  {
+    "Name": "Cresselia",
+    "Popularity": 614000,
+    "Rank": 313
+  }
+  {
+    "Name": "Kingler",
+    "Popularity": 610000,
+    "Rank": 314
+  }
+  {
+    "Name": "Exeggcute",
+    "Popularity": 610000,
+    "Rank": 315
+  }
+  {
+    "Name": "Shellder",
+    "Popularity": 607000,
+    "Rank": 316
+  }
+  {
+    "Name": "Tranquill",
+    "Popularity": 606000,
+    "Rank": 317
+  }
+  {
+    "Name": "Axew",
+    "Popularity": 605000,
+    "Rank": 318
+  }
+  {
+    "Name": "Omanyte",
+    "Popularity": 600000,
+    "Rank": 319
+  }
+  {
+    "Name": "Buizel",
+    "Popularity": 598000,
+    "Rank": 320
+  }
+  {
+    "Name": "Blissey",
+    "Popularity": 590000,
+    "Rank": 321
+  }
+  {
+    "Name": "Omastar",
+    "Popularity": 589000,
+    "Rank": 322
+  }
+  {
+    "Name": "Venonat",
+    "Popularity": 579000,
+    "Rank": 323
+  }
+  {
+    "Name": "Seviper",
+    "Popularity": 578000,
+    "Rank": 324
+  }
+  {
+    "Name": "Nidorina",
+    "Popularity": 572000,
+    "Rank": 325
+  }
+  {
+    "Name": "Shuckle",
+    "Popularity": 572000,
+    "Rank": 326
+  }
+  {
+    "Name": "Vibrava",
+    "Popularity": 572000,
+    "Rank": 327
+  }
+  {
+    "Name": "Buneary",
+    "Popularity": 566000,
+    "Rank": 328
+  }
+  {
+    "Name": "Mamoswine",
+    "Popularity": 565000,
+    "Rank": 329
+  }
+  {
+    "Name": "Donphan",
+    "Popularity": 564000,
+    "Rank": 330
+  }
+  {
+    "Name": "Larvitar",
+    "Popularity": 563000,
+    "Rank": 331
+  }
+  {
+    "Name": "Breloom",
+    "Popularity": 553000,
+    "Rank": 332
+  }
+  {
+    "Name": "Houndour",
+    "Popularity": 549000,
+    "Rank": 333
+  }
+  {
+    "Name": "Noivern",
+    "Popularity": 549000,
+    "Rank": 334
+  }
+  {
+    "Name": "Aipom",
+    "Popularity": 547000,
+    "Rank": 335
+  }
+  {
+    "Name": "Lanturn",
+    "Popularity": 544000,
+    "Rank": 336
+  }
+  {
+    "Name": "Sawk",
+    "Popularity": 543000,
+    "Rank": 337
+  }
+  {
+    "Name": "Goomy",
+    "Popularity": 543000,
+    "Rank": 338
+  }
+  {
+    "Name": "Slowking",
+    "Popularity": 542000,
+    "Rank": 339
+  }
+  {
+    "Name": "Emboar",
+    "Popularity": 542000,
+    "Rank": 340
+  }
+  {
+    "Name": "Azurill",
+    "Popularity": 539000,
+    "Rank": 341
+  }
+  {
+    "Name": "Graveler",
+    "Popularity": 538000,
+    "Rank": 342
+  }
+  {
+    "Name": "Sudowoodo",
+    "Popularity": 538000,
+    "Rank": 343
+  }
+  {
+    "Name": "Teddiursa",
+    "Popularity": 537000,
+    "Rank": 344
+  }
+  {
+    "Name": "Floette",
+    "Popularity": 537000,
+    "Rank": 345
+  }
+  {
+    "Name": "Beldum",
+    "Popularity": 536000,
+    "Rank": 346
+  }
+  {
+    "Name": "Stoutland",
+    "Popularity": 533000,
+    "Rank": 347
+  }
+  {
+    "Name": "Panpour",
+    "Popularity": 532000,
+    "Rank": 348
+  }
+  {
+    "Name": "Samurott",
+    "Popularity": 530000,
+    "Rank": 349
+  }
+  {
+    "Name": "Numel",
+    "Popularity": 529000,
+    "Rank": 350
+  }
+  {
+    "Name": "Camerupt",
+    "Popularity": 528000,
+    "Rank": 351
+  }
+  {
+    "Name": "Delibird",
+    "Popularity": 522000,
+    "Rank": 352
+  }
+  {
+    "Name": "Misdreavus",
+    "Popularity": 520000,
+    "Rank": 353
+  }
+  {
+    "Name": "Poochyena",
+    "Popularity": 519000,
+    "Rank": 354
+  }
+  {
+    "Name": "Dunsparce",
+    "Popularity": 517000,
+    "Rank": 355
+  }
+  {
+    "Name": "Gourgeist",
+    "Popularity": 516000,
+    "Rank": 356
+  }
+  {
+    "Name": "Tropius",
+    "Popularity": 515000,
+    "Rank": 357
+  }
+  {
+    "Name": "Ursaring",
+    "Popularity": 512000,
+    "Rank": 358
+  }
+  {
+    "Name": "Magby",
+    "Popularity": 512000,
+    "Rank": 359
+  }
+  {
+    "Name": "Spinda",
+    "Popularity": 512000,
+    "Rank": 360
+  }
+  {
+    "Name": "Stunfisk",
+    "Popularity": 511000,
+    "Rank": 361
+  }
+  {
+    "Name": "Sentret",
+    "Popularity": 510000,
+    "Rank": 362
+  }
+  {
+    "Name": "Togetic",
+    "Popularity": 510000,
+    "Rank": 363
+  }
+  {
+    "Name": "Swellow",
+    "Popularity": 508000,
+    "Rank": 364
+  }
+  {
+    "Name": "Ariados",
+    "Popularity": 506000,
+    "Rank": 365
+  }
+  {
+    "Name": "Azelf",
+    "Popularity": 506000,
+    "Rank": 366
+  }
+  {
+    "Name": "Roserade",
+    "Popularity": 499000,
+    "Rank": 367
+  }
+  {
+    "Name": "Politoed",
+    "Popularity": 496000,
+    "Rank": 368
+  }
+  {
+    "Name": "Duskull",
+    "Popularity": 496000,
+    "Rank": 369
+  }
+  {
+    "Name": "Murkrow",
+    "Popularity": 494000,
+    "Rank": 370
+  }
+  {
+    "Name": "Noctowl",
+    "Popularity": 490000,
+    "Rank": 371
+  }
+  {
+    "Name": "Kecleon",
+    "Popularity": 490000,
+    "Rank": 372
+  }
+  {
+    "Name": "Ludicolo",
+    "Popularity": 488000,
+    "Rank": 373
+  }
+  {
+    "Name": "Archen",
+    "Popularity": 486000,
+    "Rank": 374
+  }
+  {
+    "Name": "Shelmet",
+    "Popularity": 485000,
+    "Rank": 375
+  }
+  {
+    "Name": "Weepinbell",
+    "Popularity": 483000,
+    "Rank": 376
+  }
+  {
+    "Name": "Quagsire",
+    "Popularity": 478000,
+    "Rank": 377
+  }
+  {
+    "Name": "Spiritomb",
+    "Popularity": 478000,
+    "Rank": 378
+  }
+  {
+    "Name": "Gogoat",
+    "Popularity": 476000,
+    "Rank": 379
+  }
+  {
+    "Name": "Meowstic",
+    "Popularity": 472000,
+    "Rank": 380
+  }
+  {
+    "Name": "Froslass",
+    "Popularity": 468000,
+    "Rank": 381
+  }
+  {
+    "Name": "Hoppip",
+    "Popularity": 466000,
+    "Rank": 382
+  }
+  {
+    "Name": "Corsola",
+    "Popularity": 466000,
+    "Rank": 383
+  }
+  {
+    "Name": "Taillow",
+    "Popularity": 465000,
+    "Rank": 384
+  }
+  {
+    "Name": "Castform",
+    "Popularity": 463000,
+    "Rank": 385
+  }
+  {
+    "Name": "Mismagius",
+    "Popularity": 460000,
+    "Rank": 386
+  }
+  {
+    "Name": "Joltik",
+    "Popularity": 459000,
+    "Rank": 387
+  }
+  {
+    "Name": "Cleffa",
+    "Popularity": 458000,
+    "Rank": 388
+  }
+  {
+    "Name": "Porygon-Z",
+    "Popularity": 458000,
+    "Rank": 389
+  }
+  {
+    "Name": "Gliscor",
+    "Popularity": 457000,
+    "Rank": 390
+  }
+  {
+    "Name": "Elekid",
+    "Popularity": 454000,
+    "Rank": 391
+  }
+  {
+    "Name": "Hawlucha",
+    "Popularity": 454000,
+    "Rank": 392
+  }
+  {
+    "Name": "Shellos",
+    "Popularity": 453000,
+    "Rank": 393
+  }
+  {
+    "Name": "Mesprit",
+    "Popularity": 452000,
+    "Rank": 394
+  }
+  {
+    "Name": "Aegislash",
+    "Popularity": 451000,
+    "Rank": 395
+  }
+  {
+    "Name": "Chesnaught",
+    "Popularity": 448000,
+    "Rank": 396
+  }
+  {
+    "Name": "Combusken",
+    "Popularity": 447000,
+    "Rank": 397
+  }
+  {
+    "Name": "Bisharp",
+    "Popularity": 447000,
+    "Rank": 398
+  }
+  {
+    "Name": "Zigzagoon",
+    "Popularity": 446000,
+    "Rank": 399
+  }
+  {
+    "Name": "Glalie",
+    "Popularity": 446000,
+    "Rank": 400
+  }
+  {
+    "Name": "Staraptor",
+    "Popularity": 445000,
+    "Rank": 401
+  }
+  {
+    "Name": "Wingull",
+    "Popularity": 444000,
+    "Rank": 402
+  }
+  {
+    "Name": "Gabite",
+    "Popularity": 444000,
+    "Rank": 403
+  }
+  {
+    "Name": "Swablu",
+    "Popularity": 443000,
+    "Rank": 404
+  }
+  {
+    "Name": "Litwick",
+    "Popularity": 443000,
+    "Rank": 405
+  }
+  {
+    "Name": "Octillery",
+    "Popularity": 442000,
+    "Rank": 406
+  }
+  {
+    "Name": "Volcarona",
+    "Popularity": 442000,
+    "Rank": 407
+  }
+  {
+    "Name": "Thundurus",
+    "Popularity": 440000,
+    "Rank": 408
+  }
+  {
+    "Name": "Haxorus",
+    "Popularity": 438000,
+    "Rank": 409
+  }
+  {
+    "Name": "Girafarig",
+    "Popularity": 436000,
+    "Rank": 410
+  }
+  {
+    "Name": "Chingling",
+    "Popularity": 436000,
+    "Rank": 411
+  }
+  {
+    "Name": "Torkoal",
+    "Popularity": 434000,
+    "Rank": 412
+  }
+  {
+    "Name": "Phanpy",
+    "Popularity": 432000,
+    "Rank": 413
+  }
+  {
+    "Name": "Lotad",
+    "Popularity": 432000,
+    "Rank": 414
+  }
+  {
+    "Name": "Solrock",
+    "Popularity": 431000,
+    "Rank": 415
+  }
+  {
+    "Name": "Drifloon",
+    "Popularity": 431000,
+    "Rank": 416
+  }
+  {
+    "Name": "Abomasnow",
+    "Popularity": 431000,
+    "Rank": 417
+  }
+  {
+    "Name": "Shedinja",
+    "Popularity": 430000,
+    "Rank": 418
+  }
+  {
+    "Name": "Gligar",
+    "Popularity": 424000,
+    "Rank": 419
+  }
+  {
+    "Name": "Landorus",
+    "Popularity": 424000,
+    "Rank": 420
+  }
+  {
+    "Name": "Lunatone",
+    "Popularity": 422000,
+    "Rank": 421
+  }
+  {
+    "Name": "Phione",
+    "Popularity": 421000,
+    "Rank": 422
+  }
+  {
+    "Name": "Spheal",
+    "Popularity": 420000,
+    "Rank": 423
+  }
+  {
+    "Name": "Medicham",
+    "Popularity": 419000,
+    "Rank": 424
+  }
+  {
+    "Name": "Bellossom",
+    "Popularity": 418000,
+    "Rank": 425
+  }
+  {
+    "Name": "Magnezone",
+    "Popularity": 418000,
+    "Rank": 426
+  }
+  {
+    "Name": "Armaldo",
+    "Popularity": 417000,
+    "Rank": 427
+  }
+  {
+    "Name": "Metang",
+    "Popularity": 416000,
+    "Rank": 428
+  }
+  {
+    "Name": "Virizion",
+    "Popularity": 415000,
+    "Rank": 429
+  }
+  {
+    "Name": "Amaura",
+    "Popularity": 415000,
+    "Rank": 430
+  }
+  {
+    "Name": "Pumpkaboo",
+    "Popularity": 415000,
+    "Rank": 431
+  }
+  {
+    "Name": "Shuppet",
+    "Popularity": 414000,
+    "Rank": 432
+  }
+  {
+    "Name": "Terrakion",
+    "Popularity": 413000,
+    "Rank": 433
+  }
+  {
+    "Name": "Croconaw",
+    "Popularity": 412000,
+    "Rank": 434
+  }
+  {
+    "Name": "Timburr",
+    "Popularity": 409000,
+    "Rank": 435
+  }
+  {
+    "Name": "Frogadier",
+    "Popularity": 408000,
+    "Rank": 436
+  }
+  {
+    "Name": "Electivire",
+    "Popularity": 405000,
+    "Rank": 437
+  }
+  {
+    "Name": "Trapinch",
+    "Popularity": 404000,
+    "Rank": 438
+  }
+  {
+    "Name": "Floatzel",
+    "Popularity": 404000,
+    "Rank": 439
+  }
+  {
+    "Name": "Lairon",
+    "Popularity": 403000,
+    "Rank": 440
+  }
+  {
+    "Name": "Luvdisc",
+    "Popularity": 403000,
+    "Rank": 441
+  }
+  {
+    "Name": "Shelgon",
+    "Popularity": 403000,
+    "Rank": 442
+  }
+  {
+    "Name": "Dusknoir",
+    "Popularity": 403000,
+    "Rank": 443
+  }
+  {
+    "Name": "Marshtomp",
+    "Popularity": 401000,
+    "Rank": 444
+  }
+  {
+    "Name": "Purrloin",
+    "Popularity": 401000,
+    "Rank": 445
+  }
+  {
+    "Name": "Cobalion",
+    "Popularity": 401000,
+    "Rank": 446
+  }
+  {
+    "Name": "Minccino",
+    "Popularity": 399000,
+    "Rank": 447
+  }
+  {
+    "Name": "Vivillon",
+    "Popularity": 398000,
+    "Rank": 448
+  }
+  {
+    "Name": "Hariyama",
+    "Popularity": 397000,
+    "Rank": 449
+  }
+  {
+    "Name": "Whimsicott",
+    "Popularity": 397000,
+    "Rank": 450
+  }
+  {
+    "Name": "Servine",
+    "Popularity": 395000,
+    "Rank": 451
+  }
+  {
+    "Name": "Igglybuff",
+    "Popularity": 394000,
+    "Rank": 452
+  }
+  {
+    "Name": "Chinchou",
+    "Popularity": 393000,
+    "Rank": 453
+  }
+  {
+    "Name": "Cacturne",
+    "Popularity": 393000,
+    "Rank": 454
+  }
+  {
+    "Name": "Malamar",
+    "Popularity": 393000,
+    "Rank": 455
+  }
+  {
+    "Name": "Porygon2",
+    "Popularity": 391000,
+    "Rank": 456
+  }
+  {
+    "Name": "Snorunt",
+    "Popularity": 390000,
+    "Rank": 457
+  }
+  {
+    "Name": "Sunflora",
+    "Popularity": 386000,
+    "Rank": 458
+  }
+  {
+    "Name": "Croagunk",
+    "Popularity": 385000,
+    "Rank": 459
+  }
+  {
+    "Name": "Exploud",
+    "Popularity": 383000,
+    "Rank": 460
+  }
+  {
+    "Name": "Pineco",
+    "Popularity": 381000,
+    "Rank": 461
+  }
+  {
+    "Name": "Wailmer",
+    "Popularity": 381000,
+    "Rank": 462
+  }
+  {
+    "Name": "Deerling",
+    "Popularity": 380000,
+    "Rank": 463
+  }
+  {
+    "Name": "Tornadus",
+    "Popularity": 377000,
+    "Rank": 464
+  }
+  {
+    "Name": "Jumpluff",
+    "Popularity": 376000,
+    "Rank": 465
+  }
+  {
+    "Name": "Dewott",
+    "Popularity": 376000,
+    "Rank": 466
+  }
+  {
+    "Name": "Excadrill",
+    "Popularity": 376000,
+    "Rank": 467
+  }
+  {
+    "Name": "Hitmontop",
+    "Popularity": 375000,
+    "Rank": 468
+  }
+  {
+    "Name": "Wynaut",
+    "Popularity": 373000,
+    "Rank": 469
+  }
+  {
+    "Name": "Seedot",
+    "Popularity": 371000,
+    "Rank": 470
+  }
+  {
+    "Name": "Wurmple",
+    "Popularity": 370000,
+    "Rank": 471
+  }
+  {
+    "Name": "Snubbull",
+    "Popularity": 369000,
+    "Rank": 472
+  }
+  {
+    "Name": "Spinarak",
+    "Popularity": 368000,
+    "Rank": 473
+  }
+  {
+    "Name": "Spoink",
+    "Popularity": 366000,
+    "Rank": 474
+  }
+  {
+    "Name": "Dusclops",
+    "Popularity": 364000,
+    "Rank": 475
+  }
+  {
+    "Name": "Shiftry",
+    "Popularity": 363000,
+    "Rank": 476
+  }
+  {
+    "Name": "Pelipper",
+    "Popularity": 363000,
+    "Rank": 477
+  }
+  {
+    "Name": "Linoone",
+    "Popularity": 362000,
+    "Rank": 478
+  }
+  {
+    "Name": "Loudred",
+    "Popularity": 362000,
+    "Rank": 479
+  }
+  {
+    "Name": "Relicanth",
+    "Popularity": 362000,
+    "Rank": 480
+  }
+  {
+    "Name": "Lilligant",
+    "Popularity": 361000,
+    "Rank": 481
+  }
+  {
+    "Name": "Tyrogue",
+    "Popularity": 360000,
+    "Rank": 482
+  }
+  {
+    "Name": "Gulpin",
+    "Popularity": 360000,
+    "Rank": 483
+  }
+  {
+    "Name": "Reuniclus",
+    "Popularity": 360000,
+    "Rank": 484
+  }
+  {
+    "Name": "Magcargo",
+    "Popularity": 358000,
+    "Rank": 485
+  }
+  {
+    "Name": "Electrike",
+    "Popularity": 358000,
+    "Rank": 486
+  }
+  {
+    "Name": "Swanna",
+    "Popularity": 357000,
+    "Rank": 487
+  }
+  {
+    "Name": "Swinub",
+    "Popularity": 355000,
+    "Rank": 488
+  }
+  {
+    "Name": "Shroomish",
+    "Popularity": 355000,
+    "Rank": 489
+  }
+  {
+    "Name": "Nosepass",
+    "Popularity": 351000,
+    "Rank": 490
+  }
+  {
+    "Name": "Klefki",
+    "Popularity": 351000,
+    "Rank": 491
+  }
+  {
+    "Name": "Tyrantrum",
+    "Popularity": 349000,
+    "Rank": 492
+  }
+  {
+    "Name": "Pyroar",
+    "Popularity": 348000,
+    "Rank": 493
+  }
+  {
+    "Name": "Slugma",
+    "Popularity": 347000,
+    "Rank": 494
+  }
+  {
+    "Name": "Cacnea",
+    "Popularity": 347000,
+    "Rank": 495
+  }
+  {
+    "Name": "Corphish",
+    "Popularity": 347000,
+    "Rank": 496
+  }
+  {
+    "Name": "Scatterbug",
+    "Popularity": 343000,
+    "Rank": 497
+  }
+  {
+    "Name": "Beartic",
+    "Popularity": 342000,
+    "Rank": 498
+  }
+  {
+    "Name": "Forretress",
+    "Popularity": 340000,
+    "Rank": 499
+  }
+  {
+    "Name": "Honchkrow",
+    "Popularity": 338000,
+    "Rank": 500
+  }
+  {
+    "Name": "Yanmega",
+    "Popularity": 337000,
+    "Rank": 501
+  }
+  {
+    "Name": "Walrein",
+    "Popularity": 336000,
+    "Rank": 502
+  }
+  {
+    "Name": "Grotle",
+    "Popularity": 336000,
+    "Rank": 503
+  }
+  {
+    "Name": "Krookodile",
+    "Popularity": 335000,
+    "Rank": 504
+  }
+  {
+    "Name": "Flaaffy",
+    "Popularity": 333000,
+    "Rank": 505
+  }
+  {
+    "Name": "Granbull",
+    "Popularity": 333000,
+    "Rank": 506
+  }
+  {
+    "Name": "Golurk",
+    "Popularity": 333000,
+    "Rank": 507
+  }
+  {
+    "Name": "Remoraid",
+    "Popularity": 330000,
+    "Rank": 508
+  }
+  {
+    "Name": "Nuzleaf",
+    "Popularity": 329000,
+    "Rank": 509
+  }
+  {
+    "Name": "Fletchling",
+    "Popularity": 329000,
+    "Rank": 510
+  }
+  {
+    "Name": "Piloswine",
+    "Popularity": 328000,
+    "Rank": 511
+  }
+  {
+    "Name": "Inkay",
+    "Popularity": 328000,
+    "Rank": 512
+  }
+  {
+    "Name": "Stantler",
+    "Popularity": 325000,
+    "Rank": 513
+  }
+  {
+    "Name": "Pupitar",
+    "Popularity": 325000,
+    "Rank": 514
+  }
+  {
+    "Name": "Cradily",
+    "Popularity": 325000,
+    "Rank": 515
+  }
+  {
+    "Name": "Scolipede",
+    "Popularity": 324000,
+    "Rank": 516
+  }
+  {
+    "Name": "Crawdaunt",
+    "Popularity": 323000,
+    "Rank": 517
+  }
+  {
+    "Name": "Magmortar",
+    "Popularity": 323000,
+    "Rank": 518
+  }
+  {
+    "Name": "Qwilfish",
+    "Popularity": 322000,
+    "Rank": 519
+  }
+  {
+    "Name": "Smoochum",
+    "Popularity": 321000,
+    "Rank": 520
+  }
+  {
+    "Name": "Sunkern",
+    "Popularity": 320000,
+    "Rank": 521
+  }
+  {
+    "Name": "Drifblim",
+    "Popularity": 320000,
+    "Rank": 522
+  }
+  {
+    "Name": "Archeops",
+    "Popularity": 320000,
+    "Rank": 523
+  }
+  {
+    "Name": "Bibarel",
+    "Popularity": 319000,
+    "Rank": 524
+  }
+  {
+    "Name": "Braviary",
+    "Popularity": 319000,
+    "Rank": 525
+  }
+  {
+    "Name": "Trevenant",
+    "Popularity": 319000,
+    "Rank": 526
+  }
+  {
+    "Name": "Dustox",
+    "Popularity": 318000,
+    "Rank": 527
+  }
+  {
+    "Name": "Makuhita",
+    "Popularity": 318000,
+    "Rank": 528
+  }
+  {
+    "Name": "Monferno",
+    "Popularity": 318000,
+    "Rank": 529
+  }
+  {
+    "Name": "Rhyperior",
+    "Popularity": 317000,
+    "Rank": 530
+  }
+  {
+    "Name": "Zebstrika",
+    "Popularity": 317000,
+    "Rank": 531
+  }
+  {
+    "Name": "Bronzong",
+    "Popularity": 313000,
+    "Rank": 532
+  }
+  {
+    "Name": "Chimecho",
+    "Popularity": 312000,
+    "Rank": 533
+  }
+  {
+    "Name": "Meditite",
+    "Popularity": 308000,
+    "Rank": 534
+  }
+  {
+    "Name": "Druddigon",
+    "Popularity": 307000,
+    "Rank": 535
+  }
+  {
+    "Name": "Grumpig",
+    "Popularity": 305000,
+    "Rank": 536
+  }
+  {
+    "Name": "Pangoro",
+    "Popularity": 305000,
+    "Rank": 537
+  }
+  {
+    "Name": "Gastrodon",
+    "Popularity": 304000,
+    "Rank": 538
+  }
+  {
+    "Name": "Sawsbuck",
+    "Popularity": 303000,
+    "Rank": 539
+  }
+  {
+    "Name": "Mienshao",
+    "Popularity": 303000,
+    "Rank": 540
+  }
+  {
+    "Name": "Nincada",
+    "Popularity": 302000,
+    "Rank": 541
+  }
+  {
+    "Name": "Toxicroak",
+    "Popularity": 300000,
+    "Rank": 542
+  }
+  {
+    "Name": "Carvanha",
+    "Popularity": 299000,
+    "Rank": 543
+  }
+  {
+    "Name": "Lampent",
+    "Popularity": 299000,
+    "Rank": 544
+  }
+  {
+    "Name": "Surskit",
+    "Popularity": 297000,
+    "Rank": 545
+  }
+  {
+    "Name": "Liepard",
+    "Popularity": 294000,
+    "Rank": 546
+  }
+  {
+    "Name": "Drapion",
+    "Popularity": 293000,
+    "Rank": 547
+  }
+  {
+    "Name": "Masquerain",
+    "Popularity": 290000,
+    "Rank": 548
+  }
+  {
+    "Name": "Illumise",
+    "Popularity": 290000,
+    "Rank": 549
+  }
+  {
+    "Name": "Anorith",
+    "Popularity": 289000,
+    "Rank": 550
+  }
+  {
+    "Name": "Furfrou",
+    "Popularity": 286000,
+    "Rank": 551
+  }
+  {
+    "Name": "Galvantula",
+    "Popularity": 285000,
+    "Rank": 552
+  }
+  {
+    "Name": "Honedge",
+    "Popularity": 285000,
+    "Rank": 553
+  }
+  {
+    "Name": "Clamperl",
+    "Popularity": 282000,
+    "Rank": 554
+  }
+  {
+    "Name": "Gothitelle",
+    "Popularity": 282000,
+    "Rank": 555
+  }
+  {
+    "Name": "Florges",
+    "Popularity": 279000,
+    "Rank": 556
+  }
+  {
+    "Name": "Sealeo",
+    "Popularity": 277000,
+    "Rank": 557
+  }
+  {
+    "Name": "Rampardos",
+    "Popularity": 276000,
+    "Rank": 558
+  }
+  {
+    "Name": "Glameow",
+    "Popularity": 276000,
+    "Rank": 559
+  }
+  {
+    "Name": "Rufflet",
+    "Popularity": 276000,
+    "Rank": 560
+  }
+  {
+    "Name": "Ledyba",
+    "Popularity": 275000,
+    "Rank": 561
+  }
+  {
+    "Name": "Baltoy",
+    "Popularity": 274000,
+    "Rank": 562
+  }
+  {
+    "Name": "Cherubi",
+    "Popularity": 274000,
+    "Rank": 563
+  }
+  {
+    "Name": "Pignite",
+    "Popularity": 273000,
+    "Rank": 564
+  }
+  {
+    "Name": "Skiploom",
+    "Popularity": 271000,
+    "Rank": 565
+  }
+  {
+    "Name": "Slakoth",
+    "Popularity": 271000,
+    "Rank": 566
+  }
+  {
+    "Name": "Mime Jr.",
+    "Popularity": 270000,
+    "Rank": 567
+  }
+  {
+    "Name": "Woobat",
+    "Popularity": 269000,
+    "Rank": 568
+  }
+  {
+    "Name": "Gorebyss",
+    "Popularity": 268000,
+    "Rank": 569
+  }
+  {
+    "Name": "Budew",
+    "Popularity": 268000,
+    "Rank": 570
+  }
+  {
+    "Name": "Lumineon",
+    "Popularity": 267000,
+    "Rank": 571
+  }
+  {
+    "Name": "Phantump",
+    "Popularity": 264000,
+    "Rank": 572
+  }
+  {
+    "Name": "Cherrim",
+    "Popularity": 263000,
+    "Rank": 573
+  }
+  {
+    "Name": "Swalot",
+    "Popularity": 261000,
+    "Rank": 574
+  }
+  {
+    "Name": "Lileep",
+    "Popularity": 261000,
+    "Rank": 575
+  }
+  {
+    "Name": "Barboach",
+    "Popularity": 259000,
+    "Rank": 576
+  }
+  {
+    "Name": "Ambipom",
+    "Popularity": 259000,
+    "Rank": 577
+  }
+  {
+    "Name": "Darmanitan",
+    "Popularity": 258000,
+    "Rank": 578
+  }
+  {
+    "Name": "Aurorus",
+    "Popularity": 258000,
+    "Rank": 579
+  }
+  {
+    "Name": "Cascoon",
+    "Popularity": 257000,
+    "Rank": 580
+  }
+  {
+    "Name": "Vigoroth",
+    "Popularity": 256000,
+    "Rank": 581
+  }
+  {
+    "Name": "Whismur",
+    "Popularity": 255000,
+    "Rank": 582
+  }
+  {
+    "Name": "Huntail",
+    "Popularity": 255000,
+    "Rank": 583
+  }
+  {
+    "Name": "Pidove",
+    "Popularity": 254000,
+    "Rank": 584
+  }
+  {
+    "Name": "Ferrothorn",
+    "Popularity": 254000,
+    "Rank": 585
+  }
+  {
+    "Name": "Staravia",
+    "Popularity": 253000,
+    "Rank": 586
+  }
+  {
+    "Name": "Cofagrigus",
+    "Popularity": 252000,
+    "Rank": 587
+  }
+  {
+    "Name": "Garbodor",
+    "Popularity": 252000,
+    "Rank": 588
+  }
+  {
+    "Name": "Cubchoo",
+    "Popularity": 248000,
+    "Rank": 589
+  }
+  {
+    "Name": "Tangrowth",
+    "Popularity": 247000,
+    "Rank": 590
+  }
+  {
+    "Name": "Bunnelby",
+    "Popularity": 246000,
+    "Rank": 591
+  }
+  {
+    "Name": "Helioptile",
+    "Popularity": 244000,
+    "Rank": 592
+  }
+  {
+    "Name": "Swirlix",
+    "Popularity": 242000,
+    "Rank": 593
+  }
+  {
+    "Name": "Tyrunt",
+    "Popularity": 242000,
+    "Rank": 594
+  }
+  {
+    "Name": "Diggersby",
+    "Popularity": 241000,
+    "Rank": 595
+  }
+  {
+    "Name": "Silcoon",
+    "Popularity": 239000,
+    "Rank": 596
+  }
+  {
+    "Name": "Bronzor",
+    "Popularity": 239000,
+    "Rank": 597
+  }
+  {
+    "Name": "Happiny",
+    "Popularity": 239000,
+    "Rank": 598
+  }
+  {
+    "Name": "Leavanny",
+    "Popularity": 239000,
+    "Rank": 599
+  }
+  {
+    "Name": "Pansear",
+    "Popularity": 238000,
+    "Rank": 600
+  }
+  {
+    "Name": "Vespiquen",
+    "Popularity": 236000,
+    "Rank": 601
+  }
+  {
+    "Name": "Vanillite",
+    "Popularity": 236000,
+    "Rank": 602
+  }
+  {
+    "Name": "Larvesta",
+    "Popularity": 235000,
+    "Rank": 603
+  }
+  {
+    "Name": "Prinplup",
+    "Popularity": 234000,
+    "Rank": 604
+  }
+  {
+    "Name": "Litleo",
+    "Popularity": 233000,
+    "Rank": 605
+  }
+  {
+    "Name": "Doublade",
+    "Popularity": 231000,
+    "Rank": 606
+  }
+  {
+    "Name": "Throh",
+    "Popularity": 229000,
+    "Rank": 607
+  }
+  {
+    "Name": "Trubbish",
+    "Popularity": 229000,
+    "Rank": 608
+  }
+  {
+    "Name": "Seismitoad",
+    "Popularity": 226000,
+    "Rank": 609
+  }
+  {
+    "Name": "Ducklett",
+    "Popularity": 226000,
+    "Rank": 610
+  }
+  {
+    "Name": "Cranidos",
+    "Popularity": 225000,
+    "Rank": 611
+  }
+  {
+    "Name": "Burmy",
+    "Popularity": 225000,
+    "Rank": 612
+  }
+  {
+    "Name": "Conkeldurr",
+    "Popularity": 225000,
+    "Rank": 613
+  }
+  {
+    "Name": "Yamask",
+    "Popularity": 225000,
+    "Rank": 614
+  }
+  {
+    "Name": "Lillipup",
+    "Popularity": 224000,
+    "Rank": 615
+  }
+  {
+    "Name": "Musharna",
+    "Popularity": 224000,
+    "Rank": 616
+  }
+  {
+    "Name": "Blitzle",
+    "Popularity": 224000,
+    "Rank": 617
+  }
+  {
+    "Name": "Carbink",
+    "Popularity": 223000,
+    "Rank": 618
+  }
+  {
+    "Name": "Nidoran♀",
+    "Popularity": 222000,
+    "Rank": 619
+  }
+  {
+    "Name": "Nidoran♂",
+    "Popularity": 220000,
+    "Rank": 620
+  }
+  {
+    "Name": "Hippowdon",
+    "Popularity": 218000,
+    "Rank": 621
+  }
+  {
+    "Name": "Watchog",
+    "Popularity": 218000,
+    "Rank": 622
+  }
+  {
+    "Name": "Stunky",
+    "Popularity": 216000,
+    "Rank": 623
+  }
+  {
+    "Name": "Sigilyph",
+    "Popularity": 216000,
+    "Rank": 624
+  }
+  {
+    "Name": "Gothita",
+    "Popularity": 216000,
+    "Rank": 625
+  }
+  {
+    "Name": "Quilladin",
+    "Popularity": 215000,
+    "Rank": 626
+  }
+  {
+    "Name": "Spritzee",
+    "Popularity": 215000,
+    "Rank": 627
+  }
+  {
+    "Name": "Cinccino",
+    "Popularity": 213000,
+    "Rank": 628
+  }
+  {
+    "Name": "Jellicent",
+    "Popularity": 213000,
+    "Rank": 629
+  }
+  {
+    "Name": "Solosis",
+    "Popularity": 212000,
+    "Rank": 630
+  }
+  {
+    "Name": "Dwebble",
+    "Popularity": 211000,
+    "Rank": 631
+  }
+  {
+    "Name": "Bastiodon",
+    "Popularity": 210000,
+    "Rank": 632
+  }
+  {
+    "Name": "Skuntank",
+    "Popularity": 210000,
+    "Rank": 633
+  }
+  {
+    "Name": "Bonsly",
+    "Popularity": 209000,
+    "Rank": 634
+  }
+  {
+    "Name": "Fraxure",
+    "Popularity": 208000,
+    "Rank": 635
+  }
+  {
+    "Name": "Slurpuff",
+    "Popularity": 207000,
+    "Rank": 636
+  }
+  {
+    "Name": "Heliolisk",
+    "Popularity": 204000,
+    "Rank": 637
+  }
+  {
+    "Name": "Swadloon",
+    "Popularity": 202000,
+    "Rank": 638
+  }
+  {
+    "Name": "Fletchinder",
+    "Popularity": 202000,
+    "Rank": 639
+  }
+  {
+    "Name": "Carnivine",
+    "Popularity": 201000,
+    "Rank": 640
+  }
+  {
+    "Name": "Maractus",
+    "Popularity": 201000,
+    "Rank": 641
+  }
+  {
+    "Name": "Accelgor",
+    "Popularity": 199000,
+    "Rank": 642
+  }
+  {
+    "Name": "Purugly",
+    "Popularity": 198000,
+    "Rank": 643
+  }
+  {
+    "Name": "Probopass",
+    "Popularity": 198000,
+    "Rank": 644
+  }
+  {
+    "Name": "Amoonguss",
+    "Popularity": 198000,
+    "Rank": 645
+  }
+  {
+    "Name": "Hippopotas",
+    "Popularity": 194000,
+    "Rank": 646
+  }
+  {
+    "Name": "Darumaka",
+    "Popularity": 194000,
+    "Rank": 647
+  }
+  {
+    "Name": "Skorupi",
+    "Popularity": 193000,
+    "Rank": 648
+  }
+  {
+    "Name": "Sewaddle",
+    "Popularity": 193000,
+    "Rank": 649
+  }
+  {
+    "Name": "Gothorita",
+    "Popularity": 193000,
+    "Rank": 650
+  }
+  {
+    "Name": "Alomomola",
+    "Popularity": 193000,
+    "Rank": 651
+  }
+  {
+    "Name": "Frillish",
+    "Popularity": 192000,
+    "Rank": 652
+  }
+  {
+    "Name": "Skiddo",
+    "Popularity": 190000,
+    "Rank": 653
+  }
+  {
+    "Name": "Swoobat",
+    "Popularity": 189000,
+    "Rank": 654
+  }
+  {
+    "Name": "Mienfoo",
+    "Popularity": 189000,
+    "Rank": 655
+  }
+  {
+    "Name": "Mandibuzz",
+    "Popularity": 189000,
+    "Rank": 656
+  }
+  {
+    "Name": "Finneon",
+    "Popularity": 188000,
+    "Rank": 657
+  }
+  {
+    "Name": "Pawniard",
+    "Popularity": 188000,
+    "Rank": 658
+  }
+  {
+    "Name": "Petilil",
+    "Popularity": 187000,
+    "Rank": 659
+  }
+  {
+    "Name": "Foongus",
+    "Popularity": 187000,
+    "Rank": 660
+  }
+  {
+    "Name": "Eelektross",
+    "Popularity": 187000,
+    "Rank": 661
+  }
+  {
+    "Name": "Palpitoad",
+    "Popularity": 186000,
+    "Rank": 662
+  }
+  {
+    "Name": "Lickilicky",
+    "Popularity": 184000,
+    "Rank": 663
+  }
+  {
+    "Name": "Eelektrik",
+    "Popularity": 183000,
+    "Rank": 664
+  }
+  {
+    "Name": "Vanilluxe",
+    "Popularity": 182000,
+    "Rank": 665
+  }
+  {
+    "Name": "Bouffalant",
+    "Popularity": 182000,
+    "Rank": 666
+  }
+  {
+    "Name": "Gigalith",
+    "Popularity": 181000,
+    "Rank": 667
+  }
+  {
+    "Name": "Unfezant",
+    "Popularity": 180000,
+    "Rank": 668
+  }
+  {
+    "Name": "Ferroseed",
+    "Popularity": 180000,
+    "Rank": 669
+  }
+  {
+    "Name": "Tynamo",
+    "Popularity": 180000,
+    "Rank": 670
+  }
+  {
+    "Name": "Venipede",
+    "Popularity": 179000,
+    "Rank": 671
+  }
+  {
+    "Name": "Dragalge",
+    "Popularity": 178000,
+    "Rank": 672
+  }
+  {
+    "Name": "Krokorok",
+    "Popularity": 177000,
+    "Rank": 673
+  }
+  {
+    "Name": "Mothim",
+    "Popularity": 176000,
+    "Rank": 674
+  }
+  {
+    "Name": "Roggenrola",
+    "Popularity": 174000,
+    "Rank": 675
+  }
+  {
+    "Name": "Herdier",
+    "Popularity": 173000,
+    "Rank": 676
+  }
+  {
+    "Name": "Sliggoo",
+    "Popularity": 173000,
+    "Rank": 677
+  }
+  {
+    "Name": "Heatmor",
+    "Popularity": 172000,
+    "Rank": 678
+  }
+  {
+    "Name": "Mantyke",
+    "Popularity": 170000,
+    "Rank": 679
+  }
+  {
+    "Name": "Escavalier",
+    "Popularity": 169000,
+    "Rank": 680
+  }
+  {
+    "Name": "Aromatisse",
+    "Popularity": 168000,
+    "Rank": 681
+  }
+  {
+    "Name": "Drilbur",
+    "Popularity": 167000,
+    "Rank": 682
+  }
+  {
+    "Name": "Carracosta",
+    "Popularity": 166000,
+    "Rank": 683
+  }
+  {
+    "Name": "Klinklang",
+    "Popularity": 165000,
+    "Rank": 684
+  }
+  {
+    "Name": "Zweilous",
+    "Popularity": 165000,
+    "Rank": 685
+  }
+  {
+    "Name": "Duosion",
+    "Popularity": 164000,
+    "Rank": 686
+  }
+  {
+    "Name": "Crustle",
+    "Popularity": 163000,
+    "Rank": 687
+  }
+  {
+    "Name": "Wormadam",
+    "Popularity": 162000,
+    "Rank": 688
+  }
+  {
+    "Name": "Tympole",
+    "Popularity": 162000,
+    "Rank": 689
+  }
+  {
+    "Name": "Beheeyem",
+    "Popularity": 162000,
+    "Rank": 690
+  }
+  {
+    "Name": "Skrelp",
+    "Popularity": 162000,
+    "Rank": 691
+  }
+  {
+    "Name": "Vullaby",
+    "Popularity": 161000,
+    "Rank": 692
+  }
+  {
+    "Name": "Kricketune",
+    "Popularity": 159000,
+    "Rank": 693
+  }
+  {
+    "Name": "Vanillish",
+    "Popularity": 158000,
+    "Rank": 694
+  }
+  {
+    "Name": "Kricketot",
+    "Popularity": 154000,
+    "Rank": 695
+  }
+  {
+    "Name": "Barbaracle",
+    "Popularity": 154000,
+    "Rank": 696
+  }
+  {
+    "Name": "Golett",
+    "Popularity": 152000,
+    "Rank": 697
+  }
+  {
+    "Name": "Simisage",
+    "Popularity": 151000,
+    "Rank": 698
+  }
+  {
+    "Name": "Binacle",
+    "Popularity": 151000,
+    "Rank": 699
+  }
+  {
+    "Name": "Clawitzer",
+    "Popularity": 151000,
+    "Rank": 700
+  }
+  {
+    "Name": "Simipour",
+    "Popularity": 150000,
+    "Rank": 701
+  }
+  {
+    "Name": "Simisear",
+    "Popularity": 148000,
+    "Rank": 702
+  }
+  {
+    "Name": "Basculin",
+    "Popularity": 147000,
+    "Rank": 703
+  }
+  {
+    "Name": "Elgyem",
+    "Popularity": 146000,
+    "Rank": 704
+  }
+  {
+    "Name": "Cryogonal",
+    "Popularity": 146000,
+    "Rank": 705
+  }
+  {
+    "Name": "Whirlipede",
+    "Popularity": 145000,
+    "Rank": 706
+  }
+  {
+    "Name": "Bergmite",
+    "Popularity": 141000,
+    "Rank": 707
+  }
+  {
+    "Name": "Avalugg",
+    "Popularity": 138000,
+    "Rank": 708
+  }
+  {
+    "Name": "Tirtouga",
+    "Popularity": 134000,
+    "Rank": 709
+  }
+  {
+    "Name": "Gurdurr",
+    "Popularity": 132000,
+    "Rank": 710
+  }
+  {
+    "Name": "Karrablast",
+    "Popularity": 126000,
+    "Rank": 711
+  }
+  {
+    "Name": "Flabébé",
+    "Popularity": 114000,
+    "Rank": 712
+  }
+  {
+    "Name": "Spewpa",
+    "Popularity": 105000,
+    "Rank": 713
+  }
+  {
+    "Name": "Claydol",
+    "Popularity": 63200,
+    "Rank": 714
+  }
