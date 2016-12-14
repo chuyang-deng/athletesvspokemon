@@ -97,8 +97,8 @@
 
             document.getElementById("athletesName").innerHTML = athlete[0];
 
-            document.getElementById("athletesAtt").innerHTML = "Sport: " + athlete[1] + ", Gold: " + athlete[2] + ", Silver: "
-                                                             + athlete[3] + ", Bronze: " + athlete[4];
+            document.getElementById("athletesAtt").innerHTML = "<b>Sport: </b>" + athlete[1] + ", <b>Gold: </b>" + athlete[2] + ", <b>Silver: </b>"
+                                                             + athlete[3] + ", <b>Bronze: </b>" + athlete[4];
 
 
             var rightAnswer = Math.floor(Math.random() * (4 - 1 + 1)) + 1;
@@ -150,7 +150,7 @@
 
             document.getElementById("img" + rightAnswer).src = rightURL;
             document.getElementById("match_button" + rightAnswer).innerHTML = answer[0];
-            document.getElementById("info" + rightAnswer).innerHTML = answer[1] + " " + answer[3];
+            document.getElementById("info" + rightAnswer).innerHTML = "<b>Total: </b>" + answer[1] + ", <b>Type: </b>" + answer[3];
 
             var j = 0;
 
@@ -158,7 +158,7 @@
               if (i != rightAnswer){
                 document.getElementById("img" + i).src = wrongImgs[j];
                 document.getElementById("match_button" + i).innerHTML = wrongName[j];
-                document.getElementById("info" + i).innerHTML = wrongTotal[j] + " " + wrongType[j];
+                document.getElementById("info" + i).innerHTML = "<b>Total: </b>" + wrongTotal[j] + ", <b>Type: </b>" + wrongType[j];
                 j++;
               }
             }
@@ -186,9 +186,9 @@
           <section id="Athletes">
             <div class="container2">
               <div class="center wow fadeInDown">
-                <h2 id = "athletesName"><%= athletes[0].name%></h2>
-                <h3 class="lead" id = "athletesAtt"><%= "Sport: " + athletes[0].sport + ", Gold: " + athletes[0].gold + ", Silver: " + athletes[0].silver
-                                      + ", Bronze: " + athletes[0].bronze%></h3>
+                <h2 id = "athletesName" style = "color:#3498db"><%= athletes[0].name%></h2>
+                <h3 class="lead" id = "athletesAtt"><b>Sport: </b><%= athletes[0].sport%>, <b>Gold: </b><%=
+                                        athletes[0].gold%>, <b>Silver: </b> <%=athletes[0].silver%>, <b>Bronze: </b><%=athletes[0].bronze%></h3>
                 <h4>Your Score:</h4>
                 <h4 class = "text-center" id = "score">0</h4>
               </div>
@@ -196,25 +196,25 @@
               <div class="row">
                 <div id = "div1" class="col-xs-12 col-sm-4 col-md-3" style="background:w">
                     <img id = "img1" class = "match_images" src=<%= url0 %>>
-                    <h3 id = "info1"><%=answers[0].total + " " + answers[0].type%></h3>
+                    <h3 id = "info1"><b>Total: </b><%=answers[0].total%>, <b>Type: </b><%=answers[0].type%></h3>
                   <button id = "match_button1" onclick="popup(1)" class="btn btn-warning btn-lg"><%= answers[0].name %></button>
                 </div>
 
                 <div id = "div2" class="col-xs-12 col-sm-4 col-md-3" style="background:white">
                     <img id = "img2" class = "match_images" src=<%= url1 %>>
-                    <h3 id = "info2"><%=other[0].total + " " + other[0].type%></h3>
+                    <h3 id = "info2"><b>Total: </b><%=other[0].total%>, <b>Type: </b><%=other[0].type%></h3>
                   <button id = "match_button2" onclick="popup(2)" class="btn btn-warning btn-lg"><%= other[0].name %></button>
                 </div>
 
                 <div id = "div3" class="col-xs-12 col-sm-4 col-md-3" style="background:white">
                     <img id = "img3" class = "match_images" src=<%= url2 %>>
-                    <h3 id = "info3"><%=other[1].total + " " + other[1].type%></h3>
+                    <h3 id = "info3"><b>Total: </b><%=other[1].total%>, <b>Type: </b><%=other[1].type%></h3>
                   <button id = "match_button3" onclick="popup(3)" class="btn btn-warning btn-lg"><%= other[1].name %></button>
                 </div>
 
                 <div id = "div4" class="col-xs-12 col-sm-4 col-md-3" style="background:white">
                     <img id = "img4" class = "match_images" src=<%= url3 %>>
-                    <h3 id = "info4"><%=other[2].total + " " + other[2].type%></h3>
+                    <h3 id = "info4"><b>Total: </b><%=other[2].total%>, <b>Type: </b><%=other[2].type%></h3>
                   <button id = "match_button4" onclick="popup(4)" class="btn btn-warning btn-lg"><%= other[2].name %></button>
                 </div>
 

@@ -1,3 +1,5 @@
+INSERT INTO Pokemon VALUES ('Mega Pinsir','Flying','600','65','155','120','65','90','105','1','127');
+
 #,Name,Type,Total,HP,Attack,Defense,Sp. Atk,Sp. Def,Speed,Generation
 1,Bulbasaur,Grass,318,45,49,49,65,65,45,1
 2,Ivysaur,Grass,405,60,62,63,80,80,60,1
