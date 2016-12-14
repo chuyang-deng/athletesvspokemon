@@ -10,10 +10,12 @@
 <section id="middle">
   <div class="container">
     <div class="row">
+      <h2 class = "text-center"> <%= ""%></h2>
+      <font size="6" ><%= "The corresponding pokémon for " + name + " is:"%></font>
 
       <div class="col-sm-6 wow fadeInDown">
         <div class="accordion">
-          <h2><%= name %></h2>
+          <h2 ><%= result.name %></h2>
 
           <% var url = "https://s3-us-west-2.amazonaws.com/pokemonimage/image/"+ result.image_no +".png" %>
           <img class="img-responsive img-blog" src= <%=url%> style="width:428px;height:428px;" alt="" />
@@ -24,14 +26,14 @@
 
 
         <div class="skill">
-          <h2><%= result.name %></h2>
-          <p> The corresponding Pokémon for <%= name %> is <%= result.name %>, whose type is  <%= result.type %>.</p>
+          <h2><%= result.type %></h2>
+          <p> The type of corresponding Pokémon for <%= name %> is <%= result.type %>.</p>
 
 
           <div class="progress-wrap">
             <h3>Total</h3>
             <div class="progress">
-              <div class="progress-bar  color1" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: <%= result.total*1.0/7.2%>%">
+              <div class="progress-bar  color4" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: <%= result.total*1.0/7.2%>%">
                 <span class="bar-width"><%= result.total %></span>
               </div>
 
@@ -69,7 +71,7 @@
           <div class="progress-wrap">
             <h3>Speed</h3>
             <div class="progress">
-              <div class="progress-bar color4" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: <%= result.speed*1.0/1.6 %>%">
+              <div class="progress-bar color1" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: <%= result.speed*1.0/1.6 %>%">
                 <span class="bar-width"><%= result.speed %></span>
               </div>
             </div>

@@ -33,7 +33,7 @@ function query_db(res, aname) {
         if (err) console.log(err);
         else{
           var type = rows[0].type;
-          var query3 = "select v.name, m.score from "+ sport+ "View v Inner Join Medal m on " +
+          var query3 = "select v.name, m.gold, m.silver, m.bronze, m.score from "+ sport+ "View v Inner Join Medal m on " +
                               "v.name = m.name ORDER BY m.score DESC";
           //console.log(query3);
           connection.query(query3, function(err, rows, fields) {
@@ -58,7 +58,7 @@ function query_db(res, aname) {
                   if (pRowNum >= PokemonRank.length || pRowNum < 0){
                     noResult(res, aname);
                   }
-                  output_result(res, aname, PokemonRank[pRowNum]);
+                    output_result(res, aname, PokemonRank[pRowNum]);
 
                 }
               })
