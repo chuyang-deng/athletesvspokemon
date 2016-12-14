@@ -15,7 +15,7 @@
     <div class="container">
         <h3 class = "text-center"><%= title %></h3>
         <h4 class = "text-center">Your Score:</h4>
-        <h4 class = "text-center" id = "score">0</h4>
+        <h5 id = "score">0</h5>
 
         <div style="display:none;">
 
@@ -68,7 +68,7 @@
                   }
                   document.getElementById("total1").style.visibility = "";
                   document.getElementById("total2").style.visibility = "";
-                  document.getElementById("right or wrong").innerHTML = message;
+                  document.getElementById("rightorwrong").innerHTML = message;
 
 
 
@@ -85,7 +85,7 @@
                     if (confirm(msg) == true){
                       location.reload();
                     }else{
-                      document.getElementById("right or wrong").innerHTML = "";
+                      document.getElementById("rightorwrong").innerHTML = "";
                       document.getElementById("replay").style.display = "";
                     }
                   }
@@ -104,7 +104,7 @@
                   document.getElementById("img1").src = url1;
                   document.getElementById("img2").src = url2;
 
-                  document.getElementById("right or wrong").innerHTML = "";
+                  document.getElementById("rightorwrong").innerHTML = "";
 
                   document.getElementById("guess_button1").innerHTML = p1[0];
                   document.getElementById("guess_button2").innerHTML = p2[0];
@@ -141,7 +141,7 @@
             </div>
         </section>
 
-      <h3 id = "right or wrong" class = "text-center"></h3>
+      <h3 id = "rightorwrong" class = "text-center"></h3>
       <div>
           <button id = "replay" style="display:none;" onclick="location.reload()" class="btn btn-warning btn-lg">Play Again</button>
       </div>

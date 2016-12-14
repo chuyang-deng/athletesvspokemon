@@ -10,18 +10,17 @@
 <body style="background-image: url(images/ticao2.jpg);background-repeat:no-repeat;background-size: 100%;background-position: 0px 80px;">
 <% include templates/navibar.ejs %>
 <div class="wrapper">
-<section id="item" >
+<section id="item" class = "center">
   <div id="wrap">
     <div id="main">
       <div class="container">
           <div class="box">
           <p>
           <div class="center wow fadeInDown">
-              <h1 style="color:aliceblue;">Search an Athlete<br/>
-                </h1>
+              <h1 style="color:aliceblue;">Search an Athlete<br/></h1>
               <form class="form-inline" role="form" method="get" action="/resultByA">
                 <div class="form-group">
-                  <input type="text" class="form-control" name="aname" placeholder="Enter a Athletes' name">
+                  <input type="text" class="form-control" name="aname" placeholder="Enter an athlete's name">
                 </div>
                 <button type="submit" class="btn btn-warning btn-lg">SEARCH</button>
                 <% if (errorMsg != ""){%>

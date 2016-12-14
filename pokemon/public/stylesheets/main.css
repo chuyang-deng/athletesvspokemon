@@ -742,7 +742,7 @@ input.search-form:hover {
 
 .progress .bar-width{
   position: absolute;
-  width: 40px;
+  width: 80px;
   height: 20px;
   line-height: 20px;
   text-align: center;
@@ -750,7 +750,7 @@ input.search-form:hover {
   font-weight: 700;
   top: -30px;
   border-radius: 2px;
-  margin-left: -30px;
+  margin-left: -70px;
 }
 
 .progress span{
@@ -854,9 +854,10 @@ input.search-form:hover {
   width:500px;
   height:150px;
   position:absolute;
-  top:350px;
-  left:450px;
-  margin: 20px;
+  top: 50%;
+  left: 50%;
+  margin-top: -75px;
+  margin-left: -250px;
   background-color: #000000;
   border: 1px solid black;
   opacity: 0.8;

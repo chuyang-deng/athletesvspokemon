@@ -55,6 +55,11 @@ h4 {
     text-align: center;
 }
 
+h5#score {
+    font-size: 24px;
+    text-align: center;
+}
+
 #match_button1 {
     background: #3498db;
     border-radius: 28px;

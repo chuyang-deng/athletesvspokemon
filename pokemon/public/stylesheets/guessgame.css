@@ -35,6 +35,16 @@ h3 {
     text-align: center;
 }
 
+h3#rightorwrong {
+    font-size: 24px;
+    text-align: center;
+}
+
+h5#score {
+    font-size: 24px;
+    text-align: center;
+}
+
 #guess_button1 {
     background: #3498db;
     border-radius: 28px;
