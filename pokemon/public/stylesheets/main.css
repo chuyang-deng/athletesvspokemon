@@ -102,8 +102,20 @@ a:focus {
 
 .center h2{
   font-size: 36px;
-  margin-top: 30px;
-  margin-bottom: 10px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.center h3{
+  font-size: 28px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.center h4{
+  font-size: 20px;
+  margin-top: 50px;
+  margin-bottom: 20px;
 }
 
 .media>.pull-left{
@@ -708,6 +720,8 @@ input.search-form:hover {
 .progress .color4 .bar-width{
   background: #db3615;
 }
+
+
 
 .progress, 
 .progress-bar {
@@ -1939,7 +1953,7 @@ footer, .push {
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 70px 0;
+  padding: 70px 0px;
 }
 
 .gmap-area .gmap iframe {

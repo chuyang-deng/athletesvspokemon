@@ -7,33 +7,45 @@
 
 <%include templates/navibar.ejs%>
 
+
 <section id="middle">
   <div class="container">
     <div class="row">
+      <h2 class = "text-center"> <%= "The corresponding pokémon for " + athlete + " is: " + pokemon%></h2>
 
       <div class="col-sm-6 wow fadeInDown">
         <div class="accordion">
-          <h2><%= pokemon %></h2>
-          <!--<% var url = "https://s3-us-west-2.amazonaws.com/pokemonimage/image/"+ result+".png" %>-->
-          <!--<% console.log(url) %>-->
-          <img class="img-responsive img-blog" src= <%=url%> style="width:428px;height:428px;" alt="" />
+          <h2 class = "text-center"> <%= ""%></h2>
+
+            <% var url = "https://s3-us-west-2.amazonaws.com/pokemonimage/image/"+ result +".png" %>
+          <img class="img-responsive img-blog" src= <%=url%> style="width:428px;height:428px;position:relative;top:50%;left:65%" alt="" />
         </div>
       </div>
 
-      <div>
+      <div class="col-sm-12 wow fadeInDown">
 
 
-        <div>
+          <div class="progress-wrap">
+            <h3><%= "The Popularity of " + athlete + "is:" %></h3>
+            <div class="progress">
+              <div class="progress-bar  color4" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: <%= popularityA*1.0/4060000%>%">
+                <span class="bar-width"><%= popularityA %></span>
+              </div>
 
-          <h3><% athlete %></h3>
-          <h3><% popularityA %></h3>
-          <h3><% pokemon %></h3>
-          <h3><% popularityP %></h3>
+            </div>
+          </div>
 
+          <div class="progress-wrap">
+            <h3><%= "The Popularity of " + pokemon + "is:" %></h3>
+            <div class="progress">
+              <div class="progress-bar  color1" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: <%= popularityP*1.0/683000%>%">
+                <span class="bar-width"><%= popularityP %></span>
+              </div>
 
-        </div>
+            </div>
+          </div>
 
-      </div>
+      </div><!--/.col-sm-6-->
 
 
 
@@ -42,10 +54,13 @@
 </section><!--/#middle-->
 
 
-</div>
-<div class="push"></div>
+
 <% include templates/footer.ejs%>
 </body>
 </html>
+
+
+
+
 
 
