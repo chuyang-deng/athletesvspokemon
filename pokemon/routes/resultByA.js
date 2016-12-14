@@ -20,30 +20,31 @@ var connection = mysql.createConnection({
 function query_db(res, aname) {
   //var aname = "Barbel Wockel";
   aname = aname.trim();
-  var query = "select sport from Athletes where name = '" + aname + "'";
+  var query = "select * from Athletes where name = '" + aname + "'";
   connection.query(query, function(err, rows, fields) {
-    if (err) console.log(err);
+    if (err) noResult(res, aname);
     else if (rows.length == 0){
       noResult(res, aname);
     } else {
+      var athleteAtt = rows[0];
       var sport = rows[0].sport;
       var query1 = "select type from Activities where sport = '" + sport + "'";
       //console.log(query);
       connection.query(query1, function(err, rows, fields) {
-        if (err) console.log(err);
+        if (err) noResult(res, aname);
         else{
           var type = rows[0].type;
           var query3 = "select v.name, m.gold, m.silver, m.bronze, m.score from "+ sport+ "View v Inner Join Medal m on " +
                               "v.name = m.name ORDER BY m.score DESC";
           //console.log(query3);
           connection.query(query3, function(err, rows, fields) {
-            if (err) console.log(err);
+            if (err) noResult(res, aname);
             else{
               var athletesRank = rows;
               //console.log(athletesRank);
               var query4 = "Select * From "+ type + "View Order By total DESC";
               connection.query(query4, function(err, rows, fields) {
-                if (err) console.log(err);
+                if (err) noResult(res, aname);
                 else {
                   var PokemonRank = rows;
                   var aRowNum = 0;
@@ -58,7 +59,7 @@ function query_db(res, aname) {
                   if (pRowNum >= PokemonRank.length || pRowNum < 0){
                     noResult(res, aname);
                   }
-                    output_result(res, aname, PokemonRank[pRowNum]);
+                    output_result(res, aname, PokemonRank[pRowNum], athleteAtt, athletesRank[aRowNum]);
 
                 }
               })
@@ -83,11 +84,13 @@ function noResult(res, aname){
 // res = HTTP result object sent back to the client
 // name = Name to query for
 // results = List object of query results
-function output_result(res, aname, result) {
+function output_result(res, aname, result, athleteAtt, medal) {
   res.render('resultByA',
       { title: "All Pokemon with type: " + aname,
         result: result,
-        name: aname
+        name: aname,
+        athleteAtt: athleteAtt,
+        medal: medal
         // result2: result2,
         // result3: result3
       }
