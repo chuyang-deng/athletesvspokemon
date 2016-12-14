@@ -25,7 +25,7 @@ function query_random_pokemon(res) {
 function output_result(res, result) {
     res.render('guessgame',
         {
-            title: 'Guess Who Will Win the Battle',
+            title: 'Guess Who Will Win the Battle!',
             result: result
         });
 }
