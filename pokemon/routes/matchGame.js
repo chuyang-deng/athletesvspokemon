@@ -11,9 +11,6 @@ var connection = mysql.createConnection({
   password: settings.password,
   database: settings.database
 })
-/**
- * Get 2 random tuples FROM pokemon table
- */
 
 function query_random_pokemon(res) {
   var query = "SELECT * FROM Athletes a INNER JOIN Medal m ON a.name = m.name ORDER BY RAND() LIMIT 5";
@@ -25,7 +22,6 @@ function query_random_pokemon(res) {
       var other = [];
 
       for (var i = 0; i < athletes.length; i++){
-
         var promises = ['aaa'].map(function(name) {
           return new Promise(function(resolve, reject) {
             getAnswer(rows[i].name, answers, other,resolve);
@@ -100,9 +96,8 @@ function output_result(res, athletes, answers, other) {
       });
 }
 
-/* GET home page. */
 router.get('/', function(req, res) {
   query_random_pokemon(res); // render the query result
-}); // use index.ejs as view, also pass additional information, in this case, title: Express
+});
 
 module.exports = router;

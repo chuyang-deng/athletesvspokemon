@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
     <title> Pokemon </title>
     <link href="stylesheets/guessgame.css" rel="stylesheet">
     <%include templates/head.ejs%>
@@ -16,7 +15,6 @@
         <h3 class = "text-center"><%= title %></h3>
         <h4 class = "text-center">Your Score:</h4>
         <h5 id = "score">0</h5>
-
         <div style="display:none;">
 
             <h3 id = "index1">0</h3>
@@ -27,9 +25,7 @@
             <% } %>
 
         </div>
-
         <section>
-
             <script>
                 function popup(choice) {
                   var first = "poke" + document.getElementById("index1").innerHTML;

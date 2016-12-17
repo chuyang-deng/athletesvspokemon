@@ -4,15 +4,6 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
-require('jsdom').env("", function(err, window) {
-  if (err) {
-    console.error(err);
-    return;
-  }
-
-  var $ = require('jquery')(window);
-});
-
 var index = require('./routes/index');
 var about = require('./routes/about');
 var searchByA = require('./routes/searchByA');

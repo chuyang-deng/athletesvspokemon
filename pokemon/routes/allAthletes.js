@@ -12,14 +12,9 @@ var connection = mysql.createConnection({
 })
 
 
-/////
-// Query the oracle database, and call output_actors on the results
-//
-// res = HTTP result object sent back to the client
-// name = Name to query for
 function query_db(res) {
     var query = "select * from Athletes inner join Medal on Athletes.name = Medal.name order by gold desc LIMIT 700";
-    connection.query(query, function(err, rows, fields) {
+    connection.query(query, function(err, rows) {
         if (err) console.log(err);
         else {
             output_result(res, rows);
@@ -27,25 +22,14 @@ function query_db(res) {
     });
 }
 
-// ///
-// Given a set of query results, output a table
-//
-// res = HTTP result object sent back to the client
-// name = Name to query for
-// results = List object of query results
 function output_result(res, result) {
     res.render('allAthletes',
         { title: "All Athletes",
             result: result
-            // result2: result2,
-            // result3: result3
         }
     );
-    //console.log(results)
 }
 
-
-// This was a bug in the parameter I passed into the function below
 router.get('/', function(req, res) {
     query_db(res);
 });

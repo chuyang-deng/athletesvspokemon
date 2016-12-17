@@ -5,21 +5,14 @@
   <title> Pokemon </title>
   <link href="stylesheets/matchgame.css" rel="stylesheet">
   <%include templates/head.ejs%>
-
 </head>
 
 <body>
-
   <%include templates/navibar.ejs%>
 <div class="wrapper">
-
   <div id="headerwrap">
     <div class="container">
-      <!--<h2 class = "text-center"><%= title%></h2>-->
-
-
       <div style = "display:none">
-
         <h3 id = "index1">0</h3>
         <h3 id = "index2">0</h3>
         <h3 id = "rightAnswer">1</h3>
@@ -38,7 +31,6 @@
           <h3 id = <%="other" + i%>><%=other[i].name+"; "+other[i].total+"; "
                                         +other[i].image_no + "; " + other[i].type %></h3>
         <% } %>
-
       </div>
 
       <section>
@@ -225,23 +217,13 @@
               <div class = "center">
                 <button id = "replay" style="display:none;" onclick="location.reload()" class="btn btn-warning btn-lg">Play Again</button>
               </div>
-
-
             </div><!--/.container-->
-
           </section>
-
         </div>
-
-      <section>
-        <!--<button id = "replay" style="display:none;" onclick="location.reload()" class="btn btn-warning btn-lg">Play Again</button>-->
-      </section>
-
       </div>
     </div>
   </div>
 </div>
-
 
   <div class="push"></div>
   <% include templates/footer.ejs%>

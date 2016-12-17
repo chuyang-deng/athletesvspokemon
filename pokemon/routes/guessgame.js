@@ -11,7 +11,7 @@ var connection = mysql.createConnection({
     database: settings.database
 })
 /**
- * Get 2 random tuples from pokemon table
+ * Get 20 random tuples from pokemon table
  */
 
 function query_random_pokemon(res) {
@@ -30,9 +30,9 @@ function output_result(res, result) {
         });
 }
 
-/* GET home page. */
+
 router.get('/', function(req, res) {
     query_random_pokemon(res); // render the query result
-}); // use index.ejs as view, also pass additional information, in this case, title: Express
+});
 
 module.exports = router;

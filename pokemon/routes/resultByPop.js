@@ -28,7 +28,6 @@ function mongoQuery(res, aname) {
             noResult(res,aname);
         } else {
             console.log("Successfully connected to MongoDB.");
-
             var collectionAthletes = db.collection('athletes');
             collectionAthletes.find({Name: aname}).toArray(function (err, result) {
                 if (err) {
@@ -66,14 +65,11 @@ function mongoQuery(res, aname) {
                           noResult(res,aname);
                         }
                     });
-
                 } else {
                     //res.send("Athlete is not in our record.");
                     noResult(res,aname);
                 }
             });
-
-
         }
     });
 }
@@ -85,7 +81,6 @@ function noResult(res, aname){
 }
 
 function sqlQuery(res, pokemon, aname) {
-
     var query = "SELECT image_no FROM PokemonFull WHERE name = '" + pokemon + "'";
     connection.query(query, function(err, rows) {
         if (err) {
@@ -100,13 +95,11 @@ function sqlQuery(res, pokemon, aname) {
                 popularityA: popularityA,
                 popularityP: popularityP
             });
-
         } else {
             noResult(res, aname)
         }
     });
 }
-
 
 router.get('/', function(req, res) {
     mongoQuery(res, req.query.aname);
